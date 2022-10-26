@@ -4,17 +4,14 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
-	"os"
+	"path"
+	"runtime"
 )
 
 func loadAllFamilies(prefix string) ([]string, error) {
-	pwd, err := os.Getwd()
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(1)
-	}
-	fmt.Println(pwd)
-	b, err := ioutil.ReadFile(pwd + "/" + prefix + "/data/families/families.json")
+	_, filename, _, _ := runtime.Caller(1)
+	fmt.Println(filename)
+	b, err := ioutil.ReadFile(path.Dir(filename) + "/" + prefix + "/data/families/families.json")
 	if err != nil {
 		return nil, err
 	}
@@ -27,5 +24,5 @@ func loadAllFamilies(prefix string) ([]string, error) {
 }
 
 func LoadAllFamilies() ([]string, error) {
-	return loadAllFamilies("language")
+	return loadAllFamilies("")
 }
