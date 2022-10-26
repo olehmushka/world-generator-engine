@@ -1,3 +1,3 @@
-module world_generator_engine
+module github.com/olehmushka/world-generator-processor-service
 
 go 1.18
