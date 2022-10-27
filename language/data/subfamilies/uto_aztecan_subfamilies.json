@@ -1,0 +1,58 @@
+[
+  {
+    "slug": "northern_uto_aztecan_lang_subfamily",
+    "family_slug": "uto_aztecan_lang_family"
+  },
+  {
+    "slug": "southern_uto_aztecan_lang_subfamily",
+    "family_slug": "uto_aztecan_lang_family"
+  },
+  {
+    "slug": "tepiman_lang_subfamily",
+    "family_slug": "uto_aztecan_lang_family",
+    "extended_subfamily": {
+      "slug": "southern_uto_aztecan_lang_subfamily",
+      "family_slug": "uto_aztecan_lang_family"
+    }
+  },
+  {
+    "slug": "tarahumaran_lang_subfamily",
+    "family_slug": "uto_aztecan_lang_family",
+    "extended_subfamily": {
+      "slug": "southern_uto_aztecan_lang_subfamily",
+      "family_slug": "uto_aztecan_lang_family"
+    }
+  },
+  {
+    "slug": "cahita_lang_subfamily",
+    "family_slug": "uto_aztecan_lang_family",
+    "extended_subfamily": {
+      "slug": "southern_uto_aztecan_lang_subfamily",
+      "family_slug": "uto_aztecan_lang_family"
+    }
+  },
+  {
+    "slug": "opatan_lang_subfamily",
+    "family_slug": "uto_aztecan_lang_family",
+    "extended_subfamily": {
+      "slug": "southern_uto_aztecan_lang_subfamily",
+      "family_slug": "uto_aztecan_lang_family"
+    }
+  },
+  {
+    "slug": "corachol_lang_subfamily",
+    "family_slug": "uto_aztecan_lang_family",
+    "extended_subfamily": {
+      "slug": "southern_uto_aztecan_lang_subfamily",
+      "family_slug": "uto_aztecan_lang_family"
+    }
+  },
+  {
+    "slug": "aztecan_lang_subfamily",
+    "family_slug": "uto_aztecan_lang_family",
+    "extended_subfamily": {
+      "slug": "southern_uto_aztecan_lang_subfamily",
+      "family_slug": "uto_aztecan_lang_family"
+    }
+  }
+]

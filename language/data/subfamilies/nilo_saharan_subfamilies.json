@@ -1,0 +1,70 @@
+[
+  {
+    "slug": "berta_lang_subfamily",
+    "family_slug": "nilo_saharan_lang_family"
+  },
+  {
+    "slug": "b_aga_lang_subfamily",
+    "family_slug": "nilo_saharan_lang_family"
+  },
+  {
+    "slug": "fur_lang_subfamily",
+    "family_slug": "nilo_saharan_lang_family"
+  },
+  {
+    "slug": "kadu_lang_subfamily",
+    "family_slug": "nilo_saharan_lang_family"
+  },
+  {
+    "slug": "koman_lang_subfamily",
+    "family_slug": "nilo_saharan_lang_family"
+  },
+  {
+    "slug": "kuliak_lang_subfamily",
+    "family_slug": "nilo_saharan_lang_family"
+  },
+  {
+    "slug": "kunama_lang_subfamily",
+    "family_slug": "nilo_saharan_lang_family"
+  },
+  {
+    "slug": "maban_lang_subfamily",
+    "family_slug": "nilo_saharan_lang_family"
+  },
+  {
+    "slug": "saharan_lang_subfamily",
+    "family_slug": "nilo_saharan_lang_family"
+  },
+  {
+    "slug": "songhay_lang_subfamily",
+    "family_slug": "nilo_saharan_lang_family"
+  },
+  {
+    "slug": "central_sudanic_lang_subfamily",
+    "family_slug": "nilo_saharan_lang_family"
+  },
+  {
+    "slug": "eastern_sudanic_lang_subfamily",
+    "family_slug": "nilo_saharan_lang_family"
+  },
+  {
+    "slug": "mimi_d_lang_subfamily",
+    "family_slug": "nilo_saharan_lang_family"
+  },
+  {
+    "slug": "nubian_lang_subfamily",
+    "family_slug": "nilo_saharan_lang_family",
+    "extended_subfamily": {
+      "slug": "eastern_sudanic_lang_subfamily",
+      "family_slug": "nilo_saharan_lang_family"
+    }
+  },
+  {
+    "slug": "daju_lang_subfamily",
+    "family_slug": "nilo_saharan_lang_family",
+    "extended_subfamily": {
+      "slug": "eastern_sudanic_lang_subfamily",
+      "family_slug": "nilo_saharan_lang_family"
+    }
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "slug": "dogon_lang_subfamily",
+    "family_slug": "niger_congo_lang_family"
+  },
+  {
+    "slug": "mande_lang_subfamily",
+    "family_slug": "niger_congo_lang_family"
+  },
+  {
+    "slug": "ijoid_lang_subfamily",
+    "family_slug": "niger_congo_lang_family"
+  },
+  {
+    "slug": "lafofa_kordofanian_lang_subfamily",
+    "family_slug": "niger_congo_lang_family"
+  },
+  {
+    "slug": "kru_lang_subfamily",
+    "family_slug": "niger_congo_lang_family"
+  },
+  {
+    "slug": "siamou_lang_subfamily",
+    "family_slug": "niger_congo_lang_family"
+  },
+  {
+    "slug": "atlantic_congo_lang_subfamily",
+    "family_slug": "niger_congo_lang_family"
+  },
+  {
+    "slug": "volta_congo_lang_subfamily",
+    "family_slug": "niger_congo_lang_family",
+    "extended_subfamily": {
+      "slug": "atlantic_congo_lang_subfamily",
+      "family_slug": "niger_congo_lang_family"
+    }
+  },
+  {
+    "slug": "bantu_lang_subfamily",
+    "family_slug": "niger_congo_lang_family",
+    "extended_subfamily": {
+      "slug": "atlantic_congo_lang_subfamily",
+      "family_slug": "niger_congo_lang_family"
+    }
+  }
+]

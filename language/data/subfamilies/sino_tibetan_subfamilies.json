@@ -1,0 +1,158 @@
+[
+  {
+    "slug": "sinitic_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family"
+  },
+  {
+    "slug": "lolo_burmese_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family"
+  },
+  {
+    "slug": "tibetic_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family"
+  },
+  {
+    "slug": "karenic_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family"
+  },
+  {
+    "slug": "bodo_garo_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family"
+  },
+  {
+    "slug": "kuki_chin_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family"
+  },
+  {
+    "slug": "meitei_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family"
+  },
+  {
+    "slug": "tamangic_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family"
+  },
+  {
+    "slug": "bai_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family"
+  },
+  {
+    "slug": "jingpho_luish_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family"
+  },
+  {
+    "slug": "chinese_languages_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family",
+    "extended_subfamily": {
+      "slug": "sinitic_lang_subfamily",
+      "family_slug": "sino_tibetan_lang_family"
+    }
+  },
+  {
+    "slug": "greater_bai_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family",
+    "extended_subfamily": {
+      "slug": "sinitic_lang_subfamily",
+      "family_slug": "sino_tibetan_lang_family"
+    }
+  },
+  {
+    "slug": "mondzish_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family",
+    "extended_subfamily": {
+      "slug": "lolo_burmese_lang_subfamily",
+      "family_slug": "sino_tibetan_lang_family"
+    }
+  },
+  {
+    "slug": "burmish_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family",
+    "extended_subfamily": {
+      "slug": "lolo_burmese_lang_subfamily",
+      "family_slug": "sino_tibetan_lang_family"
+    }
+  },
+  {
+    "slug": "hanoish_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family",
+    "extended_subfamily": {
+      "slug": "lolo_burmese_lang_subfamily",
+      "family_slug": "sino_tibetan_lang_family"
+    }
+  },
+  {
+    "slug": "lahoish_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family",
+    "extended_subfamily": {
+      "slug": "lolo_burmese_lang_subfamily",
+      "family_slug": "sino_tibetan_lang_family"
+    }
+  },
+  {
+    "slug": "naxish_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family",
+    "extended_subfamily": {
+      "slug": "lolo_burmese_lang_subfamily",
+      "family_slug": "sino_tibetan_lang_family"
+    }
+  },
+  {
+    "slug": "nusoish_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family",
+    "extended_subfamily": {
+      "slug": "lolo_burmese_lang_subfamily",
+      "family_slug": "sino_tibetan_lang_family"
+    }
+  },
+  {
+    "slug": "kazhuoish_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family",
+    "extended_subfamily": {
+      "slug": "lolo_burmese_lang_subfamily",
+      "family_slug": "sino_tibetan_lang_family"
+    }
+  },
+  {
+    "slug": "lisoish_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family",
+    "extended_subfamily": {
+      "slug": "lolo_burmese_lang_subfamily",
+      "family_slug": "sino_tibetan_lang_family"
+    }
+  },
+  {
+    "slug": "nisoish_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family",
+    "extended_subfamily": {
+      "slug": "lolo_burmese_lang_subfamily",
+      "family_slug": "sino_tibetan_lang_family"
+    }
+  },
+  {
+    "slug": "qiangic_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family",
+    "extended_subfamily": {
+      "slug": "lolo_burmese_lang_subfamily",
+      "family_slug": "sino_tibetan_lang_family"
+    }
+  },
+  {
+    "slug": "tibeto_burman_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family",
+    "extended_subfamily": {
+      "slug": "tibetic_lang_subfamily",
+      "family_slug": "sino_tibetan_lang_family"
+    }
+  },
+  {
+    "slug": "bodish_lang_subfamily",
+    "family_slug": "sino_tibetan_lang_family",
+    "extended_subfamily": {
+      "slug": "tibeto_burman_lang_subfamily",
+      "family_slug": "sino_tibetan_lang_family",
+      "extended_subfamily": {
+        "slug": "tibetic_lang_subfamily",
+        "family_slug": "sino_tibetan_lang_family"
+      }
+    }
+  }
+]

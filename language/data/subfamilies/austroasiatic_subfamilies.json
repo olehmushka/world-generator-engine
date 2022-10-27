@@ -1,0 +1,94 @@
+[
+  {
+    "slug": "munda_lang_subfamily",
+    "family_slug": "austroasiatic_lang_family"
+  },
+  {
+    "slug": "khasi_palaungic_lang_subfamily",
+    "family_slug": "austroasiatic_lang_family"
+  },
+  {
+    "slug": "khmuic_lang_subfamily",
+    "family_slug": "austroasiatic_lang_family"
+  },
+  {
+    "slug": "mang_lang_subfamily",
+    "family_slug": "austroasiatic_lang_family"
+  },
+  {
+    "slug": "pakanic_lang_subfamily",
+    "family_slug": "austroasiatic_lang_family"
+  },
+  {
+    "slug": "vietic_lang_subfamily",
+    "family_slug": "austroasiatic_lang_family"
+  },
+  {
+    "slug": "katuic_lang_subfamily",
+    "family_slug": "austroasiatic_lang_family"
+  },
+  {
+    "slug": "bahnaric_lang_subfamily",
+    "family_slug": "austroasiatic_lang_family"
+  },
+  {
+    "slug": "khmer_lang_subfamily",
+    "family_slug": "austroasiatic_lang_family"
+  },
+  {
+    "slug": "pearic_lang_subfamily",
+    "family_slug": "austroasiatic_lang_family"
+  },
+  {
+    "slug": "monic_lang_subfamily",
+    "family_slug": "austroasiatic_lang_family"
+  },
+  {
+    "slug": "aslian_lang_subfamily",
+    "family_slug": "austroasiatic_lang_family"
+  },
+  {
+    "slug": "nicobarese_lang_subfamily",
+    "family_slug": "austroasiatic_lang_family"
+  },
+  {
+    "slug": "viet_muong_lang_subfamily",
+    "family_slug": "austroasiatic_lang_family",
+    "extended_subfamily": {
+      "slug": "vietic_lang_subfamily",
+      "family_slug": "austroasiatic_lang_family"
+    }
+  },
+  {
+    "slug": "cuoi_lang_subfamily",
+    "family_slug": "austroasiatic_lang_family",
+    "extended_subfamily": {
+      "slug": "vietic_lang_subfamily",
+      "family_slug": "austroasiatic_lang_family"
+    }
+  },
+  {
+    "slug": "thavung_lang_subfamily",
+    "family_slug": "austroasiatic_lang_family",
+    "extended_subfamily": {
+      "slug": "vietic_lang_subfamily",
+      "family_slug": "austroasiatic_lang_family"
+    }
+  },
+  {
+    "slug": "chut_lang_subfamily",
+    "family_slug": "austroasiatic_lang_family",
+    "extended_subfamily": {
+      "slug": "vietic_lang_subfamily",
+      "family_slug": "austroasiatic_lang_family"
+    }
+  },
+  {
+    "slug": "maleng_lang_subfamily",
+    "family_slug": "austroasiatic_lang_family",
+    "extended_subfamily": {
+      "slug": "vietic_lang_subfamily",
+      "family_slug": "austroasiatic_lang_family"
+    }
+  }
+]

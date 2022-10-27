@@ -3,7 +3,7 @@ package language
 import "testing"
 
 func TestLoadAllFamilies(t *testing.T) {
-	result, err := loadAllFamilies("")
+	result, err := LoadAllFamilies()
 	if err != nil {
 		t.Fatalf("unexpected error (err=%+v)", err)
 		return

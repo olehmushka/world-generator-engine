@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "jurchenic_nanaic_lang_subfamily",
+    "family_slug": "tungusic_lang_family"
+  },
+  {
+    "slug": "udegheic_lang_subfamily",
+    "family_slug": "tungusic_lang_family"
+  },
+  {
+    "slug": "jurchenic_lang_subfamily",
+    "family_slug": "tungusic_lang_family",
+    "extended_subfamily": {
+      "slug": "jurchenic_nanaic_lang_subfamily",
+      "family_slug": "tungusic_lang_family"
+    }
+  },
+  {
+    "slug": "nanaic_lang_subfamily",
+    "family_slug": "tungusic_lang_family",
+    "extended_subfamily": {
+      "slug": "jurchenic_nanaic_lang_subfamily",
+      "family_slug": "tungusic_lang_family"
+    }
+  }
+]

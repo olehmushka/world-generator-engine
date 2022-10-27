@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "basque_lang_subfamily",
+    "family_slug": "basque_lang_family"
+  },
+  {
+    "slug": "japonic_lang_subfamily",
+    "family_slug": "japonic_lang_family"
+  },
+  {
+    "slug": "koreanic_lang_subfamily",
+    "family_slug": "koreanic_lang_family"
+  },
+  {
+    "slug": "karto_zan_lang_subfamily",
+    "family_slug": "kartvelian_lang_family"
+  },
+  {
+    "slug": "svan_lang_subfamily",
+    "family_slug": "kartvelian_lang_family"
+  }
+]

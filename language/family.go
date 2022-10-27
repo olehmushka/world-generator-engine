@@ -2,7 +2,6 @@ package language
 
 import (
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"path"
 	"runtime"
@@ -10,7 +9,6 @@ import (
 
 func loadAllFamilies(prefix string) ([]string, error) {
 	_, filename, _, _ := runtime.Caller(1)
-	fmt.Println(filename)
 	b, err := ioutil.ReadFile(path.Dir(filename) + "/" + prefix + "/data/families/families.json")
 	if err != nil {
 		return nil, err

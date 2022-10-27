@@ -1,0 +1,178 @@
+[
+  {
+    "slug": "berber_lang_subfamily",
+    "family_slug": "afro_asiatic_lang_family"
+  },
+  {
+    "slug": "chadic_lang_subfamily",
+    "family_slug": "afro_asiatic_lang_family"
+  },
+  {
+    "slug": "cushitic_lang_subfamily",
+    "family_slug": "afro_asiatic_lang_family"
+  },
+  {
+    "slug": "egyptian_lang_subfamily",
+    "family_slug": "afro_asiatic_lang_family"
+  },
+  {
+    "slug": "semitic_lang_subfamily",
+    "family_slug": "afro_asiatic_lang_family"
+  },
+  {
+    "slug": "omotic_lang_subfamily",
+    "family_slug": "afro_asiatic_lang_family"
+  },
+  {
+    "slug": "agaw_lang_subfamily",
+    "family_slug": "afro_asiatic_lang_family",
+    "extended_subfamily": {
+      "slug": "cushitic_lang_subfamily",
+      "family_slug": "afro_asiatic_lang_family"
+    }
+  },
+  {
+    "slug": "dullay_lang_subfamily",
+    "family_slug": "afro_asiatic_lang_family",
+    "extended_subfamily": {
+      "slug": "cushitic_lang_subfamily",
+      "family_slug": "afro_asiatic_lang_family"
+    }
+  },
+  {
+    "slug": "highland_east_cushitic_lang_subfamily",
+    "family_slug": "afro_asiatic_lang_family",
+    "extended_subfamily": {
+      "slug": "cushitic_lang_subfamily",
+      "family_slug": "afro_asiatic_lang_family"
+    }
+  },
+  {
+    "slug": "lowland_east_cushitic_lang_subfamily",
+    "family_slug": "afro_asiatic_lang_family",
+    "extended_subfamily": {
+      "slug": "cushitic_lang_subfamily",
+      "family_slug": "afro_asiatic_lang_family"
+    }
+  },
+  {
+    "slug": "south_cushitic_lang_subfamily",
+    "family_slug": "afro_asiatic_lang_family",
+    "extended_subfamily": {
+      "slug": "cushitic_lang_subfamily",
+      "family_slug": "afro_asiatic_lang_family"
+    }
+  },
+  {
+    "slug": "east_semitic_lang_subfamily",
+    "family_slug": "afro_asiatic_lang_family",
+    "extended_subfamily": {
+      "slug": "semitic_lang_subfamily",
+      "family_slug": "afro_asiatic_lang_family"
+    }
+  },
+  {
+    "slug": "west_semitic_lang_subfamily",
+    "family_slug": "afro_asiatic_lang_family",
+    "extended_subfamily": {
+      "slug": "semitic_lang_subfamily",
+      "family_slug": "afro_asiatic_lang_family"
+    }
+  },
+  {
+    "slug": "canaanite_lang_subfamily",
+    "family_slug": "afro_asiatic_lang_family",
+    "extended_subfamily": {
+      "slug": "west_semitic_lang_subfamily",
+      "family_slug": "afro_asiatic_lang_family",
+      "extended_subfamily": {
+        "slug": "semitic_lang_subfamily",
+        "family_slug": "afro_asiatic_lang_family"
+      }
+    }
+  },
+  {
+    "slug": "aramaic_lang_subfamily",
+    "family_slug": "afro_asiatic_lang_family",
+    "extended_subfamily": {
+      "slug": "west_semitic_lang_subfamily",
+      "family_slug": "afro_asiatic_lang_family",
+      "extended_subfamily": {
+        "slug": "semitic_lang_subfamily",
+        "family_slug": "afro_asiatic_lang_family"
+      }
+    }
+  },
+  {
+    "slug": "arabic_lang_subfamily",
+    "family_slug": "afro_asiatic_lang_family",
+    "extended_subfamily": {
+      "slug": "west_semitic_lang_subfamily",
+      "family_slug": "afro_asiatic_lang_family",
+      "extended_subfamily": {
+        "slug": "semitic_lang_subfamily",
+        "family_slug": "afro_asiatic_lang_family"
+      }
+    }
+  },
+  {
+    "slug": "ethiopic_lang_subfamily",
+    "family_slug": "afro_asiatic_lang_family",
+    "extended_subfamily": {
+      "slug": "west_semitic_lang_subfamily",
+      "family_slug": "afro_asiatic_lang_family",
+      "extended_subfamily": {
+        "slug": "semitic_lang_subfamily",
+        "family_slug": "afro_asiatic_lang_family"
+      }
+    }
+  },
+  {
+    "slug": "south_arabian_lang_subfamily",
+    "family_slug": "afro_asiatic_lang_family",
+    "extended_subfamily": {
+      "slug": "west_semitic_lang_subfamily",
+      "family_slug": "afro_asiatic_lang_family",
+      "extended_subfamily": {
+        "slug": "semitic_lang_subfamily",
+        "family_slug": "afro_asiatic_lang_family"
+      }
+    }
+  },
+  {
+    "slug": "hebrew_lang_subfamily",
+    "family_slug": "afro_asiatic_lang_family",
+    "extended_subfamily": {
+      "slug": "canaanite_lang_subfamily",
+      "family_slug": "afro_asiatic_lang_family",
+      "extended_subfamily": {
+        "slug": "west_semitic_lang_subfamily",
+        "family_slug": "afro_asiatic_lang_family",
+        "extended_subfamily": {
+          "slug": "semitic_lang_subfamily",
+          "family_slug": "afro_asiatic_lang_family"
+        }
+      }
+    }
+  },
+  {
+    "slug": "west_chadic_lang_subfamily",
+    "family_slug": "afro_asiatic_lang_family",
+    "extended_subfamily": {
+      "slug": "chadic_lang_subfamily",
+      "family_slug": "afro_asiatic_lang_family"
+    }
+  },
+  {
+    "slug": "somalic_lang_subfamily",
+    "family_slug": "afro_asiatic_lang_family",
+    "extended_subfamily": {
+      "slug": "lowland_east_cushitic_lang_subfamily",
+      "family_slug": "afro_asiatic_lang_family",
+      "extended_subfamily": {
+        "slug": "cushitic_lang_subfamily",
+        "family_slug": "afro_asiatic_lang_family"
+      }
+    }
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "slug": "rukai_lang_subfamily",
+    "family_slug": "austronesian_lang_family"
+  },
+  {
+    "slug": "tsouic_lang_subfamily",
+    "family_slug": "austronesian_lang_family"
+  },
+  {
+    "slug": "puyuma_lang_subfamily",
+    "family_slug": "austronesian_lang_family"
+  },
+  {
+    "slug": "northwest_formosan_lang_subfamily",
+    "family_slug": "austronesian_lang_family"
+  },
+  {
+    "slug": "east_formosan_lang_subfamily",
+    "family_slug": "austronesian_lang_family"
+  },
+  {
+    "slug": "western_plains_lang_subfamily",
+    "family_slug": "austronesian_lang_family"
+  },
+  {
+    "slug": "atayalic_lang_subfamily",
+    "family_slug": "austronesian_lang_family"
+  },
+  {
+    "slug": "bunun_lang_subfamily",
+    "family_slug": "austronesian_lang_family"
+  },
+  {
+    "slug": "paiwan_lang_subfamily",
+    "family_slug": "austronesian_lang_family"
+  },
+  {
+    "slug": "malayo_polynesian_lang_subfamily",
+    "family_slug": "austronesian_lang_family"
+  },
+  {
+    "slug": "oceanic_lang_subfamily",
+    "family_slug": "austronesian_lang_family",
+    "extended_subfamily": {
+      "slug": "malayo_polynesian_lang_subfamily",
+      "family_slug": "austronesian_lang_family"
+    }
+  },
+  {
+    "slug": "polynesian_lang_subfamily",
+    "family_slug": "austronesian_lang_family",
+    "extended_subfamily": {
+      "slug": "oceanic_lang_subfamily",
+      "family_slug": "austronesian_lang_family",
+      "extended_subfamily": {
+        "slug": "malayo_polynesian_lang_subfamily",
+        "family_slug": "austronesian_lang_family"
+      }
+    }
+  },
+  {
+    "slug": "marquesic_lang_subfamily",
+    "family_slug": "austronesian_lang_family",
+    "extended_subfamily": {
+      "slug": "polynesian_lang_subfamily",
+      "family_slug": "austronesian_lang_family",
+      "extended_subfamily": {
+        "slug": "oceanic_lang_subfamily",
+        "family_slug": "austronesian_lang_family",
+        "extended_subfamily": {
+          "slug": "malayo_polynesian_lang_subfamily",
+          "family_slug": "austronesian_lang_family"
+        }
+      }
+    }
+  }
+]

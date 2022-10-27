@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "finno_ugric_lang_subfamily",
+    "family_slug": "uralic_lang_family"
+  },
+  {
+    "slug": "samoyedic_lang_subfamily",
+    "family_slug": "uralic_lang_family"
+  },
+  {
+    "slug": "finno_permic_lang_subfamily",
+    "family_slug": "uralic_lang_family",
+    "extended_subfamily": {
+      "slug": "finno_ugric_lang_subfamily",
+      "family_slug": "uralic_lang_family"
+    }
+  },
+  {
+    "slug": "ugric_lang_subfamily",
+    "family_slug": "uralic_lang_family",
+    "extended_subfamily": {
+      "slug": "finno_ugric_lang_subfamily",
+      "family_slug": "uralic_lang_family"
+    }
+  },
+  {
+    "slug": "permic_lang_subfamily",
+    "family_slug": "uralic_lang_family",
+    "extended_subfamily": {
+      "slug": "finno_permic_lang_subfamily",
+      "family_slug": "uralic_lang_family",
+      "extended_subfamily": {
+        "slug": "finno_ugric_lang_subfamily",
+        "family_slug": "uralic_lang_family"
+      }
+    }
+  },
+  {
+    "slug": "balto_finnic_lang_subfamily",
+    "family_slug": "uralic_lang_family",
+    "extended_subfamily": {
+      "slug": "finno_permic_lang_subfamily",
+      "family_slug": "uralic_lang_family",
+      "extended_subfamily": {
+        "slug": "finno_ugric_lang_subfamily",
+        "family_slug": "uralic_lang_family"
+      }
+    }
+  },
+  {
+    "slug": "sami_lang_subfamily",
+    "family_slug": "uralic_lang_family",
+    "extended_subfamily": {
+      "slug": "finno_permic_lang_subfamily",
+      "family_slug": "uralic_lang_family",
+      "extended_subfamily": {
+        "slug": "finno_ugric_lang_subfamily",
+        "family_slug": "uralic_lang_family"
+      }
+    }
+  },
+  {
+    "slug": "mordvin_lang_subfamily",
+    "family_slug": "uralic_lang_family",
+    "extended_subfamily": {
+      "slug": "finno_permic_lang_subfamily",
+      "family_slug": "uralic_lang_family",
+      "extended_subfamily": {
+        "slug": "finno_ugric_lang_subfamily",
+        "family_slug": "uralic_lang_family"
+      }
+    }
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "shaz_turkic_lang_subfamily",
+    "family_slug": "turkic_lang_family"
+  },
+  {
+    "slug": "lir_turkic_lang_subfamily",
+    "family_slug": "turkic_lang_family"
+  },
+  {
+    "slug": "oghuz_lang_subfamily",
+    "family_slug": "turkic_lang_family",
+    "extended_subfamily": {
+      "slug": "shaz_turkic_lang_subfamily",
+      "family_slug": "turkic_lang_family"
+    }
+  },
+  {
+    "slug": "kipchak_lang_subfamily",
+    "family_slug": "turkic_lang_family",
+    "extended_subfamily": {
+      "slug": "shaz_turkic_lang_subfamily",
+      "family_slug": "turkic_lang_family"
+    }
+  },
+  {
+    "slug": "karluk_lang_subfamily",
+    "family_slug": "turkic_lang_family",
+    "extended_subfamily": {
+      "slug": "shaz_turkic_lang_subfamily",
+      "family_slug": "turkic_lang_family"
+    }
+  },
+  {
+    "slug": "siberian_turkic_lang_subfamily",
+    "family_slug": "turkic_lang_family",
+    "extended_subfamily": {
+      "slug": "shaz_turkic_lang_subfamily",
+      "family_slug": "turkic_lang_family"
+    }
+  }
+]

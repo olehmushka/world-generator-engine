@@ -1,0 +1,474 @@
+[
+  {
+    "slug": "albanian_lang_subfamily",
+    "family_slug": "indo_european_lang_family"
+  },
+  {
+    "slug": "anatolian_lang_subfamily",
+    "family_slug": "indo_european_lang_family"
+  },
+  {
+    "slug": "armenian_lang_subfamily",
+    "family_slug": "indo_european_lang_family"
+  },
+  {
+    "slug": "balto_slavic_lang_subfamily",
+    "family_slug": "indo_european_lang_family"
+  },
+  {
+    "slug": "celtic_lang_subfamily",
+    "family_slug": "indo_european_lang_family"
+  },
+  {
+    "slug": "dacian_lang_subfamily",
+    "family_slug": "indo_european_lang_family"
+  },
+  {
+    "slug": "germanic_lang_subfamily",
+    "family_slug": "indo_european_lang_family"
+  },
+  {
+    "slug": "greek_lang_subfamily",
+    "family_slug": "indo_european_lang_family"
+  },
+  {
+    "slug": "illyrian_lang_subfamily",
+    "family_slug": "indo_european_lang_family"
+  },
+  {
+    "slug": "indo_iranian_lang_subfamily",
+    "family_slug": "indo_european_lang_family"
+  },
+  {
+    "slug": "italic_lang_subfamily",
+    "family_slug": "indo_european_lang_family"
+  },
+  {
+    "slug": "liburnian_lang_subfamily",
+    "family_slug": "indo_european_lang_family"
+  },
+  {
+    "slug": "lusitanian_lang_subfamily",
+    "family_slug": "indo_european_lang_family"
+  },
+  {
+    "slug": "messapic_lang_subfamily",
+    "family_slug": "indo_european_lang_family"
+  },
+  {
+    "slug": "phrygian_lang_subfamily",
+    "family_slug": "indo_european_lang_family"
+  },
+  {
+    "slug": "thracian_lang_subfamily",
+    "family_slug": "indo_european_lang_family"
+  },
+  {
+    "slug": "tocharian_lang_subfamily",
+    "family_slug": "indo_european_lang_family"
+  },
+  {
+    "slug": "tysenian_lang_subfamily",
+    "family_slug": "indo_european_lang_family"
+  },
+  {
+    "slug": "slavic_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "balto_slavic_lang_subfamily",
+      "family_slug": "indo_european_lang_family"
+    }
+  },
+  {
+    "slug": "ruthenian_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "slavic_lang_subfamily",
+      "family_slug": "indo_european_lang_family",
+      "extended_subfamily": {
+        "slug": "balto_slavic_lang_subfamily",
+        "family_slug": "indo_european_lang_family"
+      }
+    }
+  },
+  {
+    "slug": "moscovian_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "slavic_lang_subfamily",
+      "family_slug": "indo_european_lang_family",
+      "extended_subfamily": {
+        "slug": "balto_slavic_lang_subfamily",
+        "family_slug": "indo_european_lang_family"
+      }
+    }
+  },
+  {
+    "slug": "south_slavic_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "slavic_lang_subfamily",
+      "family_slug": "indo_european_lang_family",
+      "extended_subfamily": {
+        "slug": "balto_slavic_lang_subfamily",
+        "family_slug": "indo_european_lang_family"
+      }
+    }
+  },
+  {
+    "slug": "eastern_south_slavic_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "south_slavic_lang_subfamily",
+      "family_slug": "indo_european_lang_family",
+      "extended_subfamily": {
+        "slug": "balto_slavic_lang_subfamily",
+        "family_slug": "indo_european_lang_family"
+      }
+    }
+  },
+  {
+    "slug": "western_south_slavic_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "south_slavic_lang_subfamily",
+      "family_slug": "indo_european_lang_family",
+      "extended_subfamily": {
+        "slug": "balto_slavic_lang_subfamily",
+        "family_slug": "indo_european_lang_family"
+      }
+    }
+  },
+  {
+    "slug": "west_slavic_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "slavic_lang_subfamily",
+      "family_slug": "indo_european_lang_family",
+      "extended_subfamily": {
+        "slug": "balto_slavic_lang_subfamily",
+        "family_slug": "indo_european_lang_family"
+      }
+    }
+  },
+  {
+    "slug": "lechitic_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "west_slavic_lang_subfamily",
+      "family_slug": "indo_european_lang_family",
+      "extended_subfamily": {
+        "slug": "slavic_lang_subfamily",
+        "family_slug": "indo_european_lang_family",
+        "extended_subfamily": {
+          "slug": "balto_slavic_lang_subfamily",
+          "family_slug": "indo_european_lang_family"
+        }
+      }
+    }
+  },
+  {
+    "slug": "sorbian_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "west_slavic_lang_subfamily",
+      "family_slug": "indo_european_lang_family",
+      "extended_subfamily": {
+        "slug": "slavic_lang_subfamily",
+        "family_slug": "indo_european_lang_family",
+        "extended_subfamily": {
+          "slug": "balto_slavic_lang_subfamily",
+          "family_slug": "indo_european_lang_family"
+        }
+      }
+    }
+  },
+  {
+    "slug": "czech_slovak_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "west_slavic_lang_subfamily",
+      "family_slug": "indo_european_lang_family",
+      "extended_subfamily": {
+        "slug": "slavic_lang_subfamily",
+        "family_slug": "indo_european_lang_family",
+        "extended_subfamily": {
+          "slug": "balto_slavic_lang_subfamily",
+          "family_slug": "indo_european_lang_family"
+        }
+      }
+    }
+  },
+  {
+    "slug": "baltic_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "balto_slavic_lang_subfamily",
+      "family_slug": "indo_european_lang_family"
+    }
+  },
+  {
+    "slug": "eastern_baltic_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "baltic_lang_subfamily",
+      "family_slug": "indo_european_lang_family",
+      "extended_subfamily": {
+        "slug": "balto_slavic_lang_subfamily",
+        "family_slug": "indo_european_lang_family"
+      }
+    }
+  },
+  {
+    "slug": "brittonic_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "celtic_lang_subfamily",
+      "family_slug": "indo_european_lang_family"
+    }
+  },
+  {
+    "slug": "western_brittonic_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "brittonic_lang_subfamily",
+      "family_slug": "indo_european_lang_family",
+      "extended_subfamily": {
+        "slug": "celtic_lang_subfamily",
+        "family_slug": "indo_european_lang_family"
+      }
+    }
+  },
+  {
+    "slug": "south_western_brittonic_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "brittonic_lang_subfamily",
+      "family_slug": "indo_european_lang_family",
+      "extended_subfamily": {
+        "slug": "celtic_lang_subfamily",
+        "family_slug": "indo_european_lang_family"
+      }
+    }
+  },
+  {
+    "slug": "goidelic_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "celtic_lang_subfamily",
+      "family_slug": "indo_european_lang_family"
+    }
+  },
+  {
+    "slug": "north_germanic_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "germanic_lang_subfamily",
+      "family_slug": "indo_european_lang_family"
+    }
+  },
+  {
+    "slug": "west_germanic_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "germanic_lang_subfamily",
+      "family_slug": "indo_european_lang_family"
+    }
+  },
+  {
+    "slug": "east_germanic_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "germanic_lang_subfamily",
+      "family_slug": "indo_european_lang_family"
+    }
+  },
+  {
+    "slug": "elbe_germanic_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "germanic_lang_subfamily",
+      "family_slug": "indo_european_lang_family"
+    }
+  },
+  {
+    "slug": "north_sea_germanic_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "germanic_lang_subfamily",
+      "family_slug": "indo_european_lang_family"
+    }
+  },
+  {
+    "slug": "weser_rhine_germanic_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "germanic_lang_subfamily",
+      "family_slug": "indo_european_lang_family"
+    }
+  },
+  {
+    "slug": "indo_aryan_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "indo_iranian_lang_subfamily",
+      "family_slug": "indo_european_lang_family"
+    }
+  },
+  {
+    "slug": "iranian_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "indo_iranian_lang_subfamily",
+      "family_slug": "indo_european_lang_family"
+    }
+  },
+  {
+    "slug": "nuriastani_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "indo_iranian_lang_subfamily",
+      "family_slug": "indo_european_lang_family"
+    }
+  },
+  {
+    "slug": "latino_faliscan_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "italic_lang_subfamily",
+      "family_slug": "indo_european_lang_family"
+    }
+  },
+  {
+    "slug": "osco_umbrian_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "italic_lang_subfamily",
+      "family_slug": "indo_european_lang_family"
+    }
+  },
+  {
+    "slug": "romance_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "latino_faliscan_lang_subfamily",
+      "family_slug": "indo_european_lang_family",
+      "extended_subfamily": {
+        "slug": "italic_lang_subfamily",
+        "family_slug": "indo_european_lang_family"
+      }
+    }
+  },
+  {
+    "slug": "ibero_romance_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "romance_lang_subfamily",
+      "family_slug": "indo_european_lang_family",
+      "extended_subfamily": {
+        "slug": "latino_faliscan_lang_subfamily",
+        "family_slug": "indo_european_lang_family",
+        "extended_subfamily": {
+          "slug": "italic_lang_subfamily",
+          "family_slug": "indo_european_lang_family"
+        }
+      }
+    }
+  },
+  {
+    "slug": "occitano_romance_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "romance_lang_subfamily",
+      "family_slug": "indo_european_lang_family",
+      "extended_subfamily": {
+        "slug": "latino_faliscan_lang_subfamily",
+        "family_slug": "indo_european_lang_family",
+        "extended_subfamily": {
+          "slug": "italic_lang_subfamily",
+          "family_slug": "indo_european_lang_family"
+        }
+      }
+    }
+  },
+  {
+    "slug": "gallo_romance_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "romance_lang_subfamily",
+      "family_slug": "indo_european_lang_family",
+      "extended_subfamily": {
+        "slug": "latino_faliscan_lang_subfamily",
+        "family_slug": "indo_european_lang_family",
+        "extended_subfamily": {
+          "slug": "italic_lang_subfamily",
+          "family_slug": "indo_european_lang_family"
+        }
+      }
+    }
+  },
+  {
+    "slug": "rhaeto_romance_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "romance_lang_subfamily",
+      "family_slug": "indo_european_lang_family",
+      "extended_subfamily": {
+        "slug": "latino_faliscan_lang_subfamily",
+        "family_slug": "indo_european_lang_family",
+        "extended_subfamily": {
+          "slug": "italic_lang_subfamily",
+          "family_slug": "indo_european_lang_family"
+        }
+      }
+    }
+  },
+  {
+    "slug": "gallo_italic_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "romance_lang_subfamily",
+      "family_slug": "indo_european_lang_family",
+      "extended_subfamily": {
+        "slug": "latino_faliscan_lang_subfamily",
+        "family_slug": "indo_european_lang_family",
+        "extended_subfamily": {
+          "slug": "italic_lang_subfamily",
+          "family_slug": "indo_european_lang_family"
+        }
+      }
+    }
+  },
+  {
+    "slug": "italo_dalmatian_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "romance_lang_subfamily",
+      "family_slug": "indo_european_lang_family",
+      "extended_subfamily": {
+        "slug": "latino_faliscan_lang_subfamily",
+        "family_slug": "indo_european_lang_family",
+        "extended_subfamily": {
+          "slug": "italic_lang_subfamily",
+          "family_slug": "indo_european_lang_family"
+        }
+      }
+    }
+  },
+  {
+    "slug": "eastern_romance_lang_subfamily",
+    "family_slug": "indo_european_lang_family",
+    "extended_subfamily": {
+      "slug": "romance_lang_subfamily",
+      "family_slug": "indo_european_lang_family",
+      "extended_subfamily": {
+        "slug": "latino_faliscan_lang_subfamily",
+        "family_slug": "indo_european_lang_family",
+        "extended_subfamily": {
+          "slug": "italic_lang_subfamily",
+          "family_slug": "indo_european_lang_family"
+        }
+      }
+    }
+  }
+]

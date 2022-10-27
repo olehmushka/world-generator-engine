@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "quendian_lang_subfamily",
+    "family_slug": "elven_lang_family"
+  },
+  {
+    "slug": "aldmeris_lang_subfamily",
+    "family_slug": "elven_lang_family"
+  },
+  {
+    "slug": "dwermeris_lang_subfamily",
+    "family_slug": "elven_lang_family"
+  },
+  {
+    "slug": "orcish_lang_subfamily",
+    "family_slug": "orcish_lang_family"
+  },
+  {
+    "slug": "giantish_lang_subfamily",
+    "family_slug": "giantish_lang_family"
+  },
+  {
+    "slug": "draconic_lang_subfamily",
+    "family_slug": "draconic_lang_family"
+  },
+  {
+    "slug": "arachnid_lang_subfamily",
+    "family_slug": "arachnid_lang_family"
+  },
+  {
+    "slug": "serpents_lang_subfamily",
+    "family_slug": "serpents_lang_family"
+  }
+]
