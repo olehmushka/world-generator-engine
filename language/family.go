@@ -7,9 +7,11 @@ import (
 	"runtime"
 )
 
-func loadAllFamilies(prefix string) ([]string, error) {
-	_, filename, _, _ := runtime.Caller(1)
-	b, err := ioutil.ReadFile(path.Dir(filename) + "/" + prefix + "/data/families/families.json")
+func LoadAllFamilies() ([]string, error) {
+	_, fn, _, _ := runtime.Caller(1)
+	currDirname := path.Dir(fn) + "/"
+	filename := currDirname + "/data/families/families.json"
+	b, err := ioutil.ReadFile(filename)
 	if err != nil {
 		return nil, err
 	}
@@ -19,8 +21,4 @@ func loadAllFamilies(prefix string) ([]string, error) {
 	}
 
 	return out, nil
-}
-
-func LoadAllFamilies() ([]string, error) {
-	return loadAllFamilies("")
 }

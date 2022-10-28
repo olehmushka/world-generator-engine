@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "albanian_lang",
+    "subfamily_slug": "albanian_lang_subfamily",
+    "wordbase_slug": "albanian_wb"
+  },
+  {
+    "slug": "armenian_lang",
+    "subfamily_slug": "armenian_lang_subfamily",
+    "wordbase_slug": "armenian_wb"
+  },
+  {
+    "slug": "ruthenian_lang",
+    "subfamily_slug": "ruthenian_lang_subfamily",
+    "wordbase_slug": "ruthenian_wb"
+  },
+  {
+    "slug": "belarusian",
+    "subfamily_slug": "ruthenian_lang_subfamily",
+    "wordbase_slug": "ruthenian_wb"
+  },
+  {
+    "slug": "ukrainian",
+    "subfamily_slug": "ruthenian_lang_subfamily",
+    "wordbase_slug": "ruthenian_wb"
+  },
+  {
+    "slug": "russian",
+    "subfamily_slug": "moscovian_lang_subfamily",
+    "wordbase_slug": "ruthenian_wb"
+  },
+  {
+    "slug": "slovenian",
+    "subfamily_slug": "western_south_slavic_lang_subfamily",
+    "wordbase_slug": "ruthenian_wb"
+  },
+  {
+    "slug": "croation",
+    "subfamily_slug": "western_south_slavic_lang_subfamily",
+    "wordbase_slug": "ruthenian_wb"
+  },
+  {
+    "slug": "serbian",
+    "subfamily_slug": "western_south_slavic_lang_subfamily",
+    "wordbase_slug": "ruthenian_wb"
+  },
+  {
+    "slug": "bosnian",
+    "subfamily_slug": "western_south_slavic_lang_subfamily",
+    "wordbase_slug": "ruthenian_wb"
+  },
+  {
+    "slug": "bulgarian",
+    "subfamily_slug": "eastern_south_slavic_lang_subfamily",
+    "wordbase_slug": "ruthenian_wb"
+  },
+  {
+    "slug": "macedonian",
+    "subfamily_slug": "eastern_south_slavic_lang_subfamily",
+    "wordbase_slug": "ruthenian_wb"
+  },
+  {
+    "slug": "polish",
+    "subfamily_slug": "lechitic_lang_subfamily",
+    "wordbase_slug": "ruthenian_wb"
+  },
+  {
+    "slug": "silesian",
+    "subfamily_slug": "lechitic_lang_subfamily",
+    "wordbase_slug": "ruthenian_wb"
+  },
+  {
+    "slug": "lower_sorbian",
+    "subfamily_slug": "sorbian_lang_subfamily",
+    "wordbase_slug": "ruthenian_wb"
+  },
+  {
+    "slug": "upper_sorbian",
+    "subfamily_slug": "sorbian_lang_subfamily",
+    "wordbase_slug": "ruthenian_wb"
+  },
+  {
+    "slug": "czech",
+    "subfamily_slug": "czech_slovak_lang_subfamily",
+    "wordbase_slug": "ruthenian_wb"
+  },
+  {
+    "slug": "slovak",
+    "subfamily_slug": "czech_slovak_lang_subfamily",
+    "wordbase_slug": "ruthenian_wb"
+  }
+]

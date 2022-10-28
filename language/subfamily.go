@@ -16,9 +16,9 @@ type Subfamily struct {
 	ExtendedSubfamily *Subfamily `json:"extended_subfamily" bson:"extended_subfamily"`
 }
 
-func loadAllSubfamilies(prefix string) ([]*Subfamily, error) {
+func LoadAllSubfamilies() ([]*Subfamily, error) {
 	_, filename, _, _ := runtime.Caller(1)
-	currDirname := path.Dir(filename) + "/" + prefix
+	currDirname := path.Dir(filename) + "/"
 	dirname := currDirname + "/data/subfamilies/"
 	files, err := ioutil.ReadDir(dirname)
 	if err != nil {
@@ -45,6 +45,34 @@ func loadAllSubfamilies(prefix string) ([]*Subfamily, error) {
 	return out, nil
 }
 
-func LoadAllSubfamilies() ([]*Subfamily, error) {
-	return loadAllSubfamilies("")
+func SearchSubfamily(slug string) (*Subfamily, error) {
+	_, filename, _, _ := runtime.Caller(1)
+	currDirname := path.Dir(filename) + "/"
+	dirname := currDirname + "/data/subfamilies/"
+	files, err := ioutil.ReadDir(dirname)
+	if err != nil {
+		return nil, wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))
+	}
+
+	for _, file := range files {
+		if file.IsDir() {
+			continue
+		}
+		filename := dirname + file.Name()
+		b, err := ioutil.ReadFile(filename)
+		if err != nil {
+			return nil, err
+		}
+		var sfs []*Subfamily
+		if err := json.Unmarshal(b, &sfs); err != nil {
+			return nil, err
+		}
+		for _, sf := range sfs {
+			if sf.Slug == slug {
+				return sf, nil
+			}
+		}
+	}
+
+	return nil, nil
 }
