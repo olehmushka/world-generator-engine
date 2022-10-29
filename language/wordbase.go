@@ -3,10 +3,13 @@ package language
 import (
 	"encoding/json"
 	"fmt"
+	"io/fs"
 	"io/ioutil"
 	"path"
 	"runtime"
+	"sync"
 
+	"github.com/olehmushka/golang-toolkit/either"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
 )
 
@@ -21,16 +24,56 @@ type Wordbase struct {
 	M              float64  `json:"m" bson:"m"`
 }
 
-func loadAllWordbases(prefix string) ([]*Wordbase, error) {
+func LoadAllWordbases() chan either.Either[*Wordbase] {
 	_, filename, _, _ := runtime.Caller(1)
-	currDirname := path.Dir(filename) + "/" + prefix
+	currDirname := path.Dir(filename) + "/"
+	dirname := currDirname + "/data/wordbases/"
+	ch := make(chan either.Either[*Wordbase], MaxLoadDataConcurrency)
+	go func() {
+		files, err := ioutil.ReadDir(dirname)
+		if err != nil {
+			ch <- either.Either[*Wordbase]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))}
+			return
+		}
+
+		var wg sync.WaitGroup
+		wg.Add(len(files))
+		for _, file := range files {
+			go func(file fs.FileInfo) {
+				if file.IsDir() {
+					return
+				}
+				filename := dirname + file.Name()
+				b, err := ioutil.ReadFile(filename)
+				if err != nil {
+					ch <- either.Either[*Wordbase]{Err: err}
+					return
+				}
+				var wb *Wordbase
+				if err := json.Unmarshal(b, &wb); err != nil {
+					ch <- either.Either[*Wordbase]{Err: err}
+					return
+				}
+				ch <- either.Either[*Wordbase]{Value: wb}
+				wg.Done()
+			}(file)
+		}
+		wg.Wait()
+		close(ch)
+	}()
+
+	return ch
+}
+
+func SearchWordbase(slug string) (*Wordbase, error) {
+	_, filename, _, _ := runtime.Caller(1)
+	currDirname := path.Dir(filename) + "/"
 	dirname := currDirname + "/data/wordbases/"
 	files, err := ioutil.ReadDir(dirname)
 	if err != nil {
 		return nil, wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))
 	}
 
-	out := make([]*Wordbase, 0, len(files))
 	for _, file := range files {
 		if file.IsDir() {
 			continue
@@ -40,16 +83,14 @@ func loadAllWordbases(prefix string) ([]*Wordbase, error) {
 		if err != nil {
 			return nil, err
 		}
-		var sfs []*Wordbase
-		if err := json.Unmarshal(b, &sfs); err != nil {
+		var wb Wordbase
+		if err := json.Unmarshal(b, &wb); err != nil {
 			return nil, err
 		}
-		out = append(out, sfs...)
+		if wb.Slug == slug {
+			return &wb, nil
+		}
 	}
 
-	return out, nil
-}
-
-func LoadAllWordbases() ([]*Wordbase, error) {
-	return loadAllWordbases("")
+	return nil, nil
 }

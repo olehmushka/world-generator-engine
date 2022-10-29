@@ -4,21 +4,21 @@ import (
 	"testing"
 )
 
-func TestLoadAllSubfamilies(t *testing.T) {
-	for chunk := range LoadAllSubfamilies() {
+func TestLoadAllWordbases(t *testing.T) {
+	for chunk := range LoadAllWordbases() {
 		if chunk.Err != nil {
 			t.Fatalf("unexpected error (err=%+v)", chunk.Err)
 			return
 		}
-		if len(chunk.Value) == 0 {
-			t.Fatalf("unexpected length of subfamilies")
+		if chunk.Value == nil {
+			t.Fatalf("unexpected nil value of loaded wordbase")
 		}
 	}
 }
 
-func TestSearchSubfamily(t *testing.T) {
-	slug := "ruthenian_lang_subfamily"
-	result, err := SearchSubfamily(slug)
+func TestSearchWordbase(t *testing.T) {
+	slug := "ruthenian_wb"
+	result, err := SearchWordbase(slug)
 	if err != nil {
 		t.Fatalf("unexpected error (err=%+v)", err)
 		return

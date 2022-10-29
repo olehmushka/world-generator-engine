@@ -1,6 +1,7 @@
 package engine
 
 import (
+	"github.com/olehmushka/golang-toolkit/either"
 	wGen "github.com/olehmushka/word-generator"
 	"github.com/olehmushka/world-generator-engine/language"
 )
@@ -15,12 +16,16 @@ func New(wordGenerator wGen.Generator) Engine {
 	}
 }
 
-func (e *engine) LoadLanguageFamilies() ([]string, error) {
+func (e *engine) LoadLanguageFamilies() chan either.Either[[]string] {
 	return language.LoadAllFamilies()
 }
 
-func (e *engine) LoadLanguageSubfamilies() ([]*language.Subfamily, error) {
+func (e *engine) LoadLanguageSubfamilies() chan either.Either[[]*language.Subfamily] {
 	return language.LoadAllSubfamilies()
+}
+
+func (e *engine) LoadLanguages() chan either.Either[*language.Language] {
+	return language.LoadAllLanguages()
 }
 
 func (e *engine) GenerateWord(lang *language.Language) (string, error) {

@@ -1,15 +1,17 @@
 package language
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestLoadAllFamilies(t *testing.T) {
-	result, err := LoadAllFamilies()
-	if err != nil {
-		t.Fatalf("unexpected error (err=%+v)", err)
-		return
-	}
-
-	if len(result) == 0 {
-		t.Fatalf("unexpected length of families")
+	for chunk := range LoadAllFamilies() {
+		if chunk.Err != nil {
+			t.Fatalf("unexpected error (err=%+v)", chunk.Err)
+			return
+		}
+		if len(chunk.Value) == 0 {
+			t.Fatalf("unexpected length of families")
+		}
 	}
 }

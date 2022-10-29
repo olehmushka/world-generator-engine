@@ -3,10 +3,14 @@ package language
 import (
 	"encoding/json"
 	"fmt"
+	"io/fs"
 	"io/ioutil"
 	"path"
 	"runtime"
+	"sync"
 
+	"github.com/olehmushka/golang-toolkit/either"
+	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
 )
 
@@ -16,33 +20,47 @@ type Subfamily struct {
 	ExtendedSubfamily *Subfamily `json:"extended_subfamily" bson:"extended_subfamily"`
 }
 
-func LoadAllSubfamilies() ([]*Subfamily, error) {
+func LoadAllSubfamilies() chan either.Either[[]*Subfamily] {
 	_, filename, _, _ := runtime.Caller(1)
 	currDirname := path.Dir(filename) + "/"
 	dirname := currDirname + "/data/subfamilies/"
-	files, err := ioutil.ReadDir(dirname)
-	if err != nil {
-		return nil, wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))
-	}
-
-	out := make([]*Subfamily, 0, len(files))
-	for _, file := range files {
-		if file.IsDir() {
-			continue
-		}
-		filename := dirname + file.Name()
-		b, err := ioutil.ReadFile(filename)
+	ch := make(chan either.Either[[]*Subfamily], MaxLoadDataConcurrency)
+	go func() {
+		files, err := ioutil.ReadDir(dirname)
 		if err != nil {
-			return nil, err
+			ch <- either.Either[[]*Subfamily]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))}
+			return
 		}
-		var sfs []*Subfamily
-		if err := json.Unmarshal(b, &sfs); err != nil {
-			return nil, err
-		}
-		out = append(out, sfs...)
-	}
 
-	return out, nil
+		var wg sync.WaitGroup
+		wg.Add(len(files))
+		for _, file := range files {
+			go func(file fs.FileInfo) {
+				defer wg.Done()
+				if file.IsDir() {
+					return
+				}
+				filename := dirname + file.Name()
+				b, err := ioutil.ReadFile(filename)
+				if err != nil {
+					ch <- either.Either[[]*Subfamily]{Err: err}
+					return
+				}
+				var sfs []*Subfamily
+				if err := json.Unmarshal(b, &sfs); err != nil {
+					ch <- either.Either[[]*Subfamily]{Err: err}
+					return
+				}
+				for _, chunk := range sliceTools.Chunk(MaxLoadDataChunkSize, sfs) {
+					ch <- either.Either[[]*Subfamily]{Value: chunk}
+				}
+			}(file)
+		}
+		wg.Wait()
+		close(ch)
+	}()
+
+	return ch
 }
 
 func SearchSubfamily(slug string) (*Subfamily, error) {
