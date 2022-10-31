@@ -11,8 +11,10 @@ import (
 
 	"github.com/olehmushka/golang-toolkit/either"
 	"github.com/olehmushka/golang-toolkit/list"
+	randomTools "github.com/olehmushka/golang-toolkit/random_tools"
 	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
+	"github.com/olehmushka/world-generator-engine/gender"
 )
 
 type RawLanguage struct {
@@ -25,6 +27,89 @@ type Language struct {
 	Slug      string     `json:"slug" bson:"slug"`
 	Subfamily *Subfamily `json:"subfamily" bson:"subfamily"`
 	Wordbase  *Wordbase  `json:"wordbase" bson:"wordbase"`
+}
+
+func (l *Language) IsZero() bool {
+	return l == nil
+}
+
+func GetOwnName(lang *Language, sex gender.Sex) (string, error) {
+	switch sex {
+	case gender.MaleSex:
+		return sliceTools.RandomValueOfSlice(randomTools.RandFloat64, lang.Wordbase.MaleOwnNames)
+	case gender.FemaleSex:
+		return sliceTools.RandomValueOfSlice(randomTools.RandFloat64, lang.Wordbase.FemaleOwnNames)
+	default:
+		return "", nil
+	}
+}
+
+func GetFullLanguageChains(lang *Language) []string {
+	if lang == nil {
+		return []string{}
+	}
+	out := []string{lang.Slug}
+	out = GetLanguageSubfamilyChains(out, lang.Subfamily)
+
+	return append(out, string(lang.Subfamily.FamilySlug))
+}
+
+func GetLanguageKinship(l1, l2 *Language) int {
+	var (
+		l1Chains = GetFullLanguageChains(l1)
+		l2Chains = GetFullLanguageChains(l2)
+	)
+	if len(l1Chains) == 0 || len(l2Chains) == 0 {
+		return -1
+	}
+	if l1Chains[0] == l2Chains[0] {
+		return 0
+	}
+	if l1Chains[len(l1Chains)-1] != l2Chains[len(l2Chains)-1] {
+		return -1
+	}
+
+	maxIter := len(l1Chains)
+	if maxIter < len(l2Chains) {
+		maxIter = len(l2Chains)
+	}
+	for i := 0; i < maxIter; i++ {
+		var (
+			l1El = l1Chains[len(l1Chains)-1]
+			l2El = l2Chains[len(l2Chains)-1]
+		)
+		if len(l1Chains) > i {
+			l1El = l1Chains[i]
+		}
+		if len(l2Chains) > i {
+			l2El = l2Chains[i]
+		}
+		if l1El == l2El {
+			return i
+		}
+	}
+
+	return -1
+}
+
+func GetLanguageSimilarityCoef(l1, l2 *Language) (float64, error) {
+	if l1.IsZero() && l2.IsZero() {
+		return 1, nil
+	}
+	if l1.IsZero() || l2.IsZero() {
+		return 0, wrapped_error.NewInternalServerError(nil, "can not compare languages if one of it is <nil>")
+	}
+
+	switch kinship := GetLanguageKinship(l1, l2); kinship {
+	case -1:
+		return 0, nil
+	case 0:
+		return 1, nil
+	case 1:
+		return 0.75, nil
+	default:
+		return 1 / float64(kinship), nil
+	}
 }
 
 func LoadAllLanguages() chan either.Either[*Language] {

@@ -94,3 +94,17 @@ func SearchSubfamily(slug string) (*Subfamily, error) {
 
 	return nil, nil
 }
+
+func GetLanguageSubfamilyChains(accum []string, sf *Subfamily) []string {
+	if sf == nil {
+		return accum
+	}
+	if sf.ExtendedSubfamily == nil {
+		return accum
+	}
+
+	return GetLanguageSubfamilyChains(
+		append(accum, sf.Slug),
+		sf.ExtendedSubfamily,
+	)
+}
