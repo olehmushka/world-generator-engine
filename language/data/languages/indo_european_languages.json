@@ -1,731 +1,731 @@
 [
   {
-    "slug": "albanian",
+    "slug": "albanian_lang",
     "subfamily_slug": "albanian_lang_subfamily",
     "wordbase_slug": "albanian_wb"
   },
   {
-    "slug": "armenian",
+    "slug": "armenian_lang",
     "subfamily_slug": "armenian_lang_subfamily",
     "wordbase_slug": "armenian_wb"
   },
   {
-    "slug": "ruthenian",
+    "slug": "ruthenian_lang",
     "subfamily_slug": "ruthenian_lang_subfamily",
     "wordbase_slug": "ruthenian_wb"
   },
   {
-    "slug": "belarusian",
+    "slug": "belarusian_lang",
     "subfamily_slug": "ruthenian_lang_subfamily",
     "wordbase_slug": "ruthenian_wb"
   },
   {
-    "slug": "ukrainian",
+    "slug": "ukrainian_lang",
     "subfamily_slug": "ruthenian_lang_subfamily",
     "wordbase_slug": "ruthenian_wb"
   },
   {
-    "slug": "russian",
+    "slug": "russian_lang",
     "subfamily_slug": "moscovian_lang_subfamily",
     "wordbase_slug": "ruthenian_wb"
   },
   {
-    "slug": "slovenian",
+    "slug": "slovenian_lang",
     "subfamily_slug": "western_south_slavic_lang_subfamily",
     "wordbase_slug": "ruthenian_wb"
   },
   {
-    "slug": "croation",
+    "slug": "croation_lang",
     "subfamily_slug": "western_south_slavic_lang_subfamily",
     "wordbase_slug": "ruthenian_wb"
   },
   {
-    "slug": "serbian",
+    "slug": "serbian_lang",
     "subfamily_slug": "western_south_slavic_lang_subfamily",
     "wordbase_slug": "ruthenian_wb"
   },
   {
-    "slug": "bosnian",
+    "slug": "bosnian_lang",
     "subfamily_slug": "western_south_slavic_lang_subfamily",
     "wordbase_slug": "ruthenian_wb"
   },
   {
-    "slug": "bulgarian",
+    "slug": "bulgarian_lang",
     "subfamily_slug": "eastern_south_slavic_lang_subfamily",
     "wordbase_slug": "ruthenian_wb"
   },
   {
-    "slug": "macedonian",
+    "slug": "macedonian_lang",
     "subfamily_slug": "eastern_south_slavic_lang_subfamily",
     "wordbase_slug": "ruthenian_wb"
   },
   {
-    "slug": "polish",
+    "slug": "polish_lang",
     "subfamily_slug": "lechitic_lang_subfamily",
     "wordbase_slug": "ruthenian_wb"
   },
   {
-    "slug": "silesian",
+    "slug": "silesian_lang",
     "subfamily_slug": "lechitic_lang_subfamily",
     "wordbase_slug": "ruthenian_wb"
   },
   {
-    "slug": "lower_sorbian",
+    "slug": "lower_sorbian_lang",
     "subfamily_slug": "sorbian_lang_subfamily",
     "wordbase_slug": "ruthenian_wb"
   },
   {
-    "slug": "upper_sorbian",
+    "slug": "upper_sorbian_lang",
     "subfamily_slug": "sorbian_lang_subfamily",
     "wordbase_slug": "ruthenian_wb"
   },
   {
-    "slug": "czech",
+    "slug": "czech_lang",
     "subfamily_slug": "czech_slovak_lang_subfamily",
     "wordbase_slug": "ruthenian_wb"
   },
   {
-    "slug": "slovak",
+    "slug": "slovak_lang",
     "subfamily_slug": "czech_slovak_lang_subfamily",
     "wordbase_slug": "lithuanian_wb"
   },
   {
-    "slug": "latvian",
+    "slug": "latvian_lang",
     "subfamily_slug": "eastern_baltic_lang_subfamily",
     "wordbase_slug": "ruthenian_wb"
   },
   {
-    "slug": "latgalian",
+    "slug": "latgalian_lang",
     "subfamily_slug": "eastern_baltic_lang_subfamily",
     "wordbase_slug": "lithuanian_wb"
   },
   {
-    "slug": "lithuanian",
+    "slug": "lithuanian_lang",
     "subfamily_slug": "eastern_baltic_lang_subfamily",
     "wordbase_slug": "lithuanian_wb"
   },
   {
-    "slug": "semigallian",
+    "slug": "semigallian_lang",
     "subfamily_slug": "eastern_baltic_lang_subfamily",
     "wordbase_slug": "lithuanian_wb"
   },
   {
-    "slug": "celtiberian",
+    "slug": "celtiberian_lang",
     "subfamily_slug": "celtic_lang_subfamily",
     "wordbase_slug": "celtic_wb"
   },
   {
-    "slug": "gallaecian",
+    "slug": "gallaecian_lang",
     "subfamily_slug": "celtic_lang_subfamily",
     "wordbase_slug": "celtic_wb"
   },
   {
-    "slug": "noric",
+    "slug": "noric_lang",
     "subfamily_slug": "celtic_lang_subfamily",
     "wordbase_slug": "celtic_wb"
   },
   {
-    "slug": "pictish",
+    "slug": "pictish_lang",
     "subfamily_slug": "brittonic_lang_subfamily",
     "wordbase_slug": "celtic_wb"
   },
   {
-    "slug": "cumbric",
+    "slug": "cumbric_lang",
     "subfamily_slug": "brittonic_lang_subfamily",
     "wordbase_slug": "celtic_wb"
   },
   {
-    "slug": "welsh",
+    "slug": "welsh_lang",
     "subfamily_slug": "western_brittonic_lang_subfamily",
     "wordbase_slug": "celtic_wb"
   },
   {
-    "slug": "cornish",
+    "slug": "cornish_lang",
     "subfamily_slug": "south_western_brittonic_lang_subfamily",
     "wordbase_slug": "celtic_wb"
   },
   {
-    "slug": "breton",
+    "slug": "breton_lang",
     "subfamily_slug": "south_western_brittonic_lang_subfamily",
     "wordbase_slug": "celtic_wb"
   },
   {
-    "slug": "irish",
+    "slug": "irish_lang",
     "subfamily_slug": "goidelic_lang_subfamily",
     "wordbase_slug": "celtic_wb"
   },
   {
-    "slug": "manx",
+    "slug": "manx_lang",
     "subfamily_slug": "goidelic_lang_subfamily",
     "wordbase_slug": "celtic_wb"
   },
   {
-    "slug": "scottish_gaelic",
+    "slug": "scottish_gaelic_lang",
     "subfamily_slug": "goidelic_lang_subfamily",
     "wordbase_slug": "celtic_wb"
   },
   {
-    "slug": "dacian",
+    "slug": "dacian_lang",
     "subfamily_slug": "dacian_lang_subfamily",
     "wordbase_slug": "dacian_wb"
   },
   {
-    "slug": "danish",
+    "slug": "danish_lang",
     "subfamily_slug": "north_germanic_lang_subfamily",
     "wordbase_slug": "nordic_wb"
   },
   {
-    "slug": "faroese",
+    "slug": "faroese_lang",
     "subfamily_slug": "north_germanic_lang_subfamily",
     "wordbase_slug": "nordic_wb"
   },
   {
-    "slug": "icelandic",
+    "slug": "icelandic_lang",
     "subfamily_slug": "north_germanic_lang_subfamily",
     "wordbase_slug": "nordic_wb"
   },
   {
-    "slug": "norwegian",
+    "slug": "norwegian_lang",
     "subfamily_slug": "north_germanic_lang_subfamily",
     "wordbase_slug": "nordic_wb"
   },
   {
-    "slug": "swedish",
+    "slug": "swedish_lang",
     "subfamily_slug": "north_germanic_lang_subfamily",
     "wordbase_slug": "nordic_wb"
   },
   {
-    "slug": "dalecarlian",
+    "slug": "dalecarlian_lang",
     "subfamily_slug": "north_germanic_lang_subfamily",
     "wordbase_slug": "nordic_wb"
   },
   {
-    "slug": "gutnish",
+    "slug": "gutnish_lang",
     "subfamily_slug": "north_germanic_lang_subfamily",
     "wordbase_slug": "nordic_wb"
   },
   {
-    "slug": "english",
+    "slug": "english_lang",
     "subfamily_slug": "west_germanic_lang_subfamily",
     "wordbase_slug": "english_wb"
   },
   {
-    "slug": "scots",
+    "slug": "scots_lang",
     "subfamily_slug": "west_germanic_lang_subfamily",
     "wordbase_slug": "english_wb"
   },
   {
-    "slug": "yola",
+    "slug": "yola_lang",
     "subfamily_slug": "west_germanic_lang_subfamily",
     "wordbase_slug": "english_wb"
   },
   {
-    "slug": "frisian",
+    "slug": "frisian_lang",
     "subfamily_slug": "west_germanic_lang_subfamily",
     "wordbase_slug": "english_wb"
   },
   {
-    "slug": "german",
+    "slug": "german_lang",
     "subfamily_slug": "west_germanic_lang_subfamily",
     "wordbase_slug": "german_wb"
   },
   {
-    "slug": "dutch",
+    "slug": "dutch_lang",
     "subfamily_slug": "west_germanic_lang_subfamily",
     "wordbase_slug": "german_wb"
   },
   {
-    "slug": "luxembourgish",
+    "slug": "luxembourgish_lang",
     "subfamily_slug": "west_germanic_lang_subfamily",
     "wordbase_slug": "german_wb"
   },
   {
-    "slug": "yiddish",
+    "slug": "yiddish_lang",
     "subfamily_slug": "west_germanic_lang_subfamily",
     "wordbase_slug": "german_wb"
   },
   {
-    "slug": "gothic",
+    "slug": "gothic_lang",
     "subfamily_slug": "east_germanic_lang_subfamily",
     "wordbase_slug": "german_wb"
   },
   {
-    "slug": "vandalic",
+    "slug": "vandalic_lang",
     "subfamily_slug": "east_germanic_lang_subfamily",
     "wordbase_slug": "german_wb"
   },
   {
-    "slug": "burgundian",
+    "slug": "burgundian_lang",
     "subfamily_slug": "east_germanic_lang_subfamily",
     "wordbase_slug": "german_wb"
   },
   {
-    "slug": "alamannian",
+    "slug": "alamannian_lang",
     "subfamily_slug": "elbe_germanic_lang_subfamily",
     "wordbase_slug": "german_wb"
   },
   {
-    "slug": "bavarian",
+    "slug": "bavarian_lang",
     "subfamily_slug": "elbe_germanic_lang_subfamily",
     "wordbase_slug": "german_wb"
   },
   {
-    "slug": "lombardian",
+    "slug": "lombardian_lang",
     "subfamily_slug": "elbe_germanic_lang_subfamily",
     "wordbase_slug": "german_wb"
   },
   {
-    "slug": "frankish",
+    "slug": "frankish_lang",
     "subfamily_slug": "weser_rhine_germanic_lang_subfamily",
     "wordbase_slug": "german_wb"
   },
   {
-    "slug": "anglic",
+    "slug": "anglic_lang",
     "subfamily_slug": "north_sea_germanic_lang_subfamily",
     "wordbase_slug": "german_wb"
   },
   {
-    "slug": "saxon",
+    "slug": "saxon_lang",
     "subfamily_slug": "north_sea_germanic_lang_subfamily",
     "wordbase_slug": "german_wb"
   },
   {
-    "slug": "greek",
+    "slug": "greek_lang",
     "subfamily_slug": "greek_lang_subfamily",
     "wordbase_slug": "greek_wb"
   },
   {
-    "slug": "illyrian",
+    "slug": "illyrian_lang",
     "subfamily_slug": "illyrian_lang_subfamily",
     "wordbase_slug": "illyrian_wb"
   },
   {
-    "slug": "pashai",
+    "slug": "pashai_lang",
     "subfamily_slug": "indo_aryan_lang_subfamily",
     "wordbase_slug": "hindi_wb"
   },
   {
-    "slug": "chitrali",
+    "slug": "chitrali_lang",
     "subfamily_slug": "indo_aryan_lang_subfamily",
     "wordbase_slug": "hindi_wb"
   },
   {
-    "slug": "shina",
+    "slug": "shina_lang",
     "subfamily_slug": "indo_aryan_lang_subfamily",
     "wordbase_slug": "hindi_wb"
   },
   {
-    "slug": "kohistani",
+    "slug": "kohistani_lang",
     "subfamily_slug": "indo_aryan_lang_subfamily",
     "wordbase_slug": "hindi_wb"
   },
   {
-    "slug": "kashmiri",
+    "slug": "kashmiri_lang",
     "subfamily_slug": "indo_aryan_lang_subfamily",
     "wordbase_slug": "hindi_wb"
   },
   {
-    "slug": "punjabi",
+    "slug": "punjabi_lang",
     "subfamily_slug": "indo_aryan_lang_subfamily",
     "wordbase_slug": "hindi_wb"
   },
   {
-    "slug": "sindhi",
+    "slug": "sindhi_lang",
     "subfamily_slug": "indo_aryan_lang_subfamily",
     "wordbase_slug": "hindi_wb"
   },
   {
-    "slug": "rajasthani",
+    "slug": "rajasthani_lang",
     "subfamily_slug": "indo_aryan_lang_subfamily",
     "wordbase_slug": "hindi_wb"
   },
   {
-    "slug": "gujarati",
+    "slug": "gujarati_lang",
     "subfamily_slug": "indo_aryan_lang_subfamily",
     "wordbase_slug": "hindi_wb"
   },
   {
-    "slug": "bhili",
+    "slug": "bhili_lang",
     "subfamily_slug": "indo_aryan_lang_subfamily",
     "wordbase_slug": "hindi_wb"
   },
   {
-    "slug": "khandeshi",
+    "slug": "khandeshi_lang",
     "subfamily_slug": "indo_aryan_lang_subfamily",
     "wordbase_slug": "hindi_wb"
   },
   {
-    "slug": "himachali_dogri",
+    "slug": "himachali_dogri_lang",
     "subfamily_slug": "indo_aryan_lang_subfamily",
     "wordbase_slug": "hindi_wb"
   },
   {
-    "slug": "girhwali_kumaoni",
+    "slug": "girhwali_kumaoni_lang",
     "subfamily_slug": "indo_aryan_lang_subfamily",
     "wordbase_slug": "hindi_wb"
   },
   {
-    "slug": "nepali",
+    "slug": "nepali_lang",
     "subfamily_slug": "indo_aryan_lang_subfamily",
     "wordbase_slug": "hindi_wb"
   },
   {
-    "slug": "hindi",
+    "slug": "hindi_lang",
     "subfamily_slug": "indo_aryan_lang_subfamily",
     "wordbase_slug": "hindi_wb"
   },
   {
-    "slug": "bihari",
+    "slug": "bihari_lang",
     "subfamily_slug": "indo_aryan_lang_subfamily",
     "wordbase_slug": "hindi_wb"
   },
   {
-    "slug": "bengali_assamese",
+    "slug": "bengali_assamese_lang",
     "subfamily_slug": "indo_aryan_lang_subfamily",
     "wordbase_slug": "hindi_wb"
   },
   {
-    "slug": "odia",
+    "slug": "odia_lang",
     "subfamily_slug": "indo_aryan_lang_subfamily",
     "wordbase_slug": "hindi_wb"
   },
   {
-    "slug": "halbi",
+    "slug": "halbi_lang",
     "subfamily_slug": "indo_aryan_lang_subfamily",
     "wordbase_slug": "hindi_wb"
   },
   {
-    "slug": "marathi_konkani",
+    "slug": "marathi_konkani_lang",
     "subfamily_slug": "indo_aryan_lang_subfamily",
     "wordbase_slug": "hindi_wb"
   },
   {
-    "slug": "sinhala_maldivian",
+    "slug": "sinhala_maldivian_lang",
     "subfamily_slug": "indo_aryan_lang_subfamily",
     "wordbase_slug": "hindi_wb"
   },
   {
-    "slug": "farsi",
+    "slug": "farsi_lang",
     "subfamily_slug": "iranian_lang_subfamily",
     "wordbase_slug": "iranian_wb"
   },
   {
-    "slug": "avestan",
+    "slug": "avestan_lang",
     "subfamily_slug": "iranian_lang_subfamily",
     "wordbase_slug": "iranian_wb"
   },
   {
-    "slug": "dari",
+    "slug": "dari_lang",
     "subfamily_slug": "iranian_lang_subfamily",
     "wordbase_slug": "iranian_wb"
   },
   {
-    "slug": "tajik",
+    "slug": "tajik_lang",
     "subfamily_slug": "iranian_lang_subfamily",
     "wordbase_slug": "iranian_wb"
   },
   {
-    "slug": "pashto",
+    "slug": "pashto_lang",
     "subfamily_slug": "iranian_lang_subfamily",
     "wordbase_slug": "iranian_wb"
   },
   {
-    "slug": "kurdish",
+    "slug": "kurdish_lang",
     "subfamily_slug": "iranian_lang_subfamily",
     "wordbase_slug": "iranian_wb"
   },
   {
-    "slug": "luri",
+    "slug": "luri_lang",
     "subfamily_slug": "iranian_lang_subfamily",
     "wordbase_slug": "iranian_wb"
   },
   {
-    "slug": "balochi",
+    "slug": "balochi_lang",
     "subfamily_slug": "iranian_lang_subfamily",
     "wordbase_slug": "iranian_wb"
   },
   {
-    "slug": "scythian",
+    "slug": "scythian_lang",
     "subfamily_slug": "iranian_lang_subfamily",
     "wordbase_slug": "iranian_wb"
   },
   {
-    "slug": "kamkata_vari",
+    "slug": "kamkata_vari_lang",
     "subfamily_slug": "nuriastani_lang_subfamily",
     "wordbase_slug": "kannada_wb"
   },
   {
-    "slug": "vasi_vari",
+    "slug": "vasi_vari_lang",
     "subfamily_slug": "nuriastani_lang_subfamily",
     "wordbase_slug": "kannada_wb"
   },
   {
-    "slug": "askunu",
+    "slug": "askunu_lang",
     "subfamily_slug": "nuriastani_lang_subfamily",
     "wordbase_slug": "kannada_wb"
   },
   {
-    "slug": "waigali",
+    "slug": "waigali_lang",
     "subfamily_slug": "nuriastani_lang_subfamily",
     "wordbase_slug": "kannada_wb"
   },
   {
-    "slug": "tregami",
+    "slug": "tregami_lang",
     "subfamily_slug": "nuriastani_lang_subfamily",
     "wordbase_slug": "kannada_wb"
   },
   {
-    "slug": "zemiaki",
+    "slug": "zemiaki_lang",
     "subfamily_slug": "nuriastani_lang_subfamily",
     "wordbase_slug": "kannada_wb"
   },
   {
-    "slug": "venetic",
+    "slug": "venetic_lang",
     "subfamily_slug": "italic_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "sicel",
+    "slug": "sicel_lang",
     "subfamily_slug": "italic_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "lusitanian",
+    "slug": "lusitanian_lang",
     "subfamily_slug": "italic_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "latin",
+    "slug": "latin_lang",
     "subfamily_slug": "latino_faliscan_lang_subfamily",
     "wordbase_slug": "latin_wb"
   },
   {
-    "slug": "faliscan",
+    "slug": "faliscan_lang",
     "subfamily_slug": "latino_faliscan_lang_subfamily",
     "wordbase_slug": "latin_wb"
   },
   {
-    "slug": "lanuvain",
+    "slug": "lanuvain_lang",
     "subfamily_slug": "latino_faliscan_lang_subfamily",
     "wordbase_slug": "latin_wb"
   },
   {
-    "slug": "venetian",
+    "slug": "venetian_lang",
     "subfamily_slug": "romance_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "sardinian",
+    "slug": "sardinian_lang",
     "subfamily_slug": "romance_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "portuguese",
+    "slug": "portuguese_lang",
     "subfamily_slug": "ibero_romance_lang_subfamily",
     "wordbase_slug": "portuguese_wb"
   },
   {
-    "slug": "galician",
+    "slug": "galician_lang",
     "subfamily_slug": "ibero_romance_lang_subfamily",
     "wordbase_slug": "portuguese_wb"
   },
   {
-    "slug": "asturleonese",
+    "slug": "asturleonese_lang",
     "subfamily_slug": "ibero_romance_lang_subfamily",
     "wordbase_slug": "spanish_wb"
   },
   {
-    "slug": "mirandese",
+    "slug": "mirandese_lang",
     "subfamily_slug": "ibero_romance_lang_subfamily",
     "wordbase_slug": "portuguese_wb"
   },
   {
-    "slug": "spanish",
+    "slug": "spanish_lang",
     "subfamily_slug": "ibero_romance_lang_subfamily",
     "wordbase_slug": "spanish_wb"
   },
   {
-    "slug": "aragonese",
+    "slug": "aragonese_lang",
     "subfamily_slug": "ibero_romance_lang_subfamily",
     "wordbase_slug": "spanish_wb"
   },
   {
-    "slug": "ladino",
+    "slug": "ladino_lang",
     "subfamily_slug": "ibero_romance_lang_subfamily",
     "wordbase_slug": "spanish_wb"
   },
   {
-    "slug": "catalan",
+    "slug": "catalan_lang",
     "subfamily_slug": "occitano_romance_lang_subfamily",
     "wordbase_slug": "spanish_wb"
   },
   {
-    "slug": "occitan",
-    "subfamily_slug": "occitano_romance_lang_subfamily",
-    "wordbase_slug": "french_wb"
-  },
-  {
-    "slug": "gascon",
+    "slug": "occitan_lang",
     "subfamily_slug": "occitano_romance_lang_subfamily",
     "wordbase_slug": "french_wb"
   },
   {
-    "slug": "french",
+    "slug": "gascon_lang",
+    "subfamily_slug": "occitano_romance_lang_subfamily",
+    "wordbase_slug": "french_wb"
+  },
+  {
+    "slug": "french_lang",
     "subfamily_slug": "gallo_romance_lang_subfamily",
     "wordbase_slug": "french_wb"
   },
   {
-    "slug": "franco_provencal",
+    "slug": "franco_provencal_lang",
     "subfamily_slug": "gallo_romance_lang_subfamily",
     "wordbase_slug": "french_wb"
   },
   {
-    "slug": "romansh",
+    "slug": "romansh_lang",
     "subfamily_slug": "rhaeto_romance_lang_subfamily",
     "wordbase_slug": "french_wb"
   },
   {
-    "slug": "ladin",
+    "slug": "ladin_lang",
     "subfamily_slug": "rhaeto_romance_lang_subfamily",
     "wordbase_slug": "french_wb"
   },
   {
-    "slug": "friulian",
+    "slug": "friulian_lang",
     "subfamily_slug": "rhaeto_romance_lang_subfamily",
     "wordbase_slug": "french_wb"
   },
   {
-    "slug": "piedmontense",
+    "slug": "piedmontense_lang",
     "subfamily_slug": "gallo_italic_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "ligurian",
+    "slug": "ligurian_lang",
     "subfamily_slug": "gallo_italic_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "lombard",
+    "slug": "lombard_lang",
     "subfamily_slug": "gallo_italic_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "emilian",
+    "slug": "emilian_lang",
     "subfamily_slug": "gallo_italic_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "romagnol",
+    "slug": "romagnol_lang",
     "subfamily_slug": "gallo_italic_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "italian",
+    "slug": "italian_lang",
     "subfamily_slug": "italo_dalmatian_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "sicilian",
+    "slug": "sicilian_lang",
     "subfamily_slug": "italo_dalmatian_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "neapolitan",
+    "slug": "neapolitan_lang",
     "subfamily_slug": "italo_dalmatian_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "dalmatian",
+    "slug": "dalmatian_lang",
     "subfamily_slug": "italo_dalmatian_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "istriot",
+    "slug": "istriot_lang",
     "subfamily_slug": "italo_dalmatian_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "romanian",
+    "slug": "romanian_lang",
     "subfamily_slug": "eastern_romance_lang_subfamily",
     "wordbase_slug": "latin_wb"
   },
   {
-    "slug": "aromanian",
+    "slug": "aromanian_lang",
     "subfamily_slug": "eastern_romance_lang_subfamily",
     "wordbase_slug": "latin_wb"
   },
   {
-    "slug": "magleno_romanian",
+    "slug": "magleno_romanian_lang",
     "subfamily_slug": "eastern_romance_lang_subfamily",
     "wordbase_slug": "latin_wb"
   },
   {
-    "slug": "istro_romanian",
+    "slug": "istro_romanian_lang",
     "subfamily_slug": "eastern_romance_lang_subfamily",
     "wordbase_slug": "latin_wb"
   },
   {
-    "slug": "oscan",
+    "slug": "oscan_lang",
     "subfamily_slug": "osco_umbrian_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "umbrian",
+    "slug": "umbrian_lang",
     "subfamily_slug": "osco_umbrian_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "volscian",
+    "slug": "volscian_lang",
     "subfamily_slug": "osco_umbrian_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "sabine",
+    "slug": "sabine_lang",
     "subfamily_slug": "osco_umbrian_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "south_picene",
+    "slug": "south_picene_lang",
     "subfamily_slug": "osco_umbrian_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "marsian",
+    "slug": "marsian_lang",
     "subfamily_slug": "osco_umbrian_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "paeligni",
+    "slug": "paeligni_lang",
     "subfamily_slug": "osco_umbrian_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "hernican",
+    "slug": "hernican_lang",
     "subfamily_slug": "osco_umbrian_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "marrucinian",
+    "slug": "marrucinian_lang",
     "subfamily_slug": "osco_umbrian_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "pre_samnite",
+    "slug": "pre_samnite_lang",
     "subfamily_slug": "osco_umbrian_lang_subfamily",
     "wordbase_slug": "italian_wb"
   },
   {
-    "slug": "rhaetic",
+    "slug": "rhaetic_lang",
     "subfamily_slug": "tysenian_lang_subfamily",
     "wordbase_slug": "etruscan_wb"
   },
   {
-    "slug": "etruscan",
+    "slug": "etruscan_lang",
     "subfamily_slug": "tysenian_lang_subfamily",
     "wordbase_slug": "etruscan_wb"
   },
   {
-    "slug": "tocharian",
+    "slug": "tocharian_lang",
     "subfamily_slug": "tocharian_lang_subfamily",
     "wordbase_slug": "chinese_wb"
   }
