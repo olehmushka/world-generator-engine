@@ -1,1 +1,92 @@
-[]
+[
+  {
+    "slug": "oodham",
+    "subfamily_slug": "tepiman_lang_subfamily",
+    "wordbase_slug": "nahuatl_wb"
+  },
+  {
+    "slug": "pima_bajo",
+    "subfamily_slug": "tepiman_lang_subfamily",
+    "wordbase_slug": "nahuatl_wb"
+  },
+  {
+    "slug": "tepehuan",
+    "subfamily_slug": "tepiman_lang_subfamily",
+    "wordbase_slug": "nahuatl_wb"
+  },
+  {
+    "slug": "southern_tepiman",
+    "subfamily_slug": "tepiman_lang_subfamily",
+    "wordbase_slug": "nahuatl_wb"
+  },
+  {
+    "slug": "tepecano",
+    "subfamily_slug": "tepiman_lang_subfamily",
+    "wordbase_slug": "nahuatl_wb"
+  },
+  {
+    "slug": "tarahumara",
+    "subfamily_slug": "tarahumaran_lang_subfamily",
+    "wordbase_slug": "nahuatl_wb"
+  },
+  {
+    "slug": "upriver_guarijio",
+    "subfamily_slug": "tarahumaran_lang_subfamily",
+    "wordbase_slug": "nahuatl_wb"
+  },
+  {
+    "slug": "downriver_guarijio",
+    "subfamily_slug": "tarahumaran_lang_subfamily",
+    "wordbase_slug": "nahuatl_wb"
+  },
+  {
+    "slug": "tubar",
+    "subfamily_slug": "tarahumaran_lang_subfamily",
+    "wordbase_slug": "nahuatl_wb"
+  },
+  {
+    "slug": "yaqui",
+    "subfamily_slug": "cahita_lang_subfamily",
+    "wordbase_slug": "nahuatl_wb"
+  },
+  {
+    "slug": "mayo",
+    "subfamily_slug": "cahita_lang_subfamily",
+    "wordbase_slug": "nahuatl_wb"
+  },
+  {
+    "slug": "opata",
+    "subfamily_slug": "opatan_lang_subfamily",
+    "wordbase_slug": "nahuatl_wb"
+  },
+  {
+    "slug": "eudeve",
+    "subfamily_slug": "opatan_lang_subfamily",
+    "wordbase_slug": "nahuatl_wb"
+  },
+  {
+    "slug": "cora",
+    "subfamily_slug": "corachol_lang_subfamily",
+    "wordbase_slug": "nahuatl_wb"
+  },
+  {
+    "slug": "huichol",
+    "subfamily_slug": "corachol_lang_subfamily",
+    "wordbase_slug": "nahuatl_wb"
+  },
+  {
+    "slug": "pochutec",
+    "subfamily_slug": "aztecan_lang_subfamily",
+    "wordbase_slug": "nahuatl_wb"
+  },
+  {
+    "slug": "pipil",
+    "subfamily_slug": "aztecan_lang_subfamily",
+    "wordbase_slug": "nahuatl_wb"
+  },
+  {
+    "slug": "nahuatl",
+    "subfamily_slug": "aztecan_lang_subfamily",
+    "wordbase_slug": "nahuatl_wb"
+  }
+]

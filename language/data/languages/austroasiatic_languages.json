@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "slug": "vietnamese_lang",
+    "subfamily_slug": "viet_muong_lang_subfamily",
+    "wordbase_slug": "vietnamese_wb"
+  },
+  {
+    "slug": "kri_lang",
+    "subfamily_slug": "vietic_lang_subfamily",
+    "wordbase_slug": "vietnamese_wb"
+  },
+  {
+    "slug": "khmer_lang",
+    "subfamily_slug": "khmer_lang_subfamily",
+    "wordbase_slug": "vietnamese_wb"
+  }
+]

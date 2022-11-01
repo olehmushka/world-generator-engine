@@ -1,1 +1,482 @@
-[]
+[
+  {
+    "slug": "hausa",
+    "subfamily_slug": "west_chadic_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "somali",
+    "subfamily_slug": "somalic_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "kabyle",
+    "subfamily_slug": "berber_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "tamazight",
+    "subfamily_slug": "berber_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "shilha",
+    "subfamily_slug": "berber_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "senhaja_de_srair",
+    "subfamily_slug": "berber_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "ghomara",
+    "subfamily_slug": "berber_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "riffian",
+    "subfamily_slug": "berber_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "ayt_seghrouchen",
+    "subfamily_slug": "berber_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "ayt_warayn",
+    "subfamily_slug": "berber_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "shenwa",
+    "subfamily_slug": "berber_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "shawiya",
+    "subfamily_slug": "berber_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "zenaga",
+    "subfamily_slug": "berber_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "siwi",
+    "subfamily_slug": "berber_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "nafusi",
+    "subfamily_slug": "berber_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "sokna",
+    "subfamily_slug": "berber_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "ghadames",
+    "subfamily_slug": "berber_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "awjila",
+    "subfamily_slug": "berber_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "tuareg",
+    "subfamily_slug": "berber_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "numidian",
+    "subfamily_slug": "berber_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "beja",
+    "subfamily_slug": "cushitic_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "awngi",
+    "subfamily_slug": "agaw_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "bilen",
+    "subfamily_slug": "agaw_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "qimant",
+    "subfamily_slug": "agaw_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "xamtanga",
+    "subfamily_slug": "agaw_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "gawwada",
+    "subfamily_slug": "dullay_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "tsamai",
+    "subfamily_slug": "dullay_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "dihina",
+    "subfamily_slug": "dullay_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "dobase",
+    "subfamily_slug": "dullay_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "burji",
+    "subfamily_slug": "highland_east_cushitic_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "sidamo",
+    "subfamily_slug": "highland_east_cushitic_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "gedeo",
+    "subfamily_slug": "highland_east_cushitic_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "hadiyya_libido",
+    "subfamily_slug": "highland_east_cushitic_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "kambaata_alaba",
+    "subfamily_slug": "highland_east_cushitic_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "saho_afar",
+    "subfamily_slug": "lowland_east_cushitic_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "omo_tana",
+    "subfamily_slug": "lowland_east_cushitic_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "oromoid",
+    "subfamily_slug": "lowland_east_cushitic_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "dullay",
+    "subfamily_slug": "lowland_east_cushitic_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "yaaku",
+    "subfamily_slug": "lowland_east_cushitic_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "gorowa",
+    "subfamily_slug": "south_cushitic_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "iraqw",
+    "subfamily_slug": "south_cushitic_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "alagwa",
+    "subfamily_slug": "south_cushitic_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "burunge",
+    "subfamily_slug": "south_cushitic_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "aasax",
+    "subfamily_slug": "south_cushitic_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "kwadza",
+    "subfamily_slug": "south_cushitic_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "egyptian",
+    "subfamily_slug": "egyptian_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "akkadian",
+    "subfamily_slug": "east_semitic_lang_subfamily",
+    "wordbase_slug": "mesopotamian_wb"
+  },
+  {
+    "slug": "eblaite",
+    "subfamily_slug": "east_semitic_lang_subfamily",
+    "wordbase_slug": "mesopotamian_wb"
+  },
+  {
+    "slug": "kishite",
+    "subfamily_slug": "east_semitic_lang_subfamily",
+    "wordbase_slug": "mesopotamian_wb"
+  },
+  {
+    "slug": "ashkenazi",
+    "subfamily_slug": "hebrew_lang_subfamily",
+    "wordbase_slug": "mesopotamian_wb"
+  },
+  {
+    "slug": "sephardi",
+    "subfamily_slug": "hebrew_lang_subfamily",
+    "wordbase_slug": "mesopotamian_wb"
+  },
+  {
+    "slug": "hebrew",
+    "subfamily_slug": "hebrew_lang_subfamily",
+    "wordbase_slug": "mesopotamian_wb"
+  },
+  {
+    "slug": "samaritan",
+    "subfamily_slug": "hebrew_lang_subfamily",
+    "wordbase_slug": "mesopotamian_wb"
+  },
+  {
+    "slug": "ammonite",
+    "subfamily_slug": "canaanite_lang_subfamily",
+    "wordbase_slug": "mesopotamian_wb"
+  },
+  {
+    "slug": "edomite",
+    "subfamily_slug": "canaanite_lang_subfamily",
+    "wordbase_slug": "mesopotamian_wb"
+  },
+  {
+    "slug": "moabite",
+    "subfamily_slug": "canaanite_lang_subfamily",
+    "wordbase_slug": "mesopotamian_wb"
+  },
+  {
+    "slug": "phoenician",
+    "subfamily_slug": "canaanite_lang_subfamily",
+    "wordbase_slug": "mesopotamian_wb"
+  },
+  {
+    "slug": "punic",
+    "subfamily_slug": "canaanite_lang_subfamily",
+    "wordbase_slug": "mesopotamian_wb"
+  },
+  {
+    "slug": "samalian",
+    "subfamily_slug": "canaanite_lang_subfamily",
+    "wordbase_slug": "mesopotamian_wb"
+  },
+  {
+    "slug": "aramaic",
+    "subfamily_slug": "aramaic_lang_subfamily",
+    "wordbase_slug": "mesopotamian_wb"
+  },
+  {
+    "slug": "nabataean",
+    "subfamily_slug": "aramaic_lang_subfamily",
+    "wordbase_slug": "mesopotamian_wb"
+  },
+  {
+    "slug": "amorite",
+    "subfamily_slug": "aramaic_lang_subfamily",
+    "wordbase_slug": "mesopotamian_wb"
+  },
+  {
+    "slug": "himyaritic",
+    "subfamily_slug": "aramaic_lang_subfamily",
+    "wordbase_slug": "mesopotamian_wb"
+  },
+  {
+    "slug": "sutean",
+    "subfamily_slug": "aramaic_lang_subfamily",
+    "wordbase_slug": "mesopotamian_wb"
+  },
+  {
+    "slug": "syriac",
+    "subfamily_slug": "aramaic_lang_subfamily",
+    "wordbase_slug": "mesopotamian_wb"
+  },
+  {
+    "slug": "arabic",
+    "subfamily_slug": "arabic_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "geez",
+    "subfamily_slug": "ethiopic_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "tigrinya",
+    "subfamily_slug": "ethiopic_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "amharic",
+    "subfamily_slug": "ethiopic_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "argobba",
+    "subfamily_slug": "ethiopic_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "harari",
+    "subfamily_slug": "ethiopic_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "gafat",
+    "subfamily_slug": "ethiopic_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "soddo",
+    "subfamily_slug": "ethiopic_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "mesmes",
+    "subfamily_slug": "ethiopic_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "muher",
+    "subfamily_slug": "ethiopic_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "west_gurage",
+    "subfamily_slug": "ethiopic_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "mesqan",
+    "subfamily_slug": "ethiopic_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "sebat_bet",
+    "subfamily_slug": "ethiopic_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "bathari",
+    "subfamily_slug": "south_arabian_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "harsusi",
+    "subfamily_slug": "south_arabian_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "hobyot",
+    "subfamily_slug": "south_arabian_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "mehri",
+    "subfamily_slug": "south_arabian_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "shehri",
+    "subfamily_slug": "south_arabian_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "soqotri",
+    "subfamily_slug": "south_arabian_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "faifi",
+    "subfamily_slug": "south_arabian_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "hadramautic",
+    "subfamily_slug": "south_arabian_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "minaean",
+    "subfamily_slug": "south_arabian_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "qatabanian",
+    "subfamily_slug": "south_arabian_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "qatabanian",
+    "subfamily_slug": "south_arabian_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "qatabanian",
+    "subfamily_slug": "south_arabian_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "razihi",
+    "subfamily_slug": "south_arabian_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "sabaean",
+    "subfamily_slug": "south_arabian_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "south_omotic",
+    "subfamily_slug": "omotic_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "mao",
+    "subfamily_slug": "omotic_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "dizoid",
+    "subfamily_slug": "omotic_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  },
+  {
+    "slug": "gonga",
+    "subfamily_slug": "omotic_lang_subfamily",
+    "wordbase_slug": "arabic_wb"
+  }
+]

@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "slug": "manchu_lang",
+    "subfamily_slug": "jurchenic_lang_subfamily",
+    "wordbase_slug": "mongolian_wb"
+  },
+  {
+    "slug": "xibe_lang",
+    "subfamily_slug": "jurchenic_lang_subfamily",
+    "wordbase_slug": "mongolian_wb"
+  }
+]

@@ -1,1 +1,222 @@
-[]
+[
+  {
+    "slug": "chinese_lang",
+    "subfamily_slug": "chinese_languages_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "cantonese_lang",
+    "subfamily_slug": "chinese_languages_lang_subfamily",
+    "wordbase_slug": "cantonese_wb"
+  },
+  {
+    "slug": "cantonese_lang",
+    "subfamily_slug": "greater_bai_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "caijia_lang",
+    "subfamily_slug": "greater_bai_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "longjia_lang",
+    "subfamily_slug": "greater_bai_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "luren_lang",
+    "subfamily_slug": "greater_bai_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "muangphe_lang",
+    "subfamily_slug": "mondzish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "mango_lang",
+    "subfamily_slug": "mondzish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "maang_lang",
+    "subfamily_slug": "mondzish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "mondzi_lang",
+    "subfamily_slug": "mondzish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "maza_lang",
+    "subfamily_slug": "mondzish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "mauphu_lang",
+    "subfamily_slug": "mondzish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "motang_lang",
+    "subfamily_slug": "mondzish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "mongphu_lang",
+    "subfamily_slug": "mondzish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "burmish_lang",
+    "subfamily_slug": "burmish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "jinuo_lang",
+    "subfamily_slug": "hanoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "sangkong_lang",
+    "subfamily_slug": "hanoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "bisu_lang",
+    "subfamily_slug": "hanoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "phunoi_lang",
+    "subfamily_slug": "hanoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "pyen_lang",
+    "subfamily_slug": "hanoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "sila_lang",
+    "subfamily_slug": "hanoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "phana_lang",
+    "subfamily_slug": "hanoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "akeu_lang",
+    "subfamily_slug": "hanoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "hani_lang",
+    "subfamily_slug": "hanoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "piyo_lang",
+    "subfamily_slug": "hanoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "enu_lang",
+    "subfamily_slug": "hanoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "mpi_lang",
+    "subfamily_slug": "hanoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "kaduo_lang",
+    "subfamily_slug": "hanoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "laha_lang",
+    "subfamily_slug": "lahoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "kucong_lang",
+    "subfamily_slug": "lahoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "namuyi_lang",
+    "subfamily_slug": "naxish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "shixing_lang",
+    "subfamily_slug": "naxish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "naish_lang",
+    "subfamily_slug": "naxish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "nusu_lang",
+    "subfamily_slug": "nusoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "zauzou_lang",
+    "subfamily_slug": "nusoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "katso_lang",
+    "subfamily_slug": "kazhuoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "samu_lang",
+    "subfamily_slug": "kazhuoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "sanie_lang",
+    "subfamily_slug": "kazhuoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "sadu_lang",
+    "subfamily_slug": "kazhuoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "meuma_lang",
+    "subfamily_slug": "kazhuoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "lisu_lang",
+    "subfamily_slug": "lisoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "lolopo_lang",
+    "subfamily_slug": "lisoish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "tangut_lang",
+    "subfamily_slug": "qiangic_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  },
+  {
+    "slug": "tibetic_lang",
+    "subfamily_slug": "bodish_lang_subfamily",
+    "wordbase_slug": "chinese_wb"
+  }
+]

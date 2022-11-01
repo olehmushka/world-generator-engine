@@ -1,1 +1,92 @@
-[]
+[
+  {
+    "slug": "tebu",
+    "subfamily_slug": "saharan_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "nobiin",
+    "subfamily_slug": "nubian_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "kenzi",
+    "subfamily_slug": "nubian_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "midob",
+    "subfamily_slug": "nubian_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "birgid",
+    "subfamily_slug": "nubian_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "hill_nubian",
+    "subfamily_slug": "nubian_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "daju",
+    "subfamily_slug": "daju_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "korandje",
+    "subfamily_slug": "songhay_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "koyra_chiini",
+    "subfamily_slug": "songhay_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "tadaksahak",
+    "subfamily_slug": "songhay_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "tasawaq",
+    "subfamily_slug": "songhay_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "tagdal",
+    "subfamily_slug": "songhay_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "tondi_songway_kiini",
+    "subfamily_slug": "songhay_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "humburi_senni",
+    "subfamily_slug": "songhay_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "koyraboro_senni",
+    "subfamily_slug": "songhay_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "zarma",
+    "subfamily_slug": "songhay_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "songhoyboro_ciine",
+    "subfamily_slug": "songhay_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  },
+  {
+    "slug": "dendi",
+    "subfamily_slug": "songhay_lang_subfamily",
+    "wordbase_slug": "berber_wb"
+  }
+]

@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "slug": "basque_lang",
+    "subfamily_slug": "basque_lang_subfamily",
+    "wordbase_slug": "basque_wb"
+  },
+  {
+    "slug": "japanese_lang",
+    "subfamily_slug": "japonic_lang_subfamily",
+    "wordbase_slug": "japanese_wb"
+  },
+  {
+    "slug": "korean_lang",
+    "subfamily_slug": "koreanic_lang_subfamily",
+    "wordbase_slug": "korean_wb"
+  },
+  {
+    "slug": "georgian_lang",
+    "subfamily_slug": "karto_zan_lang_subfamily",
+    "wordbase_slug": "georgian_wb"
+  },
+  {
+    "slug": "mingrelian_lang",
+    "subfamily_slug": "karto_zan_lang_subfamily",
+    "wordbase_slug": "georgian_wb"
+  },
+  {
+    "slug": "laz_lang",
+    "subfamily_slug": "karto_zan_lang_subfamily",
+    "wordbase_slug": "georgian_wb"
+  },
+  {
+    "slug": "svan_lang",
+    "subfamily_slug": "svan_lang_subfamily",
+    "wordbase_slug": "georgian_wb"
+  }
+]

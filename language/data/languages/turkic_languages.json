@@ -1,1 +1,187 @@
-[]
+[
+  {
+    "slug": "gagauz_lang",
+    "subfamily_slug": "oghuz_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "turkish_lang",
+    "subfamily_slug": "oghuz_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "azerbaijani_lang",
+    "subfamily_slug": "oghuz_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "turkmen_lang",
+    "subfamily_slug": "oghuz_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "qashqai_lang",
+    "subfamily_slug": "oghuz_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "chaharmahali_lang",
+    "subfamily_slug": "oghuz_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "khorasani_lang",
+    "subfamily_slug": "oghuz_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "salar_lang",
+    "subfamily_slug": "oghuz_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "chuvash_lang",
+    "subfamily_slug": "oghuz_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "bulgar_lang",
+    "subfamily_slug": "oghuz_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "sabir_lang",
+    "subfamily_slug": "oghuz_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "khazar_lang",
+    "subfamily_slug": "oghuz_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "hunnic_lang",
+    "subfamily_slug": "oghuz_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "tuoba_lang",
+    "subfamily_slug": "oghuz_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "avar_lang",
+    "subfamily_slug": "oghuz_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "bashkir_lang",
+    "subfamily_slug": "kipchak_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "tatar_lang",
+    "subfamily_slug": "kipchak_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "crimean_tatar_lang",
+    "subfamily_slug": "kipchak_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "karachay_balkar_lang",
+    "subfamily_slug": "kipchak_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "kumyk_lang",
+    "subfamily_slug": "kipchak_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "karaim_lang",
+    "subfamily_slug": "kipchak_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "krymchak_lang",
+    "subfamily_slug": "kipchak_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "urum_lang",
+    "subfamily_slug": "kipchak_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "kazakh_lang",
+    "subfamily_slug": "kipchak_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "karakalpak_lang",
+    "subfamily_slug": "kipchak_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "nogai_lang",
+    "subfamily_slug": "kipchak_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "siberian_tatar_lang",
+    "subfamily_slug": "kipchak_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "baraba_lang",
+    "subfamily_slug": "kipchak_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "southern_altai_lang",
+    "subfamily_slug": "kipchak_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "teleut_lang",
+    "subfamily_slug": "kipchak_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "kyrgyz_lang",
+    "subfamily_slug": "kipchak_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "cuman_lang",
+    "subfamily_slug": "kipchak_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "uzbek_lang",
+    "subfamily_slug": "karluk_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "uyghur_lang",
+    "subfamily_slug": "karluk_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "aynu_lang",
+    "subfamily_slug": "karluk_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "ili_lang",
+    "subfamily_slug": "karluk_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  },
+  {
+    "slug": "khalaj_lang",
+    "subfamily_slug": "shaz_turkic_lang_subfamily",
+    "wordbase_slug": "turkish_wb"
+  }
+]

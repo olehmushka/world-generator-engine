@@ -1,1 +1,82 @@
-[]
+[
+  {
+    "slug": "ancash",
+    "subfamily_slug": "quechua_ii_lang_subfamily",
+    "wordbase_slug": "quechua_wb"
+  },
+  {
+    "slug": "alto_pativilca_alto_maranon_alto_huallaga",
+    "subfamily_slug": "quechua_i_lang_subfamily",
+    "wordbase_slug": "quechua_wb"
+  },
+  {
+    "slug": "yaru",
+    "subfamily_slug": "quechua_i_lang_subfamily",
+    "wordbase_slug": "quechua_wb"
+  },
+  {
+    "slug": "wanka",
+    "subfamily_slug": "quechua_i_lang_subfamily",
+    "wordbase_slug": "quechua_wb"
+  },
+  {
+    "slug": "yauyos_chincha",
+    "subfamily_slug": "quechua_i_lang_subfamily",
+    "wordbase_slug": "quechua_wb"
+  },
+  {
+    "slug": "pacaraos",
+    "subfamily_slug": "quechua_i_lang_subfamily",
+    "wordbase_slug": "quechua_wb"
+  },
+  {
+    "slug": "lambayeque",
+    "subfamily_slug": "quechua_ii_lang_subfamily",
+    "wordbase_slug": "quechua_wb"
+  },
+  {
+    "slug": "cajamarca",
+    "subfamily_slug": "quechua_ii_lang_subfamily",
+    "wordbase_slug": "quechua_wb"
+  },
+  {
+    "slug": "lincha",
+    "subfamily_slug": "quechua_ii_lang_subfamily",
+    "wordbase_slug": "quechua_wb"
+  },
+  {
+    "slug": "laraos",
+    "subfamily_slug": "quechua_ii_lang_subfamily",
+    "wordbase_slug": "quechua_wb"
+  },
+  {
+    "slug": "ayacucho",
+    "subfamily_slug": "quechua_ii_lang_subfamily",
+    "wordbase_slug": "quechua_wb"
+  },
+  {
+    "slug": "cusco",
+    "subfamily_slug": "quechua_ii_lang_subfamily",
+    "wordbase_slug": "quechua_wb"
+  },
+  {
+    "slug": "puno",
+    "subfamily_slug": "quechua_ii_lang_subfamily",
+    "wordbase_slug": "quechua_wb"
+  },
+  {
+    "slug": "northern_bolivian",
+    "subfamily_slug": "quechua_ii_lang_subfamily",
+    "wordbase_slug": "quechua_wb"
+  },
+  {
+    "slug": "southern_bolivia",
+    "subfamily_slug": "quechua_ii_lang_subfamily",
+    "wordbase_slug": "quechua_wb"
+  },
+  {
+    "slug": "santiago_del_estero",
+    "subfamily_slug": "quechua_ii_lang_subfamily",
+    "wordbase_slug": "quechua_wb"
+  }
+]

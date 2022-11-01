@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "slug": "kru",
+    "subfamily_slug": "kru_lang_subfamily",
+    "wordbase_slug": "nigerian_wb"
+  },
+  {
+    "slug": "kwa",
+    "subfamily_slug": "volta_congo_lang_subfamily",
+    "wordbase_slug": "nigerian_wb"
+  },
+  {
+    "slug": "gur",
+    "subfamily_slug": "volta_congo_lang_subfamily",
+    "wordbase_slug": "nigerian_wb"
+  },
+  {
+    "slug": "soninke",
+    "subfamily_slug": "mande_lang_subfamily",
+    "wordbase_slug": "nigerian_wb"
+  },
+  {
+    "slug": "manding",
+    "subfamily_slug": "mande_lang_subfamily",
+    "wordbase_slug": "nigerian_wb"
+  },
+  {
+    "slug": "senegambian",
+    "subfamily_slug": "atlantic_congo_lang_subfamily",
+    "wordbase_slug": "swahili_wb"
+  },
+  {
+    "slug": "swahili",
+    "subfamily_slug": "atlantic_congo_lang_subfamily",
+    "wordbase_slug": "swahili_wb"
+  }
+]

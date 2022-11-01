@@ -1,1 +1,102 @@
-[]
+[
+  {
+    "slug": "mari_lang",
+    "subfamily_slug": "finno_permic_lang_subfamily",
+    "wordbase_slug": "finnic_wb"
+  },
+  {
+    "slug": "merya_lang",
+    "subfamily_slug": "finno_permic_lang_subfamily",
+    "wordbase_slug": "finnic_wb"
+  },
+  {
+    "slug": "komi_lang",
+    "subfamily_slug": "permic_lang_subfamily",
+    "wordbase_slug": "finnic_wb"
+  },
+  {
+    "slug": "permyak_lang",
+    "subfamily_slug": "permic_lang_subfamily",
+    "wordbase_slug": "finnic_wb"
+  },
+  {
+    "slug": "udmurt_lang",
+    "subfamily_slug": "permic_lang_subfamily",
+    "wordbase_slug": "finnic_wb"
+  },
+  {
+    "slug": "meshchera_lang",
+    "subfamily_slug": "permic_lang_subfamily",
+    "wordbase_slug": "finnic_wb"
+  },
+  {
+    "slug": "estonian_lang",
+    "subfamily_slug": "balto_finnic_lang_subfamily",
+    "wordbase_slug": "finnic_wb"
+  },
+  {
+    "slug": "livonian_lang",
+    "subfamily_slug": "balto_finnic_lang_subfamily",
+    "wordbase_slug": "finnic_wb"
+  },
+  {
+    "slug": "votic_lang",
+    "subfamily_slug": "balto_finnic_lang_subfamily",
+    "wordbase_slug": "finnic_wb"
+  },
+  {
+    "slug": "finnish_lang",
+    "subfamily_slug": "balto_finnic_lang_subfamily",
+    "wordbase_slug": "finnic_wb"
+  },
+  {
+    "slug": "ingrian_lang",
+    "subfamily_slug": "balto_finnic_lang_subfamily",
+    "wordbase_slug": "finnic_wb"
+  },
+  {
+    "slug": "karelian_lang",
+    "subfamily_slug": "balto_finnic_lang_subfamily",
+    "wordbase_slug": "finnic_wb"
+  },
+  {
+    "slug": "ludic_lang",
+    "subfamily_slug": "balto_finnic_lang_subfamily",
+    "wordbase_slug": "finnic_wb"
+  },
+  {
+    "slug": "veps_lang",
+    "subfamily_slug": "balto_finnic_lang_subfamily",
+    "wordbase_slug": "finnic_wb"
+  },
+  {
+    "slug": "sami_lang",
+    "subfamily_slug": "sami_lang_subfamily",
+    "wordbase_slug": "finnic_wb"
+  },
+  {
+    "slug": "erzya_lang",
+    "subfamily_slug": "mordvin_lang_subfamily",
+    "wordbase_slug": "finnic_wb"
+  },
+  {
+    "slug": "moksha_lang",
+    "subfamily_slug": "mordvin_lang_subfamily",
+    "wordbase_slug": "finnic_wb"
+  },
+  {
+    "slug": "hungarian_lang",
+    "subfamily_slug": "ugric_lang_subfamily",
+    "wordbase_slug": "hungarian_wb"
+  },
+  {
+    "slug": "khanty_lang",
+    "subfamily_slug": "ugric_lang_subfamily",
+    "wordbase_slug": "hungarian_wb"
+  },
+  {
+    "slug": "mansi_lang",
+    "subfamily_slug": "ugric_lang_subfamily",
+    "wordbase_slug": "hungarian_wb"
+  }
+]

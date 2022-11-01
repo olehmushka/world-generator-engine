@@ -90,6 +90,7 @@ func TestGetLanguageKinship(t *testing.T) {
 }
 
 func TestLoadAllLanguages(t *testing.T) {
+	var count int
 	for chunk := range LoadAllLanguages() {
 		if chunk.Err != nil {
 			t.Fatalf("unexpected error (err=%+v)", chunk.Err)
@@ -98,5 +99,7 @@ func TestLoadAllLanguages(t *testing.T) {
 		if chunk.Value == nil {
 			t.Fatalf("loaded language can not be nil")
 		}
+		count++
 	}
+	t.Logf("counted langs: %d\n", count)
 }

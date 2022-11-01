@@ -1,1 +1,77 @@
-[]
+[
+  {
+    "slug": "dagur_lang",
+    "subfamily_slug": "dagur_lang_subfamily",
+    "wordbase_slug": "mongolian_wb"
+  },
+  {
+    "slug": "moghol_lang",
+    "subfamily_slug": "moghol_lang_subfamily",
+    "wordbase_slug": "mongolian_wb"
+  },
+  {
+    "slug": "khamnigan_lang",
+    "subfamily_slug": "central_mongolic_lang_subfamily",
+    "wordbase_slug": "mongolian_wb"
+  },
+  {
+    "slug": "buryat_lang",
+    "subfamily_slug": "central_mongolic_lang_subfamily",
+    "wordbase_slug": "mongolian_wb"
+  },
+  {
+    "slug": "mongolian_lang",
+    "subfamily_slug": "central_mongolic_lang_subfamily",
+    "wordbase_slug": "mongolian_wb"
+  },
+  {
+    "slug": "khalkha_lang",
+    "subfamily_slug": "central_mongolic_lang_subfamily",
+    "wordbase_slug": "mongolian_wb"
+  },
+  {
+    "slug": "chakhar_lang",
+    "subfamily_slug": "central_mongolic_lang_subfamily",
+    "wordbase_slug": "mongolian_wb"
+  },
+  {
+    "slug": "khorchin_lang",
+    "subfamily_slug": "central_mongolic_lang_subfamily",
+    "wordbase_slug": "mongolian_wb"
+  },
+  {
+    "slug": "ordos_lang",
+    "subfamily_slug": "central_mongolic_lang_subfamily",
+    "wordbase_slug": "mongolian_wb"
+  },
+  {
+    "slug": "oirat_lang",
+    "subfamily_slug": "central_mongolic_lang_subfamily",
+    "wordbase_slug": "mongolian_wb"
+  },
+  {
+    "slug": "monguor_lang",
+    "subfamily_slug": "southern_mongolic_lang_subfamily",
+    "wordbase_slug": "mongolian_wb"
+  },
+  {
+    "slug": "bonan_lang",
+    "subfamily_slug": "southern_mongolic_lang_subfamily",
+    "wordbase_slug": "mongolian_wb"
+  },
+  {
+    "slug": "santa_lang",
+    "subfamily_slug": "southern_mongolic_lang_subfamily",
+    "wordbase_slug": "mongolian_wb"
+  },
+  {
+    "slug": "kangjia_lang",
+    "subfamily_slug": "southern_mongolic_lang_subfamily",
+    "wordbase_slug": "mongolian_wb"
+  },
+  {
+    "slug": "khitan_lang",
+    "subfamily_slug": "khitan_lang_subfamily",
+    "wordbase_slug": "mongolian_wb"
+  }
+]

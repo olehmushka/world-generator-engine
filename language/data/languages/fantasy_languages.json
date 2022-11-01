@@ -1,1 +1,97 @@
-[]
+[
+  {
+    "slug": "common_eldarin",
+    "subfamily_slug": "quendian_lang_subfamily",
+    "wordbase_slug": "sindarin_wb"
+  },
+  {
+    "slug": "quenya",
+    "subfamily_slug": "quendian_lang_subfamily",
+    "wordbase_slug": "sindarin_wb"
+  },
+  {
+    "slug": "quendya",
+    "subfamily_slug": "quendian_lang_subfamily",
+    "wordbase_slug": "sindarin_wb"
+  },
+  {
+    "slug": "exilic_quendya",
+    "subfamily_slug": "quendian_lang_subfamily",
+    "wordbase_slug": "sindarin_wb"
+  },
+  {
+    "slug": "common_telerin",
+    "subfamily_slug": "quendian_lang_subfamily",
+    "wordbase_slug": "sindarin_wb"
+  },
+  {
+    "slug": "telerin",
+    "subfamily_slug": "quendian_lang_subfamily",
+    "wordbase_slug": "sindarin_wb"
+  },
+  {
+    "slug": "sindarin",
+    "subfamily_slug": "quendian_lang_subfamily",
+    "wordbase_slug": "sindarin_wb"
+  },
+  {
+    "slug": "nandorin",
+    "subfamily_slug": "quendian_lang_subfamily",
+    "wordbase_slug": "sindarin_wb"
+  },
+  {
+    "slug": "avarin",
+    "subfamily_slug": "quendian_lang_subfamily",
+    "wordbase_slug": "sindarin_wb"
+  },
+  {
+    "slug": "aldmeris",
+    "subfamily_slug": "aldmeris_lang_subfamily",
+    "wordbase_slug": "sindarin_wb"
+  },
+  {
+    "slug": "dunmeris",
+    "subfamily_slug": "aldmeris_lang_subfamily",
+    "wordbase_slug": "dunmeris_wb"
+  },
+  {
+    "slug": "bosmeris",
+    "subfamily_slug": "aldmeris_lang_subfamily",
+    "wordbase_slug": "dunmeris_wb"
+  },
+  {
+    "slug": "dwemeris",
+    "subfamily_slug": "dwermeris_lang_subfamily",
+    "wordbase_slug": "dwemeris_wb"
+  },
+  {
+    "slug": "goblins",
+    "subfamily_slug": "orcish_lang_subfamily",
+    "wordbase_slug": "goblins_wb"
+  },
+  {
+    "slug": "orcish",
+    "subfamily_slug": "orcish_lang_subfamily",
+    "wordbase_slug": "orc_wb"
+  },
+  {
+    "slug": "giantish",
+    "subfamily_slug": "giantish_lang_subfamily",
+    "wordbase_slug": "giant_wb"
+  },
+  {
+    "slug": "draconic",
+    "subfamily_slug": "draconic_lang_subfamily",
+    "wordbase_slug": "draconic_wb"
+  },
+  {
+    "slug": "arachnid",
+    "subfamily_slug": "arachnid_lang_subfamily",
+    "wordbase_slug": "arachnid_wb"
+  },
+  {
+    "slug": "serpents",
+    "subfamily_slug": "serpents_lang_subfamily",
+    "wordbase_slug": "serpents_wb"
+  }
+]

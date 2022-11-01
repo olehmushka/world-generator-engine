@@ -1,1 +1,147 @@
-[]
+[
+  {
+    "slug": "tamil_lang",
+    "subfamily_slug": "south_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "malayalam_lang",
+    "subfamily_slug": "south_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "irula_lang",
+    "subfamily_slug": "south_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "kodava_lang",
+    "subfamily_slug": "south_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "kurumba_lang",
+    "subfamily_slug": "south_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "toda_lang",
+    "subfamily_slug": "south_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "kota_lang",
+    "subfamily_slug": "south_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "kannada_lang",
+    "subfamily_slug": "south_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "badaga_lang",
+    "subfamily_slug": "south_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "telugu_lang",
+    "subfamily_slug": "south_central_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "chenchu_lang",
+    "subfamily_slug": "south_central_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "konda_lang",
+    "subfamily_slug": "south_central_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "mukha_dora_lang",
+    "subfamily_slug": "south_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "manda_lang",
+    "subfamily_slug": "south_central_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "pengo_lang",
+    "subfamily_slug": "south_central_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "kuvi_lang",
+    "subfamily_slug": "south_central_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "kui_lang",
+    "subfamily_slug": "south_central_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "gondi_lang",
+    "subfamily_slug": "south_central_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "kolami_lang",
+    "subfamily_slug": "central_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "naiki_lang",
+    "subfamily_slug": "central_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "gadaba_lang",
+    "subfamily_slug": "central_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "ollari_lang",
+    "subfamily_slug": "central_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "kondekor_lang",
+    "subfamily_slug": "central_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "duruwa_lang",
+    "subfamily_slug": "central_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "oraon_lang",
+    "subfamily_slug": "northern_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "kisan_lang",
+    "subfamily_slug": "northern_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "kumarbhag_paharia_lang",
+    "subfamily_slug": "northern_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "sauria_paharia_lang",
+    "subfamily_slug": "northern_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  },
+  {
+    "slug": "brahui_lang",
+    "subfamily_slug": "northern_dravidian_lang_subfamily",
+    "wordbase_slug": "kannada_wb"
+  }
+]
