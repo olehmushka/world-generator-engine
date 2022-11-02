@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "slug": "ancient_sarmatian_culture",
+    "base_slug": "persian_base",
+    "subbase_slug": "ancient_scythian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "steppe_tolerance_tradition",
+      "hit_and_run_tacticians_tradition",
+      "chivalry_tradition",
+      "concubines_tradition"
+    ],
+    "language_slug": "scythian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "ancient_scythian_culture",
+    "base_slug": "persian_base",
+    "subbase_slug": "ancient_scythian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "steppe_tolerance_tradition",
+      "tribal_unity_tradition",
+      "battlefield_looters_tradition",
+      "quarrelsome_tradition",
+      "chivalry_tradition",
+      "concubines_tradition"
+    ],
+    "language_slug": "scythian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

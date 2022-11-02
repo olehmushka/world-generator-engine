@@ -1,91 +1,91 @@
 [
   {
-    "slug": "tebu",
+    "slug": "tebu_lang",
     "subfamily_slug": "saharan_lang_subfamily",
     "wordbase_slug": "berber_wb"
   },
   {
-    "slug": "nobiin",
+    "slug": "nobiin_lang",
     "subfamily_slug": "nubian_lang_subfamily",
     "wordbase_slug": "berber_wb"
   },
   {
-    "slug": "kenzi",
+    "slug": "kenzi_lang",
     "subfamily_slug": "nubian_lang_subfamily",
     "wordbase_slug": "berber_wb"
   },
   {
-    "slug": "midob",
+    "slug": "midob_lang",
     "subfamily_slug": "nubian_lang_subfamily",
     "wordbase_slug": "berber_wb"
   },
   {
-    "slug": "birgid",
+    "slug": "birgid_lang",
     "subfamily_slug": "nubian_lang_subfamily",
     "wordbase_slug": "berber_wb"
   },
   {
-    "slug": "hill_nubian",
+    "slug": "hill_nubian_lang",
     "subfamily_slug": "nubian_lang_subfamily",
     "wordbase_slug": "berber_wb"
   },
   {
-    "slug": "daju",
+    "slug": "daju_lang",
     "subfamily_slug": "daju_lang_subfamily",
     "wordbase_slug": "berber_wb"
   },
   {
-    "slug": "korandje",
+    "slug": "korandje_lang",
     "subfamily_slug": "songhay_lang_subfamily",
     "wordbase_slug": "berber_wb"
   },
   {
-    "slug": "koyra_chiini",
+    "slug": "koyra_chiini_lang",
     "subfamily_slug": "songhay_lang_subfamily",
     "wordbase_slug": "berber_wb"
   },
   {
-    "slug": "tadaksahak",
+    "slug": "tadaksahak_lang",
     "subfamily_slug": "songhay_lang_subfamily",
     "wordbase_slug": "berber_wb"
   },
   {
-    "slug": "tasawaq",
+    "slug": "tasawaq_lang",
     "subfamily_slug": "songhay_lang_subfamily",
     "wordbase_slug": "berber_wb"
   },
   {
-    "slug": "tagdal",
+    "slug": "tagdal_lang",
     "subfamily_slug": "songhay_lang_subfamily",
     "wordbase_slug": "berber_wb"
   },
   {
-    "slug": "tondi_songway_kiini",
+    "slug": "tondi_songway_kiini_lang",
     "subfamily_slug": "songhay_lang_subfamily",
     "wordbase_slug": "berber_wb"
   },
   {
-    "slug": "humburi_senni",
+    "slug": "humburi_senni_lang",
     "subfamily_slug": "songhay_lang_subfamily",
     "wordbase_slug": "berber_wb"
   },
   {
-    "slug": "koyraboro_senni",
+    "slug": "koyraboro_senni_lang",
     "subfamily_slug": "songhay_lang_subfamily",
     "wordbase_slug": "berber_wb"
   },
   {
-    "slug": "zarma",
+    "slug": "zarma_lang",
     "subfamily_slug": "songhay_lang_subfamily",
     "wordbase_slug": "berber_wb"
   },
   {
-    "slug": "songhoyboro_ciine",
+    "slug": "songhoyboro_ciine_lang",
     "subfamily_slug": "songhay_lang_subfamily",
     "wordbase_slug": "berber_wb"
   },
   {
-    "slug": "dendi",
+    "slug": "dendi_lang",
     "subfamily_slug": "songhay_lang_subfamily",
     "wordbase_slug": "berber_wb"
   }

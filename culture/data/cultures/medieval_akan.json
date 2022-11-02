@@ -1,1 +1,59 @@
-[]
+[
+  {
+    "slug": "akan_akan",
+    "base_slug": "african_base",
+    "subbase_slug": "medieval_akan_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "egalitarian_ethos",
+    "tradition_slugs": [
+      "bush_hunting_tradition",
+      "matriarchal_tradition",
+      "mystical_ancestors_tradition",
+      "parochialism_tradition"
+    ],
+    "language_slug": "kwa_lang",
+    "gender_dominance": {
+      "dominated_sex": "female_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "men_and_women"
+  },
+  {
+    "slug": "akan_guan",
+    "base_slug": "african_base",
+    "subbase_slug": "medieval_akan_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "bush_hunting_tradition",
+      "dryland_dwellers_tradition",
+      "frequent_festivities_tradition",
+      "parochialism_tradition",
+      "strong_believers_tradition"
+    ],
+    "language_slug": "kwa_lang",
+    "gender_dominance": {
+      "dominated_sex": "",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "men_and_women"
+  },
+  {
+    "slug": "akan_kru",
+    "base_slug": "african_base",
+    "subbase_slug": "medieval_akan_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "bush_hunting_tradition",
+      "dexterous_fishermen_tradition",
+      "practiced_pirates_tradition"
+    ],
+    "language_slug": "kru_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "slug": "ancient_persian_culture",
+    "base_slug": "persian_base",
+    "subbase_slug": "ancient_iranian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "courtly_ethos",
+    "tradition_slugs": [
+      "dryland_dwellers_tradition",
+      "immortals_tradition",
+      "garden_architects_tradition",
+      "philosopher_culture_tradition",
+      "refined_poetry_tradition"
+    ],
+    "language_slug": "farsi_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

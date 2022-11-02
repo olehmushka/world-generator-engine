@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "slug": "ancient_armenian_culture",
+    "base_slug": "caucasian_base",
+    "subbase_slug": "ancient_anatolian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "sacred_mountains_tradition",
+      "highland_warriors_tradition",
+      "stalwart_defenders_tradition",
+      "expert_artisans_tradition"
+    ],
+    "language_slug": "armenian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

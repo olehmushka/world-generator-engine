@@ -1,91 +1,91 @@
 [
   {
-    "slug": "oodham",
+    "slug": "oodham_lang",
     "subfamily_slug": "tepiman_lang_subfamily",
     "wordbase_slug": "nahuatl_wb"
   },
   {
-    "slug": "pima_bajo",
+    "slug": "pima_bajo_lang",
     "subfamily_slug": "tepiman_lang_subfamily",
     "wordbase_slug": "nahuatl_wb"
   },
   {
-    "slug": "tepehuan",
+    "slug": "tepehuan_lang",
     "subfamily_slug": "tepiman_lang_subfamily",
     "wordbase_slug": "nahuatl_wb"
   },
   {
-    "slug": "southern_tepiman",
+    "slug": "southern_tepiman_lang",
     "subfamily_slug": "tepiman_lang_subfamily",
     "wordbase_slug": "nahuatl_wb"
   },
   {
-    "slug": "tepecano",
+    "slug": "tepecano_lang",
     "subfamily_slug": "tepiman_lang_subfamily",
     "wordbase_slug": "nahuatl_wb"
   },
   {
-    "slug": "tarahumara",
+    "slug": "tarahumara_lang",
     "subfamily_slug": "tarahumaran_lang_subfamily",
     "wordbase_slug": "nahuatl_wb"
   },
   {
-    "slug": "upriver_guarijio",
+    "slug": "upriver_guarijio_lang",
     "subfamily_slug": "tarahumaran_lang_subfamily",
     "wordbase_slug": "nahuatl_wb"
   },
   {
-    "slug": "downriver_guarijio",
+    "slug": "downriver_guarijio_lang",
     "subfamily_slug": "tarahumaran_lang_subfamily",
     "wordbase_slug": "nahuatl_wb"
   },
   {
-    "slug": "tubar",
+    "slug": "tubar_lang",
     "subfamily_slug": "tarahumaran_lang_subfamily",
     "wordbase_slug": "nahuatl_wb"
   },
   {
-    "slug": "yaqui",
+    "slug": "yaqui_lang",
     "subfamily_slug": "cahita_lang_subfamily",
     "wordbase_slug": "nahuatl_wb"
   },
   {
-    "slug": "mayo",
+    "slug": "mayo_lang",
     "subfamily_slug": "cahita_lang_subfamily",
     "wordbase_slug": "nahuatl_wb"
   },
   {
-    "slug": "opata",
+    "slug": "opata_lang",
     "subfamily_slug": "opatan_lang_subfamily",
     "wordbase_slug": "nahuatl_wb"
   },
   {
-    "slug": "eudeve",
+    "slug": "eudeve_lang",
     "subfamily_slug": "opatan_lang_subfamily",
     "wordbase_slug": "nahuatl_wb"
   },
   {
-    "slug": "cora",
+    "slug": "cora_lang",
     "subfamily_slug": "corachol_lang_subfamily",
     "wordbase_slug": "nahuatl_wb"
   },
   {
-    "slug": "huichol",
+    "slug": "huichol_lang",
     "subfamily_slug": "corachol_lang_subfamily",
     "wordbase_slug": "nahuatl_wb"
   },
   {
-    "slug": "pochutec",
+    "slug": "pochutec_lang",
     "subfamily_slug": "aztecan_lang_subfamily",
     "wordbase_slug": "nahuatl_wb"
   },
   {
-    "slug": "pipil",
+    "slug": "pipil_lang",
     "subfamily_slug": "aztecan_lang_subfamily",
     "wordbase_slug": "nahuatl_wb"
   },
   {
-    "slug": "nahuatl",
+    "slug": "nahuatl_lang",
     "subfamily_slug": "aztecan_lang_subfamily",
     "wordbase_slug": "nahuatl_wb"
   }

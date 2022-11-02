@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "slug": "ancient_illyrian_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "ancient_illyrian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "practiced_pirates_tradition",
+      "coastal_warriors_tradition",
+      "dexterous_fishermen_tradition"
+    ],
+    "language_slug": "illyrian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

@@ -1,1 +1,61 @@
-[]
+[
+  {
+    "slug": "ancient_aramaic_culture",
+    "base_slug": "mesopotamian_base",
+    "subbase_slug": "ancient_aramaic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "egalitarian_ethos",
+    "tradition_slugs": [
+      "culture_blending_tradition",
+      "strong_believers_tradition",
+      "concubines_tradition"
+    ],
+    "language_slug": "aramaic_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "ancient_assyrian_culture",
+    "base_slug": "mesopotamian_base",
+    "subbase_slug": "ancient_aramaic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "warrior_culture_tradition",
+      "battlefield_looters_tradition",
+      "quarrelsome_tradition",
+      "concubines_tradition"
+    ],
+    "language_slug": "akkadian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "ancient_babylonian_culture",
+    "base_slug": "mesopotamian_base",
+    "subbase_slug": "ancient_aramaic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "fervent_temple_builders_tradition",
+      "philosopher_culture_tradition",
+      "parochialism_tradition",
+      "recognition_of_talent_tradition",
+      "malleable_subjects_tradition",
+      "charismatic_tradition",
+      "concubines_tradition"
+    ],
+    "language_slug": "egalitarian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

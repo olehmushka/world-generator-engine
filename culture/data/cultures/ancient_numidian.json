@@ -1,1 +1,77 @@
-[]
+[
+  {
+    "slug": "ancient_berber_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "ancient_numidian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "dryland_dwellers_tradition",
+      "tribal_unity_tradition",
+      "caravaneers_tradition",
+      "african_tolerance_tradition"
+    ],
+    "language_slug": "zenaga_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "ancient_libyan_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "ancient_numidian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "dryland_dwellers_tradition",
+      "warriors_of_the_dry_tradition",
+      "african_tolerance_tradition"
+    ],
+    "language_slug": "numidian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "ancient_maurian_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "ancient_numidian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "dryland_dwellers_tradition",
+      "african_tolerance_tradition"
+    ],
+    "language_slug": "tuareg_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "ancient_numidian_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "ancient_numidian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "dryland_dwellers_tradition",
+      "tribal_unity_tradition",
+      "stalwart_defenders_tradition",
+      "warriors_of_the_dry_tradition",
+      "african_tolerance_tradition",
+      "chivalry_tradition"
+    ],
+    "language_slug": "numidian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

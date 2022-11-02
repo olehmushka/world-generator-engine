@@ -1,1 +1,84 @@
-[]
+[
+  {
+    "slug": "ancient_punic_culture",
+    "base_slug": "semitic_base",
+    "subbase_slug": "ancient_levantine_subbase",
+    "parent_culture_slugs": ["ancient_phoenician_culture"],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "maritime_mercantilism_tradition",
+      "ruling_caste_tradition",
+      "xenophilic_tradition",
+      "strong_believers_tradition"
+    ],
+    "language_slug": "punic_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "ancient_hebrew_culture",
+    "base_slug": "semitic_base",
+    "subbase_slug": "ancient_levantine_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "defensive_tactics_tradition",
+      "philosopher_culture_tradition",
+      "xenophilic_tradition",
+      "bound_by_faith_tradition",
+      "fervent_temple_builders_tradition",
+      "forebearing_tradition"
+    ],
+    "language_slug": "hebrew_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "ancient_phoenician_culture",
+    "base_slug": "semitic_base",
+    "subbase_slug": "ancient_levantine_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bureaucratic_ethos",
+    "tradition_slugs": [
+      "seafarers_tradition",
+      "maritime_mercantilism_tradition",
+      "city_keepers_tradition",
+      "parochialism_tradition",
+      "culture_blending_tradition",
+      "concubines_tradition"
+    ],
+    "language_slug": "phoenician_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "ancient_nabatean_culture",
+    "base_slug": "semitic_base",
+    "subbase_slug": "ancient_levantine_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "desert_ribats_tradition",
+      "esteemed_hospitality_tradition",
+      "caravaneers_tradition",
+      "parochialism_tradition",
+      "xenophilic_tradition",
+      "polygamous_tradition"
+    ],
+    "language_slug": "nabataean_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

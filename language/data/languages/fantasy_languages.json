@@ -1,96 +1,96 @@
 [
   {
-    "slug": "common_eldarin",
+    "slug": "common_eldarin_lang",
     "subfamily_slug": "quendian_lang_subfamily",
     "wordbase_slug": "sindarin_wb"
   },
   {
-    "slug": "quenya",
+    "slug": "quenya_lang",
     "subfamily_slug": "quendian_lang_subfamily",
     "wordbase_slug": "sindarin_wb"
   },
   {
-    "slug": "quendya",
+    "slug": "quendya_lang",
     "subfamily_slug": "quendian_lang_subfamily",
     "wordbase_slug": "sindarin_wb"
   },
   {
-    "slug": "exilic_quendya",
+    "slug": "exilic_quendya_lang",
     "subfamily_slug": "quendian_lang_subfamily",
     "wordbase_slug": "sindarin_wb"
   },
   {
-    "slug": "common_telerin",
+    "slug": "common_telerin_lang",
     "subfamily_slug": "quendian_lang_subfamily",
     "wordbase_slug": "sindarin_wb"
   },
   {
-    "slug": "telerin",
+    "slug": "telerin_lang",
     "subfamily_slug": "quendian_lang_subfamily",
     "wordbase_slug": "sindarin_wb"
   },
   {
-    "slug": "sindarin",
+    "slug": "sindarin_lang",
     "subfamily_slug": "quendian_lang_subfamily",
     "wordbase_slug": "sindarin_wb"
   },
   {
-    "slug": "nandorin",
+    "slug": "nandorin_lang",
     "subfamily_slug": "quendian_lang_subfamily",
     "wordbase_slug": "sindarin_wb"
   },
   {
-    "slug": "avarin",
+    "slug": "avarin_lang",
     "subfamily_slug": "quendian_lang_subfamily",
     "wordbase_slug": "sindarin_wb"
   },
   {
-    "slug": "aldmeris",
+    "slug": "aldmeris_lang",
     "subfamily_slug": "aldmeris_lang_subfamily",
     "wordbase_slug": "sindarin_wb"
   },
   {
-    "slug": "dunmeris",
-    "subfamily_slug": "aldmeris_lang_subfamily",
-    "wordbase_slug": "dunmeris_wb"
-  },
-  {
-    "slug": "bosmeris",
+    "slug": "dunmeris_lang",
     "subfamily_slug": "aldmeris_lang_subfamily",
     "wordbase_slug": "dunmeris_wb"
   },
   {
-    "slug": "dwemeris",
+    "slug": "bosmeris_lang",
+    "subfamily_slug": "aldmeris_lang_subfamily",
+    "wordbase_slug": "dunmeris_wb"
+  },
+  {
+    "slug": "dwemeris_lang",
     "subfamily_slug": "dwermeris_lang_subfamily",
     "wordbase_slug": "dwemeris_wb"
   },
   {
-    "slug": "goblins",
+    "slug": "goblins_lang",
     "subfamily_slug": "orcish_lang_subfamily",
     "wordbase_slug": "goblins_wb"
   },
   {
-    "slug": "orcish",
+    "slug": "orcish_lang",
     "subfamily_slug": "orcish_lang_subfamily",
     "wordbase_slug": "orc_wb"
   },
   {
-    "slug": "giantish",
+    "slug": "giantish_lang",
     "subfamily_slug": "giantish_lang_subfamily",
     "wordbase_slug": "giant_wb"
   },
   {
-    "slug": "draconic",
+    "slug": "draconic_lang",
     "subfamily_slug": "draconic_lang_subfamily",
     "wordbase_slug": "draconic_wb"
   },
   {
-    "slug": "arachnid",
+    "slug": "arachnid_lang",
     "subfamily_slug": "arachnid_lang_subfamily",
     "wordbase_slug": "arachnid_wb"
   },
   {
-    "slug": "serpents",
+    "slug": "serpents_lang",
     "subfamily_slug": "serpents_lang_subfamily",
     "wordbase_slug": "serpents_wb"
   }

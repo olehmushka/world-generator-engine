@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "slug": "ancient_dacian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "ancient_dacian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "metalworkers_tradition",
+      "tribal_unity_tradition",
+      "stalwart_defenders_tradition"
+    ],
+    "language_slug": "dacian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

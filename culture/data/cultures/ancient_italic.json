@@ -1,6 +1,6 @@
 [
   {
-    "slug": "ancient_etruscan",
+    "slug": "ancient_etruscan_culture",
     "base_slug": "mediterranean_base",
     "subbase_slug": "ancient_italic_subbase",
     "parent_culture_slugs": [],
@@ -20,7 +20,7 @@
     "martial_custom": "only_men"
   },
   {
-    "slug": "ancient_roman",
+    "slug": "ancient_roman_culture",
     "base_slug": "mediterranean_base",
     "subbase_slug": "ancient_italic_subbase",
     "parent_culture_slugs": [],
@@ -40,7 +40,7 @@
     "martial_custom": "only_men"
   },
   {
-    "slug": "ancient_sabellian",
+    "slug": "ancient_sabellian_culture",
     "base_slug": "mediterranean_base",
     "subbase_slug": "ancient_italic_subbase",
     "parent_culture_slugs": [],

@@ -1,81 +1,81 @@
 [
   {
-    "slug": "ancash",
+    "slug": "ancash_lang",
     "subfamily_slug": "quechua_ii_lang_subfamily",
     "wordbase_slug": "quechua_wb"
   },
   {
-    "slug": "alto_pativilca_alto_maranon_alto_huallaga",
+    "slug": "alto_pativilca_alto_maranon_alto_huallaga_lang",
     "subfamily_slug": "quechua_i_lang_subfamily",
     "wordbase_slug": "quechua_wb"
   },
   {
-    "slug": "yaru",
+    "slug": "yaru_lang",
     "subfamily_slug": "quechua_i_lang_subfamily",
     "wordbase_slug": "quechua_wb"
   },
   {
-    "slug": "wanka",
+    "slug": "wanka_lang",
     "subfamily_slug": "quechua_i_lang_subfamily",
     "wordbase_slug": "quechua_wb"
   },
   {
-    "slug": "yauyos_chincha",
+    "slug": "yauyos_chincha_lang",
     "subfamily_slug": "quechua_i_lang_subfamily",
     "wordbase_slug": "quechua_wb"
   },
   {
-    "slug": "pacaraos",
+    "slug": "pacaraos_lang",
     "subfamily_slug": "quechua_i_lang_subfamily",
     "wordbase_slug": "quechua_wb"
   },
   {
-    "slug": "lambayeque",
+    "slug": "lambayeque_lang",
     "subfamily_slug": "quechua_ii_lang_subfamily",
     "wordbase_slug": "quechua_wb"
   },
   {
-    "slug": "cajamarca",
+    "slug": "cajamarca_lang",
     "subfamily_slug": "quechua_ii_lang_subfamily",
     "wordbase_slug": "quechua_wb"
   },
   {
-    "slug": "lincha",
+    "slug": "lincha_lang",
     "subfamily_slug": "quechua_ii_lang_subfamily",
     "wordbase_slug": "quechua_wb"
   },
   {
-    "slug": "laraos",
+    "slug": "laraos_lang",
     "subfamily_slug": "quechua_ii_lang_subfamily",
     "wordbase_slug": "quechua_wb"
   },
   {
-    "slug": "ayacucho",
+    "slug": "ayacucho_lang",
     "subfamily_slug": "quechua_ii_lang_subfamily",
     "wordbase_slug": "quechua_wb"
   },
   {
-    "slug": "cusco",
+    "slug": "cusco_lang",
     "subfamily_slug": "quechua_ii_lang_subfamily",
     "wordbase_slug": "quechua_wb"
   },
   {
-    "slug": "puno",
+    "slug": "puno_lang",
     "subfamily_slug": "quechua_ii_lang_subfamily",
     "wordbase_slug": "quechua_wb"
   },
   {
-    "slug": "northern_bolivian",
+    "slug": "northern_bolivian_lang",
     "subfamily_slug": "quechua_ii_lang_subfamily",
     "wordbase_slug": "quechua_wb"
   },
   {
-    "slug": "southern_bolivia",
+    "slug": "southern_bolivia_lang",
     "subfamily_slug": "quechua_ii_lang_subfamily",
     "wordbase_slug": "quechua_wb"
   },
   {
-    "slug": "santiago_del_estero",
+    "slug": "santiago_del_estero_lang",
     "subfamily_slug": "quechua_ii_lang_subfamily",
     "wordbase_slug": "quechua_wb"
   }

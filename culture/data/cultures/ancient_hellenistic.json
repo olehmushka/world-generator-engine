@@ -1,1 +1,150 @@
-[]
+[
+  {
+    "slug": "ancient_achaean_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "ancient_hellenistic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+			"city_keepers_tradition",
+			"parochialism_tradition",
+      "refined_poetry_tradition"
+    ],
+    "language_slug": "greek_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "ancient_athenian_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "ancient_hellenistic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+			"philosopher_culture_tradition",
+			"parochialism_tradition",
+      "fervent_temple_builders_tradition",
+      "formation_fighting_experts_tradition",
+      "stalwart_defenders_tradition"
+    ],
+    "language_slug": "greek_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "ancient_cypriot_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "ancient_hellenistic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+			"culture_blending_tradition",
+      "malleable_subjects_tradition"
+    ],
+    "language_slug": "greek_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "ancient_hellenistic_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "ancient_hellenistic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "egalitarian_ethos",
+    "tradition_slugs": [
+      "philosopher_culture_tradition",
+      "parochialism_tradition",
+			"culture_blending_tradition",
+      "formation_fighting_experts_tradition"
+    ],
+    "language_slug": "greek_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "ancient_ionian_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "ancient_hellenistic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "city_keepers_tradition",
+      "parochialism_tradition",
+      "seafarers_tradition",
+      "xenophilic_tradition"
+    ],
+    "language_slug": "greek_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "ancient_troan_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "ancient_hellenistic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "parochialism_tradition",
+      "hereditary_hierarchy_tradition",
+      "stalwart_defenders_tradition"
+    ],
+    "language_slug": "greek_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "ancient_lacedaemonian_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "ancient_hellenistic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "swords_for_hire_tradition",
+      "stalwart_defenders_tradition",
+      "warrior_culture_tradition",
+      "formation_fighting_experts_tradition",
+      "spartan_tradition"
+    ],
+    "language_slug": "greek_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "ancient_macedonian_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "ancient_hellenistic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "hill_dwellers_tradition",
+      "formation_fighting_experts_tradition"
+    ],
+    "language_slug": "greek_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

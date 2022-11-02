@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "slug": "ancient_egyptian_culture",
+    "base_slug": "egyptian_base",
+    "subbase_slug": "ancient_egyptian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "courtly_ethos",
+    "tradition_slugs": [
+      "agrarian_tradition",
+      "staunch_traditionalists_tradition",
+      "ruling_caste_tradition",
+      "fervent_temple_builders_tradition",
+      "hereditary_hierarchy_tradition",
+      "strong_believers_tradition",
+      "concubines_tradition"
+    ],
+    "language_slug": "egyptian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]
