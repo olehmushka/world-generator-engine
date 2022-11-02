@@ -1,0 +1,218 @@
+[
+  {
+    "slug": "adaptive_skirmishers",
+    "description": "This culture knows how to effectively field skirmishers in any environment.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "spiritual_ethos", "stoic_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "battlefield_looters",
+    "description": "In this culture battles are not fought for prestige, but for profit. Who cares about one's standing if you're unable to pay for the war?",
+    "preferred_ethos_slugs": ["bellicose_ethos", "bureaucratic_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "formation_fighting_experts",
+    "description": "This culture knows how to create synergy between different types of units by use of efficient protective formations.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "communal_ethos", "courtly_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "frugal_armorsmiths",
+    "description": "While a set of high-quality armor might save one life, having ten decent sets might win a battle.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "communal_ethos", "stoic_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "recognition_of_talent",
+    "description": "Kill me if you wish, but if you let me live, I shall serve you loyally.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "courtly_ethos", "egalitarian_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "reverence_for_veterans",
+    "description": "This culture doesn't look down upon those who can no longer fight due to injury, instead they are celebrated as heroes and used as teachers.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "egalitarian_ethos", "stoic_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "stalwart_defenders",
+    "description": "Defending that which is one's own is of paramount importance to this culture.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "courtly_ethos", "stoic_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "strength_in_numbers",
+    "description": "This culture forsakes having elite troops, and instead favors massed armies.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "spiritual_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "swords_for_hire",
+    "description": "This culture views mercenary work favorably and encourages warriors to seek glory as mercenaries in-between wars.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "communal_ethos", "courtly_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "warrior_priests",
+    "description": "This culture believes that if you choose to pursue theological studies, you must also be able to defend your faith.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "spiritual_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "warriors_by_merit",
+    "description": "This culture believes that if you've proven yourself capable as a warrior, you should be allowed to fight — no matter who you are.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "communal_ethos", "egalitarian_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "forest_fighters",
+    "description": "This culture is well-versed at fighting in forests.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "communal_ethos", "stoic_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": ["pacifists"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "highland_warriors",
+    "description": "Warriors of this culture fight well in the slopes and valleys of their hilly homes.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "communal_ethos", "stoic_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": ["pacifists", "upland_skirmishing"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "hit_and_run_tacticians",
+    "description": "This culture has mastered the use of lightly-armored units to hit the enemy hard, and then fall back.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "egalitarian_ethos", "spiritual_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": ["konni_raids"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "horse_breeders",
+    "description": "This culture has painstakingly accumulated knowledge and experience in the fine art and science of horse breeding. Whether destriers or coursers, the horses of these people are renowned for their superiority.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "communal_ethos", "stoic_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "jungle_warriors",
+    "description": "Warriors of this culture know well how to traverse treacherous jungles.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "communal_ethos", "stoic_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": ["pacifists", "bush_hunting"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "longbow_competitions",
+    "description": "This culture favors a bow more powerful than most could draw, and practicing with them once a week is as dear as any ritual of worship everywhere from the most rural villages to the largest urban metropoles.",
+    "preferred_ethos_slugs": ["bureaucratic_ethos", "stoic_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "mountaineers",
+    "description": "Soldiers of this culture carry all they need to traverse mountains.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "bureaucratic_ethos", "stoic_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": ["pacifists", "mountain_skirmishing", "caucasian_wolves"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "only_the_strong",
+    "description": "This culture places a strong emphasis on having a few, well-trained warriors. If you're not the best-of-the-best, you're not welcome to serve.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "stoic_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": ["egalitarian_ethos"]
+  },
+  {
+    "slug": "quarrelsome",
+    "description": "Border conflicts are common for rulers of this culture. Land often changes hands in unjust ways.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "spiritual_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": ["pacifists"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "stand_and_fight",
+    "description": "Warriors from this culture are unyielding and unshakable. They do not fall back - even in the face of overwhelming odds, for better or for worse.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "spiritual_ethos", "stoic_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": ["defensive_tactics"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "warriors_of_the_dry",
+    "description": "This culture has mastered the art of fighting in very dry climates.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "communal_ethos", "stoic_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": ["pacifists"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "winter_warriors",
+    "description": "This culture is used to the reality that harsh winds and bitter cold brings.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "communal_ethos", "stoic_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": ["pacifists"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "malleable_invaders",
+    "description": "We will take your lands, your children, your traditions, and your future!",
+    "preferred_ethos_slugs": ["bellicose_ethos", "bureaucratic_ethos", "egalitarian_ethos"],
+    "type": "warfare_tradition_type",
+    "omit_tradition_slugs": ["pacifists"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  }
+]

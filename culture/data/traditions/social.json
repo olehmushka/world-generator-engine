@@ -1,0 +1,299 @@
+[
+  {
+    "slug": "charismatic",
+    "description": "The people of this culture excel in diplomatic matters, and social etiquette is valued above all else.",
+    "preferred_ethos_slugs": ["communal_ethos", "egalitarian_ethos", "stoic_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "charitable",
+    "description": "Regardless of faith, people of this culture are motivated to support those less fortunate.",
+    "preferred_ethos_slugs": ["communal_ethos", "spiritual_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "equitable",
+    "description": "In this culture truth and impartial justice is valued highly.",
+    "preferred_ethos_slugs": ["egalitarian_ethos", "stoic_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "eye_for_an_eye",
+    "description": "In this culture slights are not to be forgotten, nor forgiven. Its people can carry grudges for long, and vengeance is carried out with a passion.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "bureaucratic_ethos", "communal_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "forebearing",
+    "description": "In this culture being patient and restrained in the face of adversity is common.",
+    "preferred_ethos_slugs": ["spiritual_ethos", "stoic_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "industrious",
+    "description": "This culture teaches and enshrines ideas of industriousness and hard work on behalf of one's community.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "courtly_ethos", "stoic_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "life_is_just_a_joke",
+    "description": "This culture would chuckle on the chopping block with an axe above its head.",
+    "preferred_ethos_slugs": ["communal_ethos", "stoic_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "loyal_subjects",
+    "description": "For this culture, serving one's liege and country is both noble and just - a duty and a privilege, rather than an avaricious arrangement or an unwanted burden.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "communal_ethos", "stoic_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "mendicant_mystics",
+    "description": "The holy people of this culture believe strongly that the faith should be ministered in the field, and their most devout frequently wander the world.",
+    "preferred_ethos_slugs": ["communal_ethos", "spiritual_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "modest",
+    "description": "This culture values modesty, one should not take up too much space or think oneself better than others.",
+    "preferred_ethos_slugs": ["spiritual_ethos", "stoic_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "strong_believers",
+    "description": "The people of this culture are particularly zealous and dedicated to their faith.",
+    "preferred_ethos_slugs": ["communal_ethos", "spiritual_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "chivalry",
+    "description": "This culture has embraced chivalry and chivalric codes of conduct as a social method of regulating behavior. Martial prowess, duty, honor and morality are prized, as is bad poetry and romantic literature.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "courtly_ethos", "egalitarian_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "dexterous_fishermen",
+    "description": "Anyone can fish, but to do so with such skill that any catch is bountiful, regardless of tide or wind, is a rarer talent. No one knows the coast, land or sea, better than these fishermen.",
+    "preferred_ethos_slugs": ["bureaucratic_ethos", "communal_ethos", "courtly_ethos", "egalitarian_ethos", "spiritual_ethos", "stoic_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "martial_admiration",
+    "description": "Those who are willing to take up sword and fight for their culture are worthy of admiration. No matter the odds.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "stoic_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": ["chanson_de_geste", "futuwaa", "pacifists", "immortals", "druzhina"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "pacifists",
+    "description": "For this culture, the use of force can never be justified. Only by pursuing a path of non-violence can people truly live in peace.",
+    "preferred_ethos_slugs": ["egalitarian_ethos", "spiritual_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": ["bellicose_ethos"]
+  },
+  {
+    "slug": "philosopher_culture",
+    "description": "This culture promotes thought and self-reflection.",
+    "preferred_ethos_slugs": ["communal_ethos", "courtly_ethos", "spiritual_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": ["warrior_culture"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": ["bellicose_ethos"]
+  },
+  {
+    "slug": "practiced_pirates",
+    "description": "Storming a port, setting it ablaze, and taking everything that isn't nailed down may not be noble, but it is profitable.",
+    "preferred_ethos_slugs": ["bellicose_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "prolific_hunters",
+    "description": "Driven by economic necessity, or perhaps social expectation, this culture has refined their hunting practices to precise and almost beautiful art.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "spiritual_ethos", "stoic_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": ["vegetarians", "pacifists"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "refined_poetry",
+    "description": "Poetry is considered a noble art in this culture, and many spend their time piecing words together with meaning and thought.",
+    "preferred_ethos_slugs": ["communal_ethos", "courtly_ethos", "spiritual_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": ["northern_stories"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "seafarers",
+    "description": "For this culture, the call of the sea is too strong to resist, and they live to sail like a dream on a crystal clear ocean, or ride on the crest of a wild raging storm.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "bureaucratic_ethos", "spiritual_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": ["coastal_warriors"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "spartan",
+    "description": "This culture doesn't prize the trappings of power - the ceremony, the wealth, the pointless decoration. This culture is more interested in power itself, preferably in the form of towering walls and keeps.",
+    "preferred_ethos_slugs": ["communal_ethos", "stoic_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "storytellers",
+    "description": "This culture has a strong and persistent oral tradition. The past is preserved through ritualistic storytelling, where the heroes and legends of the past are passed down through generations.",
+    "preferred_ethos_slugs": ["communal_ethos", "courtly_ethos", "stoic_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": ["northern_stories"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "warrior_culture",
+    "description": "This culture values martial prowess and strength above everything else. Children are brought up knowing how to fight, and are discouraged from scholarly pursuits. Weakness is not tolerated.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "spiritual_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": ["coastal_warriors", "pacifists"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "xenophilic",
+    "description": "This culture embraces everyone and is genuinely fascinated by all cultures.",
+    "preferred_ethos_slugs": ["communal_ethos", "egalitarian_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "vegetarians",
+    "description": "This culture has developed a strong aversion to consuming the flesh of animals, and practices vegetarianism throughout their society.",
+    "preferred_ethos_slugs": ["communal_ethos", "spiritual_ethos", "stoic_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": ["sacred_hunts", "prolific_hunters"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "diasporic",
+    "description": "People of this culture have lost the homeland they once held dear. Some among them travel the world searching for a place where they may begin anew.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "bureaucratic_ethos", "communal_ethos", "courtly_ethos", "egalitarian_ethos", "spiritual_ethos", "stoic_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "northern_stories",
+    "description": "Life is lived, told, and remembered through the lens of tales. What we say, and what people say about us, matters as much as what we do. We remember that, and it shows in our stories.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "bureaucratic_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": ["refined_poetry", "storytellers"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "performative_honor",
+    "description": "Honor is born, yes, but honor is also earned and lost through deeds. By pursuing and avenging slights, or failing to, soldiers fade to scum while whelps grow into warriors.",
+    "preferred_ethos_slugs": ["bellicose_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": ["trials_by_combat"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "the_right_to_prove",
+    "description": "Though not all are born fighters, with the right mettle and a strong sword-arm, any can show themselves a warrior at heart and so become one in deed.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "communal_ethos", "egalitarian_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": ["performative_honor"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "trials_by_combat",
+    "description": "Words are a coward's substitute for weapons. Why leave justice to decrepit laws and corrupt magistrates when disputes can be settled faster and fairer with the blade?",
+    "preferred_ethos_slugs": ["bellicose_ethos", "courtly_ethos", "stoic_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": ["performative_honor"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "expert_artisans",
+    "description": "Children in this culture often carry on the profession of their parents, accumulating extensive knowledge and skill for their trade across generations.",
+    "preferred_ethos_slugs": ["communal_ethos", "courtly_ethos", "spiritual_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "musical_theorists",
+    "description": "This culture treats music almost as the language of the divine, and thus many individuals take up the noble and celebrated pursuit of musical study from a young age.",
+    "preferred_ethos_slugs": ["communal_ethos", "courtly_ethos", "spiritual_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "ritualized_friendship",
+    "description": "Blood may be thicker than water, but wine makes for better living.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "bureaucratic_ethos", "communal_ethos", "courtly_ethos", "egalitarian_ethos", "spiritual_ethos", "stoic_ethos"],
+    "type": "social_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  }
+]

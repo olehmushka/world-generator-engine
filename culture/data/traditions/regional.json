@@ -1,0 +1,363 @@
+[
+  {
+    "slug": "african_tolerance",
+    "description": "Though some would decry it as weakness, a realm founded on understanding and tolerance is a realm built on sturdy foundations.",
+    "preferred_ethos_slugs": [
+      "communal_ethos",
+      "egalitarian_ethos"
+    ],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": ["steppe_tolerance"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "bush_hunting",
+    "description": "The bush is a rough and rugged place, but it offers a bounty of opportunity for those who know where to look and how to exploit it. Training our archers in these techniques will give them an advantage when engaging enemies in these areas.",
+    "preferred_ethos_slugs": [
+      "communal_ethos",
+      "egalitarian_ethos"
+    ],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": ["jungle_warriors"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "caucasian_wolves",
+    "description": "Having spent centuries making themselves a home around the Caucasian gates, this culture has grown well at home with everything that mountain warfare entails.",
+    "preferred_ethos_slugs": [
+      "bellicose_ethos",
+      "communal_ethos",
+      "stoic_ethos"
+    ],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": ["mountain_skirmishing", "mountaineers"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "chanson_de_geste",
+    "description": "This culture values the heroic deeds of long gone ancestors. The romantic retelling of the lives of knights such as Guillaume, or Roland, will inspire generations to come.",
+    "preferred_ethos_slugs": [
+      "bellicose_ethos",
+      "courtly_ethos",
+      "stoic_ethos"
+    ],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": ["druzhina", "martial_admiration", "immortals", "futuwaa"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "defensive_tactics",
+    "description": "Our people have been exiled and driven out time and time again. While tragic, these experiences have led us to become exceptionally skilled in rear-guard tactics which minimize casualties.",
+    "preferred_ethos_slugs": [
+      "communal_ethos"
+    ],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": ["stand_and_fight"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "desert_ribats",
+    "description": "This culture has a tradition of fortified desert retreats, where the pious can live in connection with the open sky and the sands. This lifestyle breeds able and pious desert warriors and attracts mystics.",
+    "preferred_ethos_slugs": [
+      "bellicose_ethos",
+      "spiritual_ethos",
+      "stoic_ethos"
+    ],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": ["pacifists"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "desert_travelers",
+    "description": "This culture is no stranger to the harsh environment of the desert and has mastered the use of camels to aid them in travel, warfare, and everyday life.",
+    "preferred_ethos_slugs": [
+      "spiritual_ethos",
+      "stoic_ethos"
+    ],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "druzhina",
+    "description": "Varangian soldiers have long served as imposing bodyguards for our monarchs, but they can just as easily serve as dedicated heavy infantry in our armies.",
+    "preferred_ethos_slugs": [
+      "bellicose_ethos",
+      "stoic_ethos"
+    ],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": ["chanson_de_geste", "martial_admiration", "immortals", "futuwaa"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "forest_wardens",
+    "description": "Our ancestors have lived in these forests for generations, but now they are under threat by outsiders. Centuries of accumulated experience fighting in forests will aid us in protecting our ancestral homeland.",
+    "preferred_ethos_slugs": [
+      "bellicose_ethos",
+      "communal_ethos",
+      "stoic_ethos"
+    ],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": ["forest_folk"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "futuwaa",
+    "description": "Our youth have begun forming clubs that promote prowess, vigor, and moral behavior. By endorsing and supporting these clubs, we will ensure a supply of able-bodied soldiers we can rally to our cause.",
+    "preferred_ethos_slugs": [
+      "bellicose_ethos",
+      "communal_ethos",
+      "courtly_ethos"
+    ],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": ["chanson_de_geste", "martial_admiration", "immortals", "druzhina"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "garuda_warriors",
+    "description": "Distinguished warriors in this culture are designated as Garudas, and are expected to fight until death. Even those who follow a Garuda are expected to die if their leader does, either in battle or by their own hand.",
+    "preferred_ethos_slugs": [
+      "bellicose_ethos",
+      "stoic_ethos"
+    ],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "himalayan_settlers",
+    "description": "This culture has made its home atop the 'roof of the world', where the air is fresh but cold, and the winters long and hard. They pride themselves that few of the cultures below would be able to live as well as this people does, among the peaks and plateaus where otherwise only sheep can thrive.",
+    "preferred_ethos_slugs": [
+      "communal_ethos",
+      "spiritual_ethos"
+    ],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "horse_lords",
+    "description": "This culture has mastered the horse and its use in warfare.",
+    "preferred_ethos_slugs": [
+      "bellicose_ethos",
+      "communal_ethos"
+    ],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "immortals",
+    "description": "Immortals was an elite heavy infantry unit of 10,000 soldiers in the army of the Achaemenid Empire. The unit served in a dual capacity through its role as imperial guard alongside its contribution to the ranks of the Persian Empire's standing army.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "courtly_ethos"],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": ["chanson_de_geste", "martial_admiration", "futuwaa", "druzhina"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "khadga_puja",
+    "description": "This culture has embraced the martial art and ritual worship of two-handed broadswords letting them foster strong and able warriors. The heavy swords allow them to mow down infantry and cavalry alike.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "stoic_ethos"],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": ["egalitarian_ethos"]
+  },
+  {
+    "slug": "konni_raids",
+    "description": "Light cavalry which can strike quickly at exposed enemies before darting back away, our Konni can be formed into regiments which specialize in harassment and raiding.",
+    "preferred_ethos_slugs": ["stoic_ethos"],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": ["hit_and_run_tacticians"]
+  },
+  {
+    "slug": "lords_of_the_elephant",
+    "description": "This culture venerates elephants, likening them to royalty. They are masterful at capturing them, training them, and using them for devastating effect in war.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "courtly_ethos", "stoic_ethos"],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "mountain_herding",
+    "description": "This culture has made the cooler mountains their homes in an otherwise dry and arid region. The herders and farmers of these uplands have make for resilient and robust warriors, and over time their toil has made this people flourish far above the naked desert.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "communal_ethos", "stoic_ethos"],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": ["pacifists"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "mountain_skirmishing",
+    "description": "The great mountains in the Horn of Africa pose logistical challenges to many types of armies, but our skirmishers can easily adapt to these conditions to rout enemy invaders.",
+    "preferred_ethos_slugs": ["communal_ethos", "spiritual_ethos"],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": ["caucasian_wolves", "mountaineers"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "mountaineer_ruralism",
+    "description": "From their origins in the hills of the Bohemian Forest, to the crags of the Ore and Tatra mountains, most in this culture know not only how to traverse the rocky lands, but handle life on a mountain with ease.",
+    "preferred_ethos_slugs": ["stoic_ethos"],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "mubarizun",
+    "description": "Modeled after the legendary champions of the Rashidun army, our Mubarizun soldiers are trained to excel in both formation fighting as well as single combat.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "communal_ethos", "stoic_ethos"],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": ["pacifists", "warriors_of_the_dry"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "royal_army",
+    "description": "We have a long tradition of a standing army made to protect the capital. This has given us access to tough soldiers that work exceedingly well with supporting troops, such as War Elephants.",
+    "preferred_ethos_slugs": ["spiritual_ethos"],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "saharan_nomads",
+    "description": "This culture is intimately accustomed with the Saharan desert, which it has traversed for centuries, connecting the Mediterranean with the sub-Saharan kingdoms of the Sahel.",
+    "preferred_ethos_slugs": ["spiritual_ethos", "stoic_ethos"],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "steppe_tolerance",
+    "description": "Those who live on the Steppe will always have much in common with those who share their way of life. Strangers may worship differently, but they still live in the saddle.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "communal_ethos", "egalitarian_ethos"],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": ["african_tolerance", "religion_blending"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "strong_kinship",
+    "description": "This culture has a strong tradition of kinship within the extended family, or clan. In times of need a ruler will always be able to rely on their kin.",
+    "preferred_ethos_slugs": ["bellicose_ethos", "bureaucratic_ethos", "stoic_ethos"],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "the_witenagemot",
+    "description": "This culture has a long history of holding assemblies comprised of the land's ruling potentates, debating politics, law, finance, and, most importantly, how best to... advise the ruler.",
+    "preferred_ethos_slugs": [
+      "bureaucratic_ethos",
+      "stoic_ethos"
+    ],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "ting_meet",
+    "description": "In Scandinavia, the distances and wilderness render centralized authority ineffective. When disputes must be resolved and decisions made, the Ting-meet is gathered, an assembly of peers presided over by a lawspeaker.",
+    "preferred_ethos_slugs": [
+      "bellicose_ethos",
+      "bureaucratic_ethos"
+    ],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "upland_skirmishing",
+    "description": "The hills of the wooded savanna have been our homeland for generations. Our ancestors showed us how to utilize this terrain, and with raiders threatening our borders, we can use this knowledge in our defense.",
+    "preferred_ethos_slugs": [
+      "communal_ethos",
+      "egalitarian_ethos"
+    ],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": ["highland_warriors"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "visigothic_codes",
+    "description": "Although many of the older traditions of the Visigoths have long been wiped from the world, the children of the Pyrenees remember the ancient ways, and how land was divided between sons and daughters practically but fairly.",
+    "preferred_ethos_slugs": [
+      "egalitarian_ethos"
+    ],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "warrior_queens",
+    "description": "Those who live in East Africa well remember the great Warrior Queens who once stood against invaders and forged kingdoms on the Kush. Our neighbors may insist on the superiority of males, but we track our bloodlines through our mothers, and the warcry of powerful Nubian women send these foreign \"men\" running home.",
+    "preferred_ethos_slugs": [
+      "egalitarian_ethos"
+    ],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "caravaneers",
+    "description": "This culture is well-integrated into the commercial practices of the region, and its people are strongly associated with the caravan trade.",
+    "preferred_ethos_slugs": [
+      "egalitarian_ethos"
+    ],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "land_of_the_bow",
+    "description": "In a land of plenty, enriched by the Nile and their own ingenuity, the Nubian have prospered for generations. For almost as long, the bow has been the weapon of choice to deter the raiders and brigands of the surrounding deserts.",
+    "preferred_ethos_slugs": [
+      "bellicose_ethos",
+      "spiritual_ethos"
+    ],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": [],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  },
+  {
+    "slug": "hirds",
+    "description": "The tradition of keeping armed retinues in service to a household has served us well. By formalizing and expanding this system we can field entire regiments of huscarls in our armies.",
+    "preferred_ethos_slugs": [
+      "bellicose_ethos",
+      "spiritual_ethos"
+    ],
+    "type": "regional_tradition_type",
+    "omit_tradition_slugs": ["warrior_culture", "pacifists"],
+    "omit_gender_dominance": [],
+    "omit_ethos_slugs": []
+  }
+]
