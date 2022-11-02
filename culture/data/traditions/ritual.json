@@ -1,6 +1,6 @@
 [
   {
-    "slug": "bound_by_faith",
+    "slug": "bound_by_faith_tradition",
     "description": "In this culture being of a different faith means that you're not eligible for succession.",
     "preferred_ethos_slugs": ["spiritual_ethos"],
     "type": "ritual_tradition_type",
@@ -9,7 +9,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "frequent_festivities",
+    "slug": "frequent_festivities_tradition",
     "description": "The frequency and exuberance with which this culture throws festivities would be considered vulgar to others, but a party is a party!",
     "preferred_ethos_slugs": ["communal_ethos", "courtly_ethos", "stoic_ethos"],
     "type": "ritual_tradition_type",
@@ -18,7 +18,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "linguists",
+    "slug": "linguists_tradition",
     "description": "To learn the words of a neighbor brings you one step closer to the language of the Divine.",
     "preferred_ethos_slugs": ["bureaucratic_ethos", "egalitarian_ethos", "spiritual_ethos"],
     "type": "ritual_tradition_type",
@@ -27,7 +27,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "medicinal_herbalists",
+    "slug": "medicinal_herbalists_tradition",
     "description": "This culture long ago developed knowledge of the medicinal properties of the plants and trees; to them most ailments are treatable with the right poultice, salve or stew.",
     "preferred_ethos_slugs": ["bureaucratic_ethos", "stoic_ethos"],
     "type": "ritual_tradition_type",
@@ -36,7 +36,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "by_the_sword",
+    "slug": "by_the_sword_tradition",
     "description": "Members of this culture believe that the best missionary is one carrying a sword. While support for holy wars are widespread, motives are scrutinized as to make sure the Divine powers would approve.",
     "preferred_ethos_slugs": ["spiritual_ethos"],
     "type": "ritual_tradition_type",
@@ -45,34 +45,34 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "concubines",
+    "slug": "concubines_tradition",
     "description": "Rulers of this culture often keep a number of concubines in their household, regardless of their faith.",
     "preferred_ethos_slugs": ["bellicose_ethos", "bureaucratic_ethos", "communal_ethos", "courtly_ethos", "egalitarian_ethos", "spiritual_ethos", "stoic_ethos"],
     "type": "ritual_tradition_type",
-    "omit_tradition_slugs": ["monogamous", "polygamous"],
+    "omit_tradition_slugs": ["monogamous_tradition", "polygamous_tradition"],
     "omit_gender_dominance": [],
     "omit_ethos_slugs": []
   },
   {
-    "slug": "monogamous",
+    "slug": "monogamous_tradition",
     "description": "In this culture one keeps a single spouse, regardless of faith.",
     "preferred_ethos_slugs": ["bellicose_ethos", "bureaucratic_ethos", "communal_ethos", "courtly_ethos", "egalitarian_ethos", "spiritual_ethos", "stoic_ethos"],
     "type": "ritual_tradition_type",
-    "omit_tradition_slugs": ["concubines", "polygamous"],
+    "omit_tradition_slugs": ["concubines_tradition", "polygamous_tradition"],
     "omit_gender_dominance": [],
     "omit_ethos_slugs": []
   },
   {
-    "slug": "polygamous",
+    "slug": "polygamous_tradition",
     "description": "In this culture one tend to have multiple spouses, regardless of faith.",
     "preferred_ethos_slugs": ["bellicose_ethos", "bureaucratic_ethos", "communal_ethos", "courtly_ethos", "egalitarian_ethos", "spiritual_ethos", "stoic_ethos"],
     "type": "ritual_tradition_type",
-    "omit_tradition_slugs": ["concubines", "monogamous"],
+    "omit_tradition_slugs": ["concubines_tradition", "monogamous_tradition"],
     "omit_gender_dominance": [],
     "omit_ethos_slugs": []
   },
   {
-    "slug": "culinary_artists",
+    "slug": "culinary_artists_tradition",
     "description": "Food isn't just sustenance for this culture; it is both an art and a ritual, a focal point for family and community alike.",
     "preferred_ethos_slugs": ["communal_ethos", "courtly_ethos", "spiritual_ethos"],
     "type": "ritual_tradition_type",
@@ -81,7 +81,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "merciful_blindings",
+    "slug": "merciful_blindings_tradition",
     "description": "No matter how far beyond forgiveness one has gone, this culture thinks it is better to gouge out an eye than run through a heart.",
     "preferred_ethos_slugs": ["courtly_ethos", "spiritual_ethos"],
     "type": "ritual_tradition_type",
@@ -90,16 +90,16 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "religion_blending",
+    "slug": "religion_blending_tradition",
     "description": "Members of this culture often live together with those sharing different faiths and beliefs, and do well in adopting foreign elements into their own worship.",
     "preferred_ethos_slugs": ["communal_ethos", "courtly_ethos", "spiritual_ethos"],
     "type": "ritual_tradition_type",
-    "omit_tradition_slugs": ["steppe_tolerance"],
+    "omit_tradition_slugs": ["steppe_tolerance_tradition"],
     "omit_gender_dominance": [],
     "omit_ethos_slugs": []
   },
   {
-    "slug": "religious_patronage",
+    "slug": "religious_patronage_tradition",
     "description": "For the salvation of the soul, one must commit to works of religious significance. You cannot purchase redemption, but having a temple of priests sing your praises helps!",
     "preferred_ethos_slugs": ["communal_ethos", "courtly_ethos", "spiritual_ethos"],
     "type": "ritual_tradition_type",
@@ -108,7 +108,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "runestone_raisers",
+    "slug": "runestone_raisers_tradition",
     "description": "Death, conquest, the acquisition of rank — are these not the things that define life in the nobility? Where our people go, so go the markers of our lives' worth.",
     "preferred_ethos_slugs": ["bellicose_ethos", "bureaucratic_ethos"],
     "type": "ritual_tradition_type",
@@ -117,7 +117,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "sacred_groves",
+    "slug": "sacred_groves_tradition",
     "description": "Trees are considered sacred by this culture. The forest is a living being that ought to be cared for—not destroyed.",
     "preferred_ethos_slugs": ["spiritual_ethos"],
     "type": "ritual_tradition_type",
@@ -126,16 +126,16 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "sacred_hunts",
+    "slug": "sacred_hunts_tradition",
     "description": "Hunting is neither a sport nor a pastime, it is nothing less than the purest expression of the human experience, where one may connect with the divine by demonstrating their mastery over nature.",
     "preferred_ethos_slugs": ["bellicose_ethos", "spiritual_ethos", "stoic_ethos"],
     "type": "ritual_tradition_type",
-    "omit_tradition_slugs": ["vegetarians", "pacifists"],
+    "omit_tradition_slugs": ["vegetarians_tradition", "pacifists_tradition"],
     "omit_gender_dominance": [],
     "omit_ethos_slugs": []
   },
   {
-    "slug": "sacred_mountains",
+    "slug": "sacred_mountains_tradition",
     "description": "This culture considers mountains to be connections to the divine, and treats them with reverence and respect.",
     "preferred_ethos_slugs": ["spiritual_ethos"],
     "type": "ritual_tradition_type",
@@ -144,7 +144,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "sorcerous_metallurgy",
+    "slug": "sorcerous_metallurgy_tradition",
     "description": "There are as many alchemists in this culture attempting to turn metal into gold as there are smiths forging weapons. What does it matter if this culture's wealth and weaponry are enhanced by witchcraft?",
     "preferred_ethos_slugs": ["communal_ethos", "spiritual_ethos"],
     "type": "ritual_tradition_type",
@@ -153,7 +153,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "tabletop_warriors",
+    "slug": "tabletop_warriors_tradition",
     "description": "Any commander can gamble and get lucky on the day of battle. A real strategist keeps their mind honed through practice and pretend, so that they have no need of 'luck'.",
     "preferred_ethos_slugs": ["bellicose_ethos", "courtly_ethos"],
     "type": "ritual_tradition_type",
@@ -162,7 +162,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "mystical_ancestors",
+    "slug": "mystical_ancestors_tradition",
     "description": "Lineage is very important to this culture, to the point where ancestors have become mythical and legendary beings with many who claim to be their descendants.",
     "preferred_ethos_slugs": ["spiritual_ethos"],
     "type": "ritual_tradition_type",

@@ -1,6 +1,6 @@
 [
   {
-    "slug": "astute_diplomats",
+    "slug": "astute_diplomats_tradition",
     "description": "It is a common idea in this culture that the purest expression of superiority is the ability to subdue your enemy without fighting them.",
     "preferred_ethos_slugs": ["bureaucratic_ethos", "communal_ethos", "courtly_ethos", "egalitarian_ethos", "spiritual_ethos", "stoic_ethos"],
     "type": "realm_tradition_type",
@@ -9,7 +9,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "collective_lands",
+    "slug": "collective_lands_tradition",
     "description": "The idea that individuals personally own land is alien to this culture; land belongs to all people, for the common good.",
     "preferred_ethos_slugs": ["communal_ethos", "egalitarian_ethos", "stoic_ethos"],
     "type": "realm_tradition_type",
@@ -18,7 +18,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "esteemed_hospitality",
+    "slug": "esteemed_hospitality_tradition",
     "description": "In this culture rulers are known, and expected, to welcome anyone who might come to their court with open arms. Hosting guests and visitors in a spectacular fashion.",
     "preferred_ethos_slugs": ["communal_ethos", "courtly_ethos", "spiritual_ethos"],
     "type": "realm_tradition_type",
@@ -27,7 +27,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "garden_architects",
+    "slug": "garden_architects_tradition",
     "description": "This culture has a long tradition of constructing and maintaining various types of gardens, building themselves a small paradise.",
     "preferred_ethos_slugs": ["communal_ethos", "courtly_ethos", "spiritual_ethos"],
     "type": "realm_tradition_type",
@@ -36,7 +36,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "isolationist",
+    "slug": "isolationist_tradition",
     "description": "This culture prefers to keep to itself, and doesn't often look outside its own sphere.",
     "preferred_ethos_slugs": ["communal_ethos", "spiritual_ethos", "stoic_ethos"],
     "type": "realm_tradition_type",
@@ -45,7 +45,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "marital_ceremonies",
+    "slug": "marital_ceremonies_tradition",
     "description": "For this culture, the union of two people in marriage is considered a highly public and ritualistic affair.",
     "preferred_ethos_slugs": ["communal_ethos", "courtly_ethos", "spiritual_ethos"],
     "type": "realm_tradition_type",
@@ -54,7 +54,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "metalworkers",
+    "slug": "metalworkers_tradition",
     "description": "This culture has enjoyed easy access to iron for centuries. Over time they have developed their understanding of metal to such a degree that their name has become a byword for durable and high quality arms and armor.",
     "preferred_ethos_slugs": ["bureaucratic_ethos", "communal_ethos", "stoic_ethos"],
     "type": "realm_tradition_type",
@@ -63,7 +63,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "ruling_caste",
+    "slug": "ruling_caste_tradition",
     "description": "Rulers of this culture are used to lording over subjects that are not their own culture. They know how to effectively suppress revolts, though at the cost of public perception.",
     "preferred_ethos_slugs": ["courtly_ethos", "spiritual_ethos"],
     "type": "realm_tradition_type",
@@ -72,7 +72,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "agrarian",
+    "slug": "agrarian_tradition",
     "description": "This culture is distinctly agrarian, their lands producing ample crops for hungry armies. While not having to struggle for food means many peasants for the levy, it also means that each soldier is not as motivated as those from harsher regions.",
     "preferred_ethos_slugs": ["bellicose_ethos", "bureaucratic_ethos", "communal_ethos", "courtly_ethos", "egalitarian_ethos", "spiritual_ethos", "stoic_ethos"],
     "type": "realm_tradition_type",
@@ -81,25 +81,25 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "castle_keepers",
+    "slug": "castle_keepers_tradition",
     "description": "Offense is not a good defense. A good defense is having the most castles on the face of the known world.",
     "preferred_ethos_slugs": ["bellicose_ethos", "bureaucratic_ethos", "spiritual_ethos"],
     "type": "realm_tradition_type",
-    "omit_tradition_slugs": ["city_keepers"],
+    "omit_tradition_slugs": ["city_keepers_tradition"],
     "omit_gender_dominance": [],
     "omit_ethos_slugs": []
   },
   {
-    "slug": "city_keepers",
+    "slug": "city_keepers_tradition",
     "description": "Cities are the beating urban heart of this culture, and they wish for every one of their metropolises to become enviable gems known across the world.",
     "preferred_ethos_slugs": ["bellicose_ethos", "courtly_ethos", "egalitarian_ethos"],
     "type": "realm_tradition_type",
-    "omit_tradition_slugs": ["castle_keepers"],
+    "omit_tradition_slugs": ["castle_keepers_tradition"],
     "omit_gender_dominance": [],
     "omit_ethos_slugs": []
   },
   {
-    "slug": "court_eunuchs",
+    "slug": "court_eunuchs_tradition",
     "description": "This culture makes extensive use of eunuchs at court, occupying positions ranging from domestic servants to bureaucratic administrators and even military commanders. Men with no desire are easy to trust.",
     "preferred_ethos_slugs": ["communal_ethos", "courtly_ethos", "spiritual_ethos"],
     "type": "realm_tradition_type",
@@ -108,7 +108,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "dryland_dwellers",
+    "slug": "dryland_dwellers_tradition",
     "description": "This culture is accustomed to living in dry climates, and know where to find water and how to work the lands.",
     "preferred_ethos_slugs": ["bureaucratic_ethos", "communal_ethos", "courtly_ethos","egalitarian_ethos", "spiritual_ethos", "stoic_ethos"],
     "type": "realm_tradition_type",
@@ -117,16 +117,16 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "equal_inheritance",
+    "slug": "equal_inheritance_tradition",
     "description": "This culture has a history of rulers dividing their lands between all their children, even those who normally would be excluded.",
     "preferred_ethos_slugs": ["egalitarian_ethos"],
     "type": "realm_tradition_type",
-    "omit_tradition_slugs": ["warrior_queens"],
+    "omit_tradition_slugs": ["warrior_queens_tradition"],
     "omit_gender_dominance": ["male_sex", "female_sex"],
     "omit_ethos_slugs": []
   },
   {
-    "slug": "family_business",
+    "slug": "family_business_tradition",
     "description": "This culture encourages businesses to develop along familial lines, each generation picking up the tools and techniques of their trade from the last, building a strong tradition of ancestral professionalism",
     "preferred_ethos_slugs": ["communal_ethos", "courtly_ethos"],
     "type": "realm_tradition_type",
@@ -135,7 +135,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "fervent_temple_builders",
+    "slug": "fervent_temple_builders_tradition",
     "description": "This culture finds constructing temples the most direct path to the divine. Fervent rulers are expected to build many, and grand, temples.",
     "preferred_ethos_slugs": ["communal_ethos", "spiritual_ethos", "stoic_ethos"],
     "type": "realm_tradition_type",
@@ -144,7 +144,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "forest_folk",
+    "slug": "forest_folk_tradition",
     "description": "This culture lives close to vast forests, and knows how to forage its bounties.",
     "preferred_ethos_slugs": ["bureaucratic_ethos", "communal_ethos", "courtly_ethos", "egalitarian_ethos", "spiritual_ethos", "stoic_ethos"],
     "type": "realm_tradition_type",
@@ -153,7 +153,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "hereditary_hierarchy",
+    "slug": "hereditary_hierarchy_tradition",
     "description": "It is ingrained in this culture that leadership in passed on by blood, nobility is bound by stone in castles, and that the feudal structure is unshakable. They do not easily forget those who break the feudal code.",
     "preferred_ethos_slugs": ["courtly_ethos", "spiritual_ethos"],
     "type": "realm_tradition_type",
@@ -162,16 +162,16 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "hidden_cities",
+    "slug": "hidden_cities_tradition",
     "description": "Whether they are up in the jungle trees, or protected by the organic maze, foreigners may not even know this culture's cities exist, let alone have a clue how to besiege them.",
     "preferred_ethos_slugs": ["bellicose_ethos"],
     "type": "realm_tradition_type",
-    "omit_tradition_slugs": ["jungle_dwellers"],
+    "omit_tradition_slugs": ["jungle_dwellers_tradition"],
     "omit_gender_dominance": [],
     "omit_ethos_slugs": []
   },
   {
-    "slug": "hill_dwellers",
+    "slug": "hill_dwellers_tradition",
     "description": "This culture is at home in hills, and know how to work its lands effectively.",
     "preferred_ethos_slugs": ["bureaucratic_ethos", "communal_ethos", "courtly_ethos", "egalitarian_ethos", "spiritual_ethos", "stoic_ethos"],
     "type": "realm_tradition_type",
@@ -180,16 +180,16 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "jungle_dwellers",
+    "slug": "jungle_dwellers_tradition",
     "description": "This culture lives close to the jungle, and knows how to harvest its riches.",
     "preferred_ethos_slugs": ["bureaucratic_ethos", "communal_ethos", "courtly_ethos", "egalitarian_ethos", "spiritual_ethos", "stoic_ethos"],
     "type": "realm_tradition_type",
-    "omit_tradition_slugs": ["hidden_cities"],
+    "omit_tradition_slugs": ["hidden_cities_tradition"],
     "omit_gender_dominance": [],
     "omit_ethos_slugs": []
   },
   {
-    "slug": "legalistic",
+    "slug": "legalistic_tradition",
     "description": "This culture regards the rule of law and its codification as being the most important parameter of a civilized society.",
     "preferred_ethos_slugs": ["communal_ethos", "courtly_ethos", "egalitarian_ethos"],
     "type": "realm_tradition_type",
@@ -198,7 +198,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "maritime_mercantilism",
+    "slug": "maritime_mercantilism_tradition",
     "description": "The world may be ruled by armies, but this culture knows that it is truly controlled by whoever dominates the flow of gold across the seas.",
     "preferred_ethos_slugs": ["bureaucratic_ethos", "egalitarian_ethos", "stoic_ethos"],
     "type": "realm_tradition_type",
@@ -207,16 +207,16 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "matriarchal",
+    "slug": "matriarchal_tradition",
     "description": "This culture enforces a matriarchal hierarchy, where the ruling class is overwhelmingly comprised of women.",
     "preferred_ethos_slugs": ["egalitarian_ethos"],
     "type": "realm_tradition_type",
-    "omit_tradition_slugs": ["warrior_queens"],
+    "omit_tradition_slugs": ["warrior_queens_tradition"],
     "omit_gender_dominance": ["male_sex", ""],
     "omit_ethos_slugs": []
   },
   {
-    "slug": "monastic_communities",
+    "slug": "monastic_communities_tradition",
     "description": "This culture has a long history of sending noble progeny to serve the faith. Revered political thinkers often arise from the monastic orders.",
     "preferred_ethos_slugs": ["communal_ethos", "spiritual_ethos"],
     "type": "realm_tradition_type",
@@ -225,7 +225,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "mountain_homes",
+    "slug": "mountain_homes_tradition",
     "description": "This culture knows how to live and thrive on plateaus near the harsh slopes of mountains.",
     "preferred_ethos_slugs": ["bureaucratic_ethos", "communal_ethos", "courtly_ethos", "egalitarian_ethos", "spiritual_ethos", "stoic_ethos"],
     "type": "realm_tradition_type",
@@ -234,7 +234,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "parochialism",
+    "slug": "parochialism_tradition",
     "description": "City residents of this culture are fiercely competitive and independent. They invest a lot of money and energy to make sure that their city is the grandest.",
     "preferred_ethos_slugs": ["communal_ethos", "courtly_ethos", "spiritual_ethos"],
     "type": "realm_tradition_type",
@@ -243,7 +243,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "pastorialists",
+    "slug": "pastorialists_tradition",
     "description": "This culture is at home in wide and open terrain, where they herd large groups of animals.",
     "preferred_ethos_slugs": ["bellicose_ethos", "communal_ethos", "stoic_ethos"],
     "type": "realm_tradition_type",
@@ -252,7 +252,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "polders",
+    "slug": "polders_tradition",
     "description": "This culture has a long tradition of reclaiming land from the surrounding sea. This allows them to utilize what would normally be a shallow seabed for farming and construction.",
     "preferred_ethos_slugs": ["bureaucratic_ethos", "communal_ethos", "stoic_ethos"],
     "type": "realm_tradition_type",
@@ -261,16 +261,16 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "republican_legacy",
+    "slug": "republican_legacy_tradition",
     "description": "This culture has a long history of republican values, where the urban classes are just as important as the rural landholders.",
     "preferred_ethos_slugs": ["communal_ethos", "courtly_ethos", "spiritual_ethos"],
     "type": "realm_tradition_type",
-    "omit_tradition_slugs": ["parochialism"],
+    "omit_tradition_slugs": ["parochialism_tradition"],
     "omit_gender_dominance": [],
     "omit_ethos_slugs": []
   },
   {
-    "slug": "tribal_unity",
+    "slug": "tribal_unity_tradition",
     "description": "This culture emphasizes the familial and communal bonds its people share, pushing them to remember their shared heritage.",
     "preferred_ethos_slugs": ["communal_ethos", "spiritual_ethos", "stoic_ethos"],
     "type": "realm_tradition_type",
@@ -279,7 +279,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "wetlanders",
+    "slug": "wetlanders_tradition",
     "description": "This culture has mastered the bogs and marshes. Though life is at times a battle against mold, they have learned to use the peat to their advantage.",
     "preferred_ethos_slugs": ["bureaucratic_ethos", "communal_ethos", "courtly_ethos", "egalitarian_ethos", "spiritual_ethos", "stoic_ethos"],
     "type": "realm_tradition_type",
@@ -288,7 +288,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "ancient_miners",
+    "slug": "ancient_miners_tradition",
     "description": "This culture has always been surrounded by raw materials, ore, and uncut gems. They have an affinity for finding sites for mining excavations.",
     "preferred_ethos_slugs": [],
     "type": "realm_tradition_type",
@@ -297,16 +297,16 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "coastal_warriors",
+    "slug": "coastal_warriors_tradition",
     "description": "We have always been drawn to the shoreline. The sting of sea air, the crying gulls, the scent of smoked fish... what warrior would ever opt to live far from the water and its freedoms?",
     "preferred_ethos_slugs": ["bellicose_ethos"],
     "type": "realm_tradition_type",
-    "omit_tradition_slugs": ["warrior_culture", "seafarers"],
+    "omit_tradition_slugs": ["warrior_culture_tradition", "seafarers_tradition"],
     "omit_gender_dominance": [],
     "omit_ethos_slugs": []
   },
   {
-    "slug": "culture_blending",
+    "slug": "culture_blending_tradition",
     "description": "Members of this culture have often lived alongside people of other cultures. Through exposure, they have become adept at incorporating foreign languages, traditions and customs into their own lives.",
     "preferred_ethos_slugs": ["communal_ethos", "egalitarian_ethos"],
     "type": "realm_tradition_type",
@@ -315,7 +315,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "staunch_traditionalists",
+    "slug": "staunch_traditionalists_tradition",
     "description": "Tradition is tradition, it is immovable and unchangeable. We must be ready and willing to stand up for what makes us who we are.",
     "preferred_ethos_slugs": ["communal_ethos", "spiritual_ethos", "stoic_ethos"],
     "type": "realm_tradition_type",
@@ -324,7 +324,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "malleable_subjects",
+    "slug": "malleable_subjects_tradition",
     "description": "Who's to say what freedom is? One king is much like another regardless of culture. True freedom comes from learning how to live with any liege.",
     "preferred_ethos_slugs": ["courtly_ethos", "egalitarian_ethos"],
     "type": "realm_tradition_type",
@@ -333,7 +333,7 @@
     "omit_ethos_slugs": []
   },
   {
-    "slug": "state_ransoming",
+    "slug": "state_ransoming_tradition",
     "description": "Every soldier goes into battle ready to risk life and limb for their liege! Does it not behoove the liege to offer them some guarantee of safety, regardless of station, should they be captured in the field?",
     "preferred_ethos_slugs": ["bellicose_ethos", "communal_ethos"],
     "type": "realm_tradition_type",

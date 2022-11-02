@@ -13,9 +13,9 @@ func (i Influence) String() string {
 }
 
 const (
-	StrongInfluence   Influence = "strong"
-	ModerateInfluence Influence = "moderate"
-	WeakInfluence     Influence = "weak"
+	StrongInfluence   Influence = "strong_influence"
+	ModerateInfluence Influence = "moderate_influence"
+	WeakInfluence     Influence = "weak_influence"
 )
 
 func GetInfluenceByProbability(strong, moderate, weak float64) (Influence, error) {

@@ -17,7 +17,7 @@ func TestLoadAllTraditions(t *testing.T) {
 }
 
 func TestSearchTradition(t *testing.T) {
-	slug := "astute_diplomats"
+	slug := "astute_diplomats_tradition"
 	result, err := SearchTradition(slug)
 	if err != nil {
 		t.Fatalf("unexpected error (err=%+v)", err)

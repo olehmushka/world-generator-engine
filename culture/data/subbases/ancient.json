@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "ancient_belgae_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "ancient_celt_iberian_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "ancient_gaelic_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "ancient_gallic_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "ancient_germanic_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "ancient_iberian_subbase",
+    "base_slug": "mediterranean_base"
+  },
+  {
+    "slug": "ancient_occidental_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "ancient_pannonian_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "ancient_pretani_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "ancient_veneti_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "ancient_italic_subbase",
+    "base_slug": "mediterranean_base"
+  },
+  {
+    "slug": "ancient_dacian_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "ancient_hellenistic_subbase",
+    "base_slug": "mediterranean_base"
+  },
+  {
+    "slug": "ancient_illyrian_subbase",
+    "base_slug": "mediterranean_base"
+  },
+  {
+    "slug": "ancient_numidian_subbase",
+    "base_slug": "african_base"
+  },
+  {
+    "slug": "ancient_nubian_subbase",
+    "base_slug": "african_base"
+  },
+  {
+    "slug": "ancient_levantine_subbase",
+    "base_slug": "semitic_base"
+  },
+  {
+    "slug": "ancient_aksumite_subbase",
+    "base_slug": "egyptian_base"
+  },
+  {
+    "slug": "ancient_egyptian_subbase",
+    "base_slug": "egyptian_base"
+  },
+  {
+    "slug": "ancient_arabian_subbase",
+    "base_slug": "semitic_base"
+  },
+  {
+    "slug": "ancient_aramaic_subbase",
+    "base_slug": "semitic_base"
+  },
+  {
+    "slug": "ancient_anatolian_subbase",
+    "base_slug": "caucasian_base"
+  },
+  {
+    "slug": "ancient_caucasian_subbase",
+    "base_slug": "caucasian_base"
+  },
+  {
+    "slug": "ancient_bactrian_subbase",
+    "base_slug": "persian_base"
+  },
+  {
+    "slug": "ancient_iranian_subbase",
+    "base_slug": "persian_base"
+  },
+  {
+    "slug": "ancient_scythian_subbase",
+    "base_slug": "persian_base"
+  },
+  {
+    "slug": "ancient_aryan_subbase",
+    "base_slug": "indian_base"
+  },
+  {
+    "slug": "ancient_dravidian_subbase",
+    "base_slug": "indian_base"
+  },
+  {
+    "slug": "ancient_pracyan_subbase",
+    "base_slug": "indian_base"
+  },
+  {
+    "slug": "ancient_tibetan_subbase",
+    "base_slug": "indian_base"
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "slug": "ancient_etruscan",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "ancient_italic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bureaucratic_ethos",
+    "tradition_slugs": [
+      "mystical_ancestors_tradition",
+			"practiced_pirates_tradition",
+			"city_keepers_tradition",
+			"legalistic_tradition",
+			"parochialism_tradition"
+    ],
+    "language_slug": "etruscan_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "weak_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "ancient_roman",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "ancient_italic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "formation_fighting_experts_tradition",
+      "hereditary_hierarchy_tradition",
+      "legalistic_tradition",
+      "mystical_ancestors_tradition",
+      "refined_poetry_tradition"
+    ],
+    "language_slug": "latin_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "ancient_sabellian",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "ancient_italic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "egalitarian_ethos",
+    "tradition_slugs": [
+      "hill_dwellers_tradition",
+      "metalworkers_tradition"
+    ],
+    "language_slug": "oscan_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

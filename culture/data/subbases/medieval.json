@@ -1,0 +1,158 @@
+[
+  {
+    "slug": "medieval_akan_subbase",
+    "base_slug": "african_base"
+  },
+  {
+    "slug": "medieval_central_african_subbase",
+    "base_slug": "african_base"
+  },
+  {
+    "slug": "medieval_east_african_subbase",
+    "base_slug": "african_base"
+  },
+  {
+    "slug": "medieval_guinean_uplander_subbase",
+    "base_slug": "african_base"
+  },
+  {
+    "slug": "medieval_horn_african_subbase",
+    "base_slug": "african_base"
+  },
+  {
+    "slug": "medieval_niger_delta_subbase",
+    "base_slug": "african_base"
+  },
+  {
+    "slug": "medieval_sahelian_subbase",
+    "base_slug": "african_base"
+  },
+  {
+    "slug": "medieval_senegambian_subbase",
+    "base_slug": "african_base"
+  },
+  {
+    "slug": "medieval_baltic_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "medieval_vlach_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "medieval_volga_finnic_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "medieval_west_germanic_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "medieval_west_slavic_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "medieval_balto_finnic_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "medieval_brythonic_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "medieval_south_slavic_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "medieval_central_germanic_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "medieval_east_slavic_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "medieval_frankish_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "medieval_goidelic_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "medieval_magyar_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "medieval_ugro_permian_subbase",
+    "base_slug": "europe_continental_base"
+  },
+  {
+    "slug": "medieval_north_germanic_subbase",
+    "base_slug": "nordic_europe_base"
+  },
+  {
+    "slug": "medieval_byzantine_subbase",
+    "base_slug": "mediterranean_base"
+  },
+  {
+    "slug": "medieval_iberian_subbase",
+    "base_slug": "mediterranean_base"
+  },
+  {
+    "slug": "medieval_latin_subbase",
+    "base_slug": "mediterranean_base"
+  },
+  {
+    "slug": "medieval_arabic_subbase",
+    "base_slug": "semitic_base"
+  },
+  {
+    "slug": "medieval_israelite_subbase",
+    "base_slug": "semitic_base"
+  },
+  {
+    "slug": "medieval_berber_subbase",
+    "base_slug": "berber_base"
+  },
+  {
+    "slug": "medieval_burman_subbase",
+    "base_slug": "indian_base"
+  },
+  {
+    "slug": "medieval_dravidian_subbase",
+    "base_slug": "indian_base"
+  },
+  {
+    "slug": "medieval_indo_aryan_subbase",
+    "base_slug": "indian_base"
+  },
+  {
+    "slug": "medieval_tibetan_subbase",
+    "base_slug": "indian_base"
+  },
+  {
+    "slug": "medieval_chinese_subbase",
+    "base_slug": "chinese_base"
+  },
+  {
+    "slug": "medieval_iranian_subbase",
+    "base_slug": "persian_base"
+  },
+  {
+    "slug": "medieval_tocharian_subbase",
+    "base_slug": "persian_base"
+  },
+  {
+    "slug": "medieval_mongolic_subbase",
+    "base_slug": "mongolian_base"
+  },
+  {
+    "slug": "medieval_qiangic_subbase",
+    "base_slug": "mongolian_base"
+  },
+  {
+    "slug": "medieval_turkic_subbase",
+    "base_slug": "turkic_base"
+  }
+]
