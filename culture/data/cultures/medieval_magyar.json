@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "slug": "magyar_hungarian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_magyar_subbase",
+    "parent_culture_slugs": ["magyar_mogyer_culture"],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "agrarian_tradition",
+      "konni_raids_tradition",
+      "strong_believers_tradition"
+    ],
+    "language_slug": "hungarian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "magyar_mogyer_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_magyar_subbase",
+    "parent_culture_slugs": ["magyar_mogyer_culture"],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "tribal_unity_tradition",
+      "strong_believers_tradition"
+    ],
+    "language_slug": "hungarian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

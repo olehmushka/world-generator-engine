@@ -1,1 +1,75 @@
-[]
+[
+  {
+    "slug": "dravidian_gond_culture",
+    "base_slug": "indian_base",
+    "subbase_slug": "medieval_dravidian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "jungle_warriors_tradition",
+      "sacred_groves_tradition",
+      "culture_blending_tradition"
+    ],
+    "language_slug": "telugu_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "dravidian_kannada_culture",
+    "base_slug": "indian_base",
+    "subbase_slug": "medieval_dravidian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "fervent_temple_builders_tradition",
+      "garuda_warriors_tradition",
+      "refined_poetry_tradition",
+      "ruling_caste_tradition"
+    ],
+    "language_slug": "kannada_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "dravidian_tamil_culture",
+    "base_slug": "indian_base",
+    "subbase_slug": "medieval_dravidian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "MetalworkersTradition",
+      "ParochialismTradition",
+      "SeafarersTradition"
+    ],
+    "language_slug": "tamil_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "dravidian_telugu_culture",
+    "base_slug": "indian_base",
+    "subbase_slug": "medieval_dravidian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "metalworkers_tradition",
+      "recognition_of_talent_tradition",
+      "warrior_culture_tradition"
+    ],
+    "language_slug": "telugu_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

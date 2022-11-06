@@ -1,1 +1,109 @@
-[]
+[
+  {
+    "slug": "slavic_carantanian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_west_slavic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "martial_admiration_tradition",
+      "mountaineer_ruralism_tradition"
+    ],
+    "language_slug": "croation_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+	{
+    "slug": "slavic_czech_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_west_slavic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bureaucratic_ethos",
+    "tradition_slugs": [
+      "castle_keepers_tradition",
+      "industrious_tradition",
+      "life_is_just_a_joke_tradition",
+      "mountaineer_ruralism_tradition"
+    ],
+    "language_slug": "czech_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+	{
+    "slug": "slavic_polabian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_west_slavic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "hereditary_hierarchy_tradition",
+      "konni_raids_tradition",
+      "stalwart_defenders_tradition"
+    ],
+    "language_slug": "polish_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+	{
+    "slug": "slavic_polish_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_west_slavic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "courtly_ethos",
+    "tradition_slugs": [
+      "konni_raids_tradition",
+      "xenophilic_tradition",
+      "staunch_traditionalists_tradition"
+    ],
+    "language_slug": "polish_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+	{
+    "slug": "slavic_pomeranian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_west_slavic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "konni_raids_tradition",
+      "maritime_mercantilism_tradition",
+      "staunch_traditionalists_tradition"
+    ],
+    "language_slug": "polish_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+	{
+    "slug": "slavic_slovien_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_west_slavic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "egalitarian_ethos",
+    "tradition_slugs": [
+      "equitable_tradition",
+      "mountaineer_ruralism_tradition"
+    ],
+    "language_slug": "slovenian_lang",
+    "gender_dominance": {
+      "dominated_sex": "",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

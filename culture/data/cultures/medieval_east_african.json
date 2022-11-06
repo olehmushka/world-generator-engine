@@ -1,1 +1,75 @@
-[]
+[
+  {
+    "slug": "african_daju_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "medieval_east_african_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "dryland_dwellers_tradition",
+      "warrior_culture_tradition",
+      "warrior_queens_tradition"
+    ],
+    "language_slug": "daju_lang",
+    "gender_dominance": {
+      "dominated_sex": "",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "men_and_women"
+  },
+  {
+    "slug": "african_ethiopian_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "medieval_east_african_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "fervent_temple_builders_tradition",
+      "isolationist_tradition",
+      "strong_believers_tradition"
+    ],
+    "language_slug": "amharic_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "african_nubian_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "medieval_east_african_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "agrarian_tradition",
+      "astute_diplomats_tradition",
+      "warrior_queens_tradition",
+      "land_of_the_bow_tradition",
+      "xenophilic_tradition"
+    ],
+    "language_slug": "daju_lang",
+    "gender_dominance": {
+      "dominated_sex": "",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "men_and_women"
+  },
+  {
+    "slug": "african_welayta_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "medieval_east_african_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "frequent_festivities_tradition",
+      "mountain_skirmishing_tradition"
+    ],
+    "language_slug": "south_omotic_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

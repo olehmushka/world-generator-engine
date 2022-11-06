@@ -1,1 +1,75 @@
-[]
+[
+  {
+    "slug": "frankish_frankish_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_frankish_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "hereditary_hierarchy_tradition",
+      "stand_and_fight_tradition",
+      "warrior_culture_tradition"
+    ],
+    "language_slug": "frankish_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "frankish_french_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_frankish_subbase",
+    "parent_culture_slugs": ["frankish_frankish_culture"],
+    "ethos_slug": "courtly_ethos",
+    "tradition_slugs": [
+      "hereditary_hierarchy_tradition",
+      "chanson_de_geste_tradition",
+      "chivalry_tradition"
+    ],
+    "language_slug": "french_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "frankish_norman_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_frankish_subbase",
+    "parent_culture_slugs": ["frankish_french_culture", "germanic_norse_culture"],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "hereditary_hierarchy_tradition",
+      "chanson_de_geste_tradition",
+      "stand_and_fight_tradition"
+    ],
+    "language_slug": "french_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "frankish_occitan_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_frankish_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "egalitarian_ethos",
+    "tradition_slugs": [
+      "chanson_de_geste_tradition",
+      "chivalry_tradition",
+      "equal_inheritance_tradition",
+      "parochialism_tradition"
+    ],
+    "language_slug": "occitan_lang",
+    "gender_dominance": {
+      "dominated_sex": "",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

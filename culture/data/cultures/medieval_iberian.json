@@ -1,1 +1,198 @@
-[]
+[
+  {
+    "slug": "iberian_andalusian_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "medieval_iberian_subbase",
+    "parent_culture_slugs": ["iberian_visigothic_culture", "arabic_bedouin_culture"],
+    "ethos_slug": "courtly_ethos",
+    "tradition_slugs": [
+      "hit_and_run_tacticians_tradition",
+      "expert_artisans_tradition",
+      "malleable_subjects_tradition",
+      "ritualized_friendship_tradition",
+      "tabletop_warriors_tradition",
+      "xenophilic_tradition"
+    ],
+    "language_slug": "arabic_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "iberian_aragonese_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "medieval_iberian_subbase",
+    "parent_culture_slugs": ["iberian_basque_culture", "iberian_catalan_culture"],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "martial_admiration_tradition",
+      "mountaineers_tradition",
+      "visigothic_codes_tradition",
+      "ritualized_friendship_tradition",
+      "state_ransoming_tradition",
+      "marital_ceremonies_tradition"
+    ],
+    "language_slug": "aragonese_lang",
+    "gender_dominance": {
+      "dominated_sex": "",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "iberian_asturleonese_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "medieval_iberian_subbase",
+    "parent_culture_slugs": ["iberian_visigothic_culture"],
+    "ethos_slug": "egalitarian_ethos",
+    "tradition_slugs": [
+      "hit_and_run_tacticians_tradition",
+      "ritualized_friendship_tradition",
+      "fervent_temple_builders_tradition",
+      "mountaineers_tradition"
+    ],
+    "language_slug": "asturleonese_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "iberian_basque_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "medieval_iberian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "egalitarian_ethos",
+    "tradition_slugs": [
+      "mountaineers_tradition",
+      "visigothic_codes_tradition",
+      "ritualized_friendship_tradition",
+      "marital_ceremonies_tradition"
+    ],
+    "language_slug": "basque_lang",
+    "gender_dominance": {
+      "dominated_sex": "",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "iberian_castilian_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "medieval_iberian_subbase",
+    "parent_culture_slugs": ["iberian_visigothic_culture"],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "hit_and_run_tacticians_tradition",
+      "ritualized_friendship_tradition",
+      "castle_keepers_tradition",
+      "chivalry_tradition",
+      "martial_admiration_tradition",
+      "tabletop_warriors_tradition"
+    ],
+    "language_slug": "spanish_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "iberian_catalan_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "medieval_iberian_subbase",
+    "parent_culture_slugs": ["iberian_visigothic_culture", "frankish_occitan_culture"],
+    "ethos_slug": "courtly_ethos",
+    "tradition_slugs": [
+      "ritualized_friendship_tradition",
+      "maritime_mercantilism_tradition",
+      "parochialism_tradition",
+      "refined_poetry_tradition",
+      "visigothic_codes_tradition"
+    ],
+    "language_slug": "catalan_lang",
+    "gender_dominance": {
+      "dominated_sex": "",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "iberian_galician_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "medieval_iberian_subbase",
+    "parent_culture_slugs": ["iberian_visigothic_culture"],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "ritualized_friendship_tradition",
+      "monastic_communities_tradition",
+      "dexterous_fishermen_tradition",
+      "highland_warriors_tradition"
+    ],
+    "language_slug": "galician_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "iberian_portuguese_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "medieval_iberian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "ritualized_friendship_tradition",
+      "chivalry_tradition",
+      "fervent_temple_builders_tradition",
+      "martial_admiration_tradition"
+    ],
+    "language_slug": "portuguese_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "iberian_suebi_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "medieval_iberian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "agrarian_tradition",
+      "stand_and_fight_tradition"
+    ],
+    "language_slug": "german_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "iberian_visigothic_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "medieval_iberian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "visigothic_codes_tradition",
+      "hit_and_run_tacticians_tradition",
+      "martial_admiration_tradition",
+      "malleable_subjects_tradition",
+      "ritualized_friendship_tradition"
+    ],
+    "language_slug": "spanish_lang",
+    "gender_dominance": {
+      "dominated_sex": "",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

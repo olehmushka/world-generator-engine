@@ -1,1 +1,113 @@
-[]
+[
+  {
+    "slug": "latin_roman_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "medieval_latin_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "formation_fighting_experts_tradition",
+      "hereditary_hierarchy_tradition",
+      "legalistic_tradition",
+      "refined_poetry_tradition"
+    ],
+    "language_slug": "latin_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "latin_italian_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "medieval_latin_subbase",
+    "parent_culture_slugs": ["latin_roman_culture"],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "formation_fighting_experts_tradition",
+      "refined_poetry_tradition",
+      "republican_legacy_tradition"
+    ],
+    "language_slug": "italian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "latin_sardinian_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "medieval_latin_subbase",
+    "parent_culture_slugs": ["latin_roman_culture"],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "isolationist_tradition",
+      "stalwart_defenders_tradition"
+    ],
+    "language_slug": "sardinian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "latin_lombard_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "medieval_latin_subbase",
+    "parent_culture_slugs": ["latin_italian_culture", "germanic_langobard_culture"],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "isolationist_tradition",
+      "martial_admiration_tradition",
+      "republican_legacy_tradition",
+      "stand_and_fight_tradition"
+    ],
+    "language_slug": "lombard_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "latin_cisalpine_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "medieval_latin_subbase",
+    "parent_culture_slugs": ["latin_lombard_culture", "frankish_frankish_culture"],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "martial_admiration_tradition",
+      "republican_legacy_tradition",
+      "mountain_homes_tradition"
+    ],
+    "language_slug": "italian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "latin_sicilian_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "medieval_latin_subbase",
+    "parent_culture_slugs": ["latin_lombard_culture", "byzantine_greek_culture"],
+    "ethos_slug": "courtly_ethos",
+    "tradition_slugs": [
+      "republican_legacy_tradition",
+      "refined_poetry_tradition",
+      "ruling_caste_tradition",
+      "swords_for_hire_tradition",
+      "xenophilic_tradition"
+    ],
+    "language_slug": "sicilian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

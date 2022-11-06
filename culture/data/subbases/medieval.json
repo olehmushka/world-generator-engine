@@ -32,6 +32,10 @@
     "base_slug": "african_base"
   },
   {
+    "slug": "medieval_caucasian_subbase",
+    "base_slug": "caucasian_base"
+  },
+  {
     "slug": "medieval_baltic_subbase",
     "base_slug": "europe_continental_base"
   },

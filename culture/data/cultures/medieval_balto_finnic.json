@@ -1,1 +1,92 @@
-[]
+[
+  {
+    "slug": "balto_finnic_estonian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_balto_finnic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "musical_theorists_tradition",
+      "coastal_warriors_tradition",
+      "hirds_tradition",
+      "staunch_traditionalists_tradition"
+    ],
+    "language_slug": "estonian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "balto_finnic_finnish_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_balto_finnic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "dexterous_fishermen_tradition",
+      "forest_wardens_tradition",
+      "isolationist_tradition"
+    ],
+    "language_slug": "finnish_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "balto_finnic_karelian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_balto_finnic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "forest_wardens_tradition",
+      "stalwart_defenders_tradition",
+      "swords_for_hire_tradition"
+    ],
+    "language_slug": "karelian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "balto_finnic_sami_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_balto_finnic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "forest_wardens_tradition",
+      "adaptive_skirmishers_tradition",
+      "winter_warriors_tradition"
+    ],
+    "language_slug": "sami_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "balto_finnic_vepsian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_balto_finnic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "egalitarian_ethos",
+    "tradition_slugs": [
+      "isolationist_tradition",
+      "xenophilic_tradition"
+    ],
+    "language_slug": "veps_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

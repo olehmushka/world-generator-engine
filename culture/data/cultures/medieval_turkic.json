@@ -1,1 +1,321 @@
-[]
+[
+  {
+    "slug": "turkic_avar_culture",
+    "base_slug": "turkic_base",
+    "subbase_slug": "medieval_turkic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "recognition_of_talent_tradition",
+      "ruling_caste_tradition",
+      "culture_blending_tradition"
+    ],
+    "language_slug": "avar_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "turkic_bashkir_culture",
+    "base_slug": "turkic_base",
+    "subbase_slug": "medieval_turkic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "forest_folk_tradition",
+      "sacred_mountains_tradition",
+      "malleable_invaders_tradition"
+    ],
+    "language_slug": "bashkir_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "turkic_bolghar_culture",
+    "base_slug": "turkic_base",
+    "subbase_slug": "medieval_turkic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "astute_diplomats_tradition",
+      "ruling_caste_tradition",
+      "malleable_invaders_tradition"
+    ],
+    "language_slug": "bulgar_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "turkic_chuvash_culture",
+    "base_slug": "turkic_base",
+    "subbase_slug": "medieval_turkic_subbase",
+    "parent_culture_slugs": ["turkic_bolghar_culture"],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "sacred_hunts_tradition",
+      "strong_believers_tradition"
+    ],
+    "language_slug": "chuvash_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "turkic_cuman_culture",
+    "base_slug": "turkic_base",
+    "subbase_slug": "medieval_turkic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "swords_for_hire_tradition",
+      "warrior_culture_tradition",
+      "malleable_invaders_tradition"
+    ],
+    "language_slug": "cuman_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "turkic_karluk_culture",
+    "base_slug": "turkic_base",
+    "subbase_slug": "medieval_turkic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "sacred_mountains_tradition",
+      "steppe_tolerance_tradition",
+      "malleable_invaders_tradition"
+    ],
+    "language_slug": "uzbek_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "turkic_khazar_culture",
+    "base_slug": "turkic_base",
+    "subbase_slug": "medieval_turkic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "egalitarian_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "stand_and_fight_tradition",
+      "steppe_tolerance_tradition"
+    ],
+    "language_slug": "khazar_lang",
+    "gender_dominance": {
+      "dominated_sex": "",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "men_and_women"
+  },
+  {
+    "slug": "turkic_kimek_culture",
+    "base_slug": "turkic_base",
+    "subbase_slug": "medieval_turkic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "pastorialists_tradition",
+      "prolific_hunters_tradition",
+      "stalwart_defenders_tradition"
+    ],
+    "language_slug": "karaim_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "turkic_kipchak_culture",
+    "base_slug": "turkic_base",
+    "subbase_slug": "medieval_turkic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "quarrelsome_tradition",
+      "prolific_hunters_tradition",
+      "swords_for_hire_tradition"
+    ],
+    "language_slug": "karaim_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "turkic_kirghiz_culture",
+    "base_slug": "turkic_base",
+    "subbase_slug": "medieval_turkic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "egalitarian_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "quarrelsome_tradition",
+      "prolific_hunters_tradition"
+    ],
+    "language_slug": "kyrgyz_lang",
+    "gender_dominance": {
+      "dominated_sex": "",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "men_and_women"
+  },
+  {
+    "slug": "turkic_laktan_culture",
+    "base_slug": "turkic_base",
+    "subbase_slug": "medieval_turkic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "forest_folk_tradition",
+      "prolific_hunters_tradition",
+      "stalwart_defenders_tradition"
+    ],
+    "language_slug": "turkish_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "turkic_oghuz_culture",
+    "base_slug": "turkic_base",
+    "subbase_slug": "medieval_turkic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "ruling_caste_tradition",
+      "swords_for_hire_tradition",
+      "warrior_culture_tradition"
+    ],
+    "language_slug": "turkish_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "turkic_pecheneg_culture",
+    "base_slug": "turkic_base",
+    "subbase_slug": "medieval_turkic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "quarrelsome_tradition",
+      "swords_for_hire_tradition",
+      "warrior_culture_tradition"
+    ],
+    "language_slug": "khazar_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "turkic_shatuo_culture",
+    "base_slug": "turkic_base",
+    "subbase_slug": "medieval_turkic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "court_eunuchs_tradition",
+      "ruling_caste_tradition",
+      "malleable_invaders_tradition"
+    ],
+    "language_slug": "chinese_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "turkic_uriankhai_culture",
+    "base_slug": "turkic_base",
+    "subbase_slug": "medieval_turkic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "forest_folk_tradition",
+      "mendicant_mystics_tradition",
+      "prolific_hunters_tradition"
+    ],
+    "language_slug": "turkish_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "turkic_uyghur_culture",
+    "base_slug": "turkic_base",
+    "subbase_slug": "medieval_turkic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "caravaneers_tradition",
+      "charitable_tradition",
+      "religious_patronage_tradition",
+      "steppe_tolerance_tradition",
+      "xenophilic_tradition"
+    ],
+    "language_slug": "uyghur_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "turkic_yughur_culture",
+    "base_slug": "turkic_base",
+    "subbase_slug": "medieval_turkic_subbase",
+    "parent_culture_slugs": ["turkic_uyghur_culture"],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "pastorialists_tradition",
+      "steppe_tolerance_tradition"
+    ],
+    "language_slug": "turkish_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

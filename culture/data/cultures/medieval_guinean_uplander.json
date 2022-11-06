@@ -1,1 +1,92 @@
-[]
+[
+  {
+    "slug": "guinean_bobo_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "medieval_guinean_uplander_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "egalitarian_ethos",
+    "tradition_slugs": [
+      "stalwart_defenders_tradition",
+      "upland_skirmishing_tradition",
+      "sorcerous_metallurgy_tradition"
+    ],
+    "language_slug": "soninke_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "guinean_gur_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "medieval_guinean_uplander_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "ancient_miners_tradition",
+      "upland_skirmishing_tradition",
+      "sorcerous_metallurgy_tradition"
+    ],
+    "language_slug": "gur_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "guinean_malinke_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "medieval_guinean_uplander_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "charitable_tradition",
+      "upland_skirmishing_tradition",
+      "sorcerous_metallurgy_tradition"
+    ],
+    "language_slug": "manding_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "guinean_marka_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "medieval_guinean_uplander_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "musical_theorists_tradition",
+      "upland_skirmishing_tradition",
+      "warriors_of_the_dry_tradition"
+    ],
+    "language_slug": "manding_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "guinean_mel_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "medieval_guinean_uplander_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "egalitarian_ethos",
+    "tradition_slugs": [
+      "stalwart_defenders_tradition",
+      "upland_skirmishing_tradition",
+      "staunch_traditionalists_tradition"
+    ],
+    "language_slug": "manding_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

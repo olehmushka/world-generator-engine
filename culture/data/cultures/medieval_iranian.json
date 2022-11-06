@@ -1,1 +1,174 @@
-[]
+[
+  {
+    "slug": "iranian_afghan_culture",
+    "base_slug": "persian_base",
+    "subbase_slug": "medieval_iranian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "esteemed_hospitality_tradition",
+      "futuwaa_tradition",
+      "loyal_subjects_tradition",
+      "mountain_homes_tradition"
+    ],
+    "language_slug": "pashto_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "iranian_baloch_culture",
+    "base_slug": "persian_base",
+    "subbase_slug": "medieval_iranian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "esteemed_hospitality_tradition",
+      "futuwaa_tradition",
+      "desert_travelers_tradition",
+      "isolationist_tradition"
+    ],
+    "language_slug": "balochi_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "iranian_daylamite_culture",
+    "base_slug": "persian_base",
+    "subbase_slug": "medieval_iranian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "mountaineers_tradition",
+      "futuwaa_tradition",
+      "stalwart_defenders_tradition",
+      "swords_for_hire_tradition"
+    ],
+    "language_slug": "farsi_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "iranian_khwarezmian_culture",
+    "base_slug": "persian_base",
+    "subbase_slug": "medieval_iranian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "isolationist_tradition",
+      "futuwaa_tradition",
+      "caravaneers_tradition",
+      "dryland_dwellers_tradition"
+    ],
+    "language_slug": "scythian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "iranian_kurdish_culture",
+    "base_slug": "persian_base",
+    "subbase_slug": "medieval_iranian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "swords_for_hire_tradition",
+      "futuwaa_tradition",
+      "mountain_homes_tradition",
+      "eye_for_an_eye_tradition"
+    ],
+    "language_slug": "kurdish_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "iranian_persian_culture",
+    "base_slug": "persian_base",
+    "subbase_slug": "medieval_iranian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "courtly_ethos",
+    "tradition_slugs": [
+      "dryland_dwellers_tradition",
+      "futuwaa_tradition",
+      "garden_architects_tradition",
+      "philosopher_culture_tradition",
+      "refined_poetry_tradition"
+    ],
+    "language_slug": "farsi_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "iranian_saka_culture",
+    "base_slug": "persian_base",
+    "subbase_slug": "medieval_iranian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "dryland_dwellers_tradition",
+      "caravaneers_tradition",
+      "expert_artisans_tradition",
+      "horse_lords_tradition"
+    ],
+    "language_slug": "scythian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "iranian_sogdian_culture",
+    "base_slug": "persian_base",
+    "subbase_slug": "medieval_iranian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "egalitarian_ethos",
+    "tradition_slugs": [
+      "caravaneers_tradition",
+      "futuwaa_tradition",
+      "parochialism_tradition",
+      "religion_blending_tradition"
+    ],
+    "language_slug": "scythian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "iranian_tajik_culture",
+    "base_slug": "persian_base",
+    "subbase_slug": "medieval_iranian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "caravaneers_tradition",
+      "futuwaa_tradition",
+      "dryland_dwellers_tradition",
+      "philosopher_culture_tradition"
+    ],
+    "language_slug": "pashto_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

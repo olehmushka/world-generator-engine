@@ -1,6 +1,6 @@
 [
   {
-    "slug": "akan_akan",
+    "slug": "akan_akan_culture",
     "base_slug": "african_base",
     "subbase_slug": "medieval_akan_subbase",
     "parent_culture_slugs": [],
@@ -19,7 +19,7 @@
     "martial_custom": "men_and_women"
   },
   {
-    "slug": "akan_guan",
+    "slug": "akan_guan_culture",
     "base_slug": "african_base",
     "subbase_slug": "medieval_akan_subbase",
     "parent_culture_slugs": [],
@@ -39,7 +39,7 @@
     "martial_custom": "men_and_women"
   },
   {
-    "slug": "akan_kru",
+    "slug": "akan_kru_culture",
     "base_slug": "african_base",
     "subbase_slug": "medieval_akan_subbase",
     "parent_culture_slugs": [],

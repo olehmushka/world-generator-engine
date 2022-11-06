@@ -1,1 +1,90 @@
-[]
+[
+	{
+    "slug": "volga_finnic_mari_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_volga_finnic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "frequent_festivities_tradition",
+      "musical_theorists_tradition"
+    ],
+    "language_slug": "mari_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+	{
+    "slug": "volga_finnic_merya_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_volga_finnic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "storytellers_tradition",
+      "culture_blending_tradition"
+    ],
+    "language_slug": "merya_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+	{
+    "slug": "volga_finnic_meshchera_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_volga_finnic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "musical_theorists_tradition",
+			"religion_blending_tradition",
+      "culture_blending_tradition"
+    ],
+    "language_slug": "meshchera_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+	{
+    "slug": "volga_finnic_mordvin_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_volga_finnic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "musical_theorists_tradition",
+			"religion_blending_tradition",
+      "frequent_festivities_tradition"
+    ],
+    "language_slug": "moksha_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+	{
+    "slug": "volga_finnic_muroma_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_volga_finnic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "storytellers_tradition",
+			"culture_blending_tradition",
+      "frequent_festivities_tradition"
+    ],
+    "language_slug": "mari_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

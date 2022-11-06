@@ -1,1 +1,96 @@
-[]
+[
+  {
+    "slug": "brythonic_breton_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_brythonic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "chanson_de_geste_tradition",
+      "dexterous_fishermen_tradition",
+      "storytellers_tradition",
+      "swords_for_hire_tradition"
+    ],
+    "language_slug": "breton_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "brythonic_cornish_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_brythonic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "ancient_miners_tradition",
+      "dexterous_fishermen_tradition",
+      "storytellers_tradition"
+    ],
+    "language_slug": "cornish_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "brythonic_cumbrian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_brythonic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "concubines_tradition",
+      "highland_warriors_tradition",
+      "refined_poetry_tradition",
+      "stalwart_defenders_tradition"
+    ],
+    "language_slug": "cumbric_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "brythonic_pictish_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_brythonic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "concubines_tradition",
+      "highland_warriors_tradition",
+      "refined_poetry_tradition",
+      "hill_dwellers_tradition"
+    ],
+    "language_slug": "pictish_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "brythonic_welsh_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_brythonic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "concubines_tradition",
+      "highland_warriors_tradition",
+      "refined_poetry_tradition",
+      "longbow_competitions_tradition"
+    ],
+    "language_slug": "welsh_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

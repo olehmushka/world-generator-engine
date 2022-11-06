@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "slug": "tocharian_culture",
+    "base_slug": "persian_base",
+    "subbase_slug": "medieval_tocharian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "caravaneers_tradition",
+      "religious_patronage_tradition",
+      "xenophilic_tradition",
+      "philosopher_culture_tradition"
+    ],
+    "language_slug": "tocharian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

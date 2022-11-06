@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "slug": "vlach_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_vlach_subbase",
+    "parent_culture_slugs": ["latin_roman_culture"],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "xenophilic_tradition",
+      "konni_raids_tradition",
+      "pastorialists_tradition",
+      "strongBelievers_tradition",
+      "staunch_traditionalists_tradition"
+    ],
+    "language_slug": "dacian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

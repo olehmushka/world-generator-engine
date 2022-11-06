@@ -1,1 +1,58 @@
-[]
+[
+  {
+    "slug": "baltic_latgalian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_baltic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "forest_wardens_tradition",
+      "sacred_groves_tradition",
+      "staunch_traditionalists_tradition"
+    ],
+    "language_slug": "latgalian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "baltic_lithuanian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_baltic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "forest_wardens_tradition",
+      "sacred_groves_tradition",
+      "hit_and_run_tacticians_tradition",
+      "strong_believers_tradition"
+    ],
+    "language_slug": "lithuanian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "baltic_prussian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_baltic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bureaucratic_ethos",
+    "tradition_slugs": [
+      "forest_wardens_tradition",
+      "sacred_groves_tradition",
+      "charismatic_tradition",
+      "equitable_tradition"
+    ],
+    "language_slug": "lithuanian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

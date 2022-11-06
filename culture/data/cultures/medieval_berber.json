@@ -1,1 +1,75 @@
-[]
+[
+  {
+    "slug": "berber_baranis_culture",
+    "base_slug": "berber_base",
+    "subbase_slug": "medieval_berber_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "african_tolerance_tradition",
+      "family_business_tradition",
+      "mountain_herding_tradition"
+    ],
+    "language_slug": "tuareg_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "berber_butr_culture",
+    "base_slug": "berber_base",
+    "subbase_slug": "medieval_berber_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "african_tolerance_tradition",
+      "desert_ribats_tradition",
+      "equal_inheritance_tradition",
+      "saharan_nomads_tradition"
+    ],
+    "language_slug": "tuareg_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "berber_guanche_culture",
+    "base_slug": "berber_base",
+    "subbase_slug": "medieval_berber_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "stalwart_defenders_tradition",
+      "mystical_ancestors_tradition",
+      "isolationist_tradition"
+    ],
+    "language_slug": "tuareg_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "berber_zaghawa_culture",
+    "base_slug": "berber_base",
+    "subbase_slug": "medieval_berber_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "egalitarian_ethos",
+    "tradition_slugs": [
+      "african_tolerance_tradition",
+      "desert_ribats_tradition",
+      "saharan_nomads_tradition"
+    ],
+    "language_slug": "tuareg_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

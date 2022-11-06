@@ -1,1 +1,41 @@
-[]
+[
+  {
+    "slug": "qiangic_qiang_culture",
+    "base_slug": "mongolian_base",
+    "subbase_slug": "medieval_qiangic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "equal_inheritance_tradition",
+      "himalayan_settlers_tradition",
+      "medicinal_herbalists_tradition",
+      "sacred_mountains_tradition"
+    ],
+    "language_slug": "tangut_lang",
+    "gender_dominance": {
+      "dominated_sex": "",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "qiangic_tangut_culture",
+    "base_slug": "mongolian_base",
+    "subbase_slug": "medieval_qiangic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bureaucratic_ethos",
+    "tradition_slugs": [
+      "caravaneers_tradition",
+      "court_eunuchs_tradition",
+      "himalayan_settlers_tradition",
+      "religion_blending_tradition",
+      "religious_patronage_tradition"
+    ],
+    "language_slug": "tangut_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

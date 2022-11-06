@@ -1,0 +1,40 @@
+[
+  {
+    "slug": "caucasian_armenian_culture",
+    "base_slug": "caucasian_base",
+    "subbase_slug": "medieval_caucasian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "fervent_temple_builders_tradition",
+      "highland_warriors_tradition",
+      "hill_dwellers_tradition",
+      "strong_believers_tradition"
+    ],
+    "language_slug": "armenian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "caucasian_georgian_culture",
+    "base_slug": "caucasian_base",
+    "subbase_slug": "medieval_caucasian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "castle_keepers_tradition",
+      "caucasian_wolves_tradition",
+      "hereditary_hierarchy_tradition",
+      "metalworkers_tradition"
+    ],
+    "language_slug": "georgian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

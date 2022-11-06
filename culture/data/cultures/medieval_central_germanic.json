@@ -1,1 +1,148 @@
-[]
+[
+  {
+    "slug": "germanic_bavarian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_central_germanic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "hereditary_hierarchy_tradition",
+      "stand_and_fight_tradition",
+      "strong_believers_tradition"
+    ],
+    "language_slug": "german_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "germanic_dutch_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_central_germanic_subbase",
+    "parent_culture_slugs": ["germanic_frisian_culture", "frankish_frankish_culture"],
+    "ethos_slug": "bureaucratic_ethos",
+    "tradition_slugs": [
+      "agrarian_tradition",
+      "maritime_mercantilism_tradition",
+      "parochialism_tradition",
+      "polders_tradition"
+    ],
+    "language_slug": "dutch_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "germanic_franconian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_central_germanic_subbase",
+    "parent_culture_slugs": ["frankish_frankish_culture"],
+    "ethos_slug": "courtly_ethos",
+    "tradition_slugs": [
+      "astute_diplomats_tradition",
+      "castle_keepers_tradition",
+      "hereditary_hierarchy_tradition"
+    ],
+    "language_slug": "german_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "germanic_frisian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_central_germanic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "battlefield_looters_tradition",
+      "dexterous_fishermen_tradition",
+      "strong_believers_tradition"
+    ],
+    "language_slug": "frisian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "germanic_german_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_central_germanic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "astute_diplomats_tradition",
+      "hereditary_hierarchy_tradition",
+      "stand_and_fight_tradition"
+    ],
+    "language_slug": "german_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "germanic_langobard_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_central_germanic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "isolationist_tradition",
+      "martial_admiration_tradition",
+      "stand_and_fight_tradition",
+      "malleable_invaders_tradition"
+    ],
+    "language_slug": "lombardian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "germanic_saxon_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_central_germanic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "religious_patronage_tradition",
+      "ruling_caste_tradition",
+      "stand_and_fight_tradition"
+    ],
+    "language_slug": "saxon_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "germanic_swabian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_central_germanic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "industrious_tradition",
+      "mountain_homes_tradition",
+      "parochialism_tradition"
+    ],
+    "language_slug": "german_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

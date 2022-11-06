@@ -1,1 +1,57 @@
-[]
+[
+  {
+    "slug": "byzantine_alan_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "medieval_byzantine_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "marital_ceremonies_tradition",
+      "mountaineers_tradition",
+      "steppe_tolerance_tradition"
+    ],
+    "language_slug": "scythian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "byzantine_greek_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "medieval_byzantine_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bureaucratic_ethos",
+    "tradition_slugs": [
+      "formation_fighting_experts_tradition",
+      "legalistic_tradition"
+    ],
+    "language_slug": "greek_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "byzantine_syriac_culture",
+    "base_slug": "mediterranean_base",
+    "subbase_slug": "medieval_byzantine_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "caravaneers_tradition",
+      "loyal_subjects_tradition",
+      "philosopher_culture_tradition",
+      "strong_believers_tradition"
+    ],
+    "language_slug": "aramaic_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

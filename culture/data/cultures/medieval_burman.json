@@ -1,1 +1,39 @@
-[]
+[
+  {
+    "slug": "burman_burmese_culture",
+    "base_slug": "indian_base",
+    "subbase_slug": "medieval_burman_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "fervent_temple_builders_tradition",
+      "frequent_festivities_tradition",
+      "religion_blending_tradition",
+      "royal_army_tradition"
+    ],
+    "language_slug": "burmish_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "burman_mon_culture",
+    "base_slug": "indian_base",
+    "subbase_slug": "medieval_burman_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "mystical_ancestors_tradition",
+      "religious_patronage_tradition",
+      "culture_blending_tradition"
+    ],
+    "language_slug": "burmish_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

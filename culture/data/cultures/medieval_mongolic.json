@@ -1,1 +1,173 @@
-[]
+[
+  {
+    "slug": "mongolic_buryat_culture",
+    "base_slug": "mongolian_base",
+    "subbase_slug": "medieval_mongolic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "sacred_mountains_tradition",
+      "mystical_ancestors_tradition",
+      "steppe_tolerance_tradition"
+    ],
+    "language_slug": "buryat_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "mongolic_jurchen_culture",
+    "base_slug": "mongolian_base",
+    "subbase_slug": "medieval_mongolic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "agrarian_tradition",
+      "horse_breeders_tradition",
+      "malleable_invaders_tradition"
+    ],
+    "language_slug": "xibe_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "mongolic_kerait_culture",
+    "base_slug": "mongolian_base",
+    "subbase_slug": "medieval_mongolic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "horse_breeders_tradition",
+      "prolific_hunters_tradition",
+      "steppe_tolerance_tradition"
+    ],
+    "language_slug": "mongolian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "mongolic_khitan_culture",
+    "base_slug": "mongolian_base",
+    "subbase_slug": "medieval_mongolic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "malleable_invaders_tradition",
+      "pastorialists_tradition",
+      "sacred_hunts_tradition"
+    ],
+    "language_slug": "khitan_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "mongolic_mongol_culture",
+    "base_slug": "mongolian_base",
+    "subbase_slug": "medieval_mongolic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "malleable_invaders_tradition",
+      "prolific_hunters_tradition",
+      "steppe_tolerance_tradition"
+    ],
+    "language_slug": "mongolian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "mongolic_naiman_culture",
+    "base_slug": "mongolian_base",
+    "subbase_slug": "medieval_mongolic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "steppe_tolerance_tradition",
+      "charismatic_tradition",
+      "pastorialists_tradition"
+    ],
+    "language_slug": "mongolian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "mongolic_oirat_culture",
+    "base_slug": "mongolian_base",
+    "subbase_slug": "medieval_mongolic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "loyal_subjects_tradition",
+      "prolific_hunters_tradition",
+      "strong_believers_tradition"
+    ],
+    "language_slug": "oirat_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "mongolic_ongud_culture",
+    "base_slug": "mongolian_base",
+    "subbase_slug": "medieval_mongolic_subbase",
+    "parent_culture_slugs": ["turkic_shatuo_culture"],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "steppe_tolerance_tradition",
+      "astute_diplomats_tradition",
+      "stalwart_defenders_tradition"
+    ],
+    "language_slug": "turkish_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "mongolic_tuyuhun_culture",
+    "base_slug": "mongolian_base",
+    "subbase_slug": "medieval_mongolic_subbase",
+    "parent_culture_slugs": ["turkic_shatuo_culture"],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "horse_lords_tradition",
+      "horse_breeders_tradition",
+      "dryland_dwellers_tradition",
+      "pastorialists_tradition"
+    ],
+    "language_slug": "mongolian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

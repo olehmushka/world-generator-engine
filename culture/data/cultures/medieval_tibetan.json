@@ -1,1 +1,108 @@
-[]
+[
+  {
+    "slug": "tibetian_bodpa_culture",
+    "base_slug": "indian_base",
+    "subbase_slug": "medieval_tibetan_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "himalayan_settlers_tradition",
+      "horse_breeders_tradition",
+      "religious_patronage_tradition"
+    ],
+    "language_slug": "tibetic_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "tibetian_kirati_culture",
+    "base_slug": "indian_base",
+    "subbase_slug": "medieval_tibetan_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "himalayan_settlers_tradition",
+      "religion_blending_tradition"
+    ],
+    "language_slug": "tibetic_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "tibetian_lhomon_culture",
+    "base_slug": "indian_base",
+    "subbase_slug": "medieval_tibetan_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "himalayan_settlers_tradition",
+      "medicinal_herbalists_tradition",
+      "mystical_ancestors_tradition"
+    ],
+    "language_slug": "tibetic_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "tibetian_sumpa_culture",
+    "base_slug": "indian_base",
+    "subbase_slug": "medieval_tibetan_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "egalitarian_ethos",
+    "tradition_slugs": [
+      "himalayan_settlers_tradition",
+      "equal_inheritance_tradition",
+      "mountaineers_tradition"
+    ],
+    "language_slug": "tibetic_lang",
+    "gender_dominance": {
+      "dominated_sex": "",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "tibetian_tsangpa_culture",
+    "base_slug": "indian_base",
+    "subbase_slug": "medieval_tibetan_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "himalayan_settlers_tradition",
+      "religious_patronage_tradition",
+      "sacred_mountains_tradition"
+    ],
+    "language_slug": "tibetic_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "tibetian_zhangzhung_culture",
+    "base_slug": "indian_base",
+    "subbase_slug": "medieval_tibetan_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "himalayan_settlers_tradition",
+      "sacred_mountains_tradition"
+    ],
+    "language_slug": "tibetic_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

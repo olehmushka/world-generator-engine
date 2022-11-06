@@ -1,1 +1,40 @@
-[]
+[
+  {
+    "slug": "african_afar_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "medieval_horn_african_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "eye_for_an_eye_tradition",
+      "mountain_skirmishing_tradition",
+      "monogamous_tradition",
+      "warrior_culture_tradition"
+    ],
+    "language_slug": "saho_afar_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "african_beja_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "medieval_horn_african_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "desert_travelers_tradition",
+      "mountain_skirmishing_tradition",
+      "isolationist_tradition",
+      "warriors_of_the_dry_tradition"
+    ],
+    "language_slug": "beja_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

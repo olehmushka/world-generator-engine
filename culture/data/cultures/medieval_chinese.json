@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "slug": "chinese_han_culture",
+    "base_slug": "chinese_base",
+    "subbase_slug": "medieval_chinese_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "courtly_ethos",
+    "tradition_slugs": [
+      "court_eunuchs_tradition",
+      "family_business_tradition",
+      "mystical_ancestors_tradition",
+      "philosopher_culture_tradition"
+    ],
+    "language_slug": "chinese_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

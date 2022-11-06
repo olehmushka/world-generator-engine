@@ -1,1 +1,55 @@
-[]
+[
+  {
+    "slug": "ugro_permian_bjarmian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_ugro_permian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "caravaneers_tradition",
+      "charismatic_tradition",
+      "forest_wardens_tradition",
+      "xenophilic_tradition"
+    ],
+    "language_slug": "finnish_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+	{
+    "slug": "ugro_permian_ostyak_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_ugro_permian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "isolationist_tradition",
+      "strong_believers_tradition"
+    ],
+    "language_slug": "permyak_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+	{
+    "slug": "ugro_permian_permian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_ugro_permian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "forest_wardens_tradition",
+      "frugal_armorsmiths_tradition"
+    ],
+    "language_slug": "permyak_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

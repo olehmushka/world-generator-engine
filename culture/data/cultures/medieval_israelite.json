@@ -1,1 +1,81 @@
-[]
+[
+  {
+    "slug": "israelite_ashkenazi_culture",
+    "base_slug": "semitic_base",
+    "subbase_slug": "medieval_israelite_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "сommunal_ethos",
+    "tradition_slugs": [
+      "diasporic_tradition",
+      "philosopher_culture_tradition",
+      "bound_by_faith_tradition",
+      "defensive_tactics_tradition",
+      "forebearing_tradition"
+    ],
+    "language_slug": "ashkenazi_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "israelite_kochinim_culture",
+    "base_slug": "semitic_base",
+    "subbase_slug": "medieval_israelite_subbase",
+    "parent_culture_slugs": ["israelite_sephardi_culture", "dravidian_tamil_culture"],
+    "ethos_slug": "сommunal_ethos",
+    "tradition_slugs": [
+      "diasporic_tradition",
+      "philosopher_culture_tradition",
+      "fervent_temple_builders_tradition",
+      "xenophilic_tradition"
+    ],
+    "language_slug": "hebrew_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "israelite_radhanite_culture",
+    "base_slug": "semitic_base",
+    "subbase_slug": "medieval_israelite_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "egalitarian_ethos",
+    "tradition_slugs": [
+      "diasporic_tradition",
+      "philosopher_culture_tradition",
+      "defensive_tactics_tradition",
+      "maritime_mercantilism_tradition",
+      "xenophilic_tradition"
+    ],
+    "language_slug": "hebrew_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "israelite_sephardi_culture",
+    "base_slug": "semitic_base",
+    "subbase_slug": "medieval_israelite_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "diasporic_tradition",
+      "philosopher_culture_tradition",
+      "defensive_tactics_tradition",
+      "maritime_mercantilism_tradition",
+      "caravaneers_tradition"
+    ],
+    "language_slug": "sephardi_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

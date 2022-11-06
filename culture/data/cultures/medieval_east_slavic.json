@@ -1,1 +1,95 @@
-[]
+[
+  {
+    "slug": "slavic_ilmenian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_east_slavic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "agrarian_tradition",
+      "druzhina_tradition",
+      "forest_folk_tradition",
+      "hit_and_run_tacticians_tradition"
+    ],
+    "language_slug": "ruthenian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "slavic_ruthenian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_east_slavic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "courtly_ethos",
+    "tradition_slugs": [
+      "agrarian_tradition",
+      "druzhina_tradition",
+      "charismatic_tradition",
+      "city_keepers_tradition"
+    ],
+    "language_slug": "ruthenian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "slavic_moscovian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_east_slavic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "mendicant_mystics_tradition",
+      "druzhina_tradition",
+      "forest_folk_tradition"
+    ],
+    "language_slug": "russian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "slavic_severian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_east_slavic_subbase",
+    "parent_culture_slugs": ["slavic_ruthenian_culture"],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "druzhina_tradition",
+      "forest_folk_tradition",
+      "sacred_groves_tradition"
+    ],
+    "language_slug": "ruthenian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "slavic_volhynian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_east_slavic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "courtly_ethos",
+    "tradition_slugs": [
+      "agrarian_tradition",
+      "druzhina_tradition",
+      "astute_diplomats_tradition",
+      "city_keepers_tradition"
+    ],
+    "language_slug": "ruthenian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

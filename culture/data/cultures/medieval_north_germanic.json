@@ -1,1 +1,87 @@
-[]
+[
+  {
+    "slug": "germanic_danish_culture",
+    "base_slug": "nordic_europe_base",
+    "subbase_slug": "medieval_north_germanic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "eye_for_an_eye_tradition",
+      "hereditary_hierarchy_tradition",
+      "runestone_raisers_tradition",
+      "ting_meet_tradition",
+      "coastal_warriors_tradition",
+      "hirds_tradition"
+    ],
+    "language_slug": "danish_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "germanic_norse_culture",
+    "base_slug": "nordic_europe_base",
+    "subbase_slug": "medieval_north_germanic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "ting_meet_tradition",
+      "coastal_warriors_tradition",
+      "hirds_tradition",
+      "runestone_raisers_tradition",
+      "malleable_invaders_tradition",
+      "northern_stories_tradition",
+      "performative_honor_tradition",
+      "refined_poetry_tradition"
+    ],
+    "language_slug": "swedish_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "germanic_norwegian_culture",
+    "base_slug": "nordic_europe_base",
+    "subbase_slug": "medieval_north_germanic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "runestone_raisers_tradition",
+      "ting_meet_tradition",
+      "coastal_warriors_tradition",
+      "hirds_tradition",
+      "maritime_mercantilism_tradition",
+      "storytellers_tradition"
+    ],
+    "language_slug": "norwegian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "germanic_swedish_culture",
+    "base_slug": "nordic_europe_base",
+    "subbase_slug": "medieval_north_germanic_subbase",
+    "parent_culture_slugs": ["germanic_norse_culture"],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "runestone_raisers_tradition",
+      "ting_meet_tradition",
+      "coastal_warriors_tradition",
+      "hirds_tradition",
+      "strong_believers_tradition"
+    ],
+    "language_slug": "swedish_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

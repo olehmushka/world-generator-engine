@@ -1,1 +1,77 @@
-[]
+[
+	{
+    "slug": "germanic_anglo_saxon_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_west_germanic_subbase",
+    "parent_culture_slugs": ["germanic_old_saxon_culture"],
+    "ethos_slug": "bureaucratic_ethos",
+    "tradition_slugs": [
+      "city_keepers_tradition",
+      "hirds_tradition",
+      "the_witenagemot_tradition"
+    ],
+    "language_slug": "english_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+	{
+    "slug": "germanic_english_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_west_germanic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bureaucratic_ethos",
+    "tradition_slugs": [
+      "castle_keepers_tradition",
+      "chivalry_tradition",
+      "hereditary_hierarchy_tradition",
+      "longbow_competitions_tradition"
+    ],
+    "language_slug": "english_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+	{
+    "slug": "germanic_old_saxon_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_west_germanic_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "hirds_tradition",
+      "seafarers_tradition",
+      "ting_meet_tradition",
+      "malleable_invaders_tradition"
+    ],
+    "language_slug": "saxon_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+	{
+    "slug": "germanic_scots_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_west_germanic_subbase",
+    "parent_culture_slugs": ["germanic_anglo_saxon_culture", "brythonic_cumbrian_culture"],
+    "ethos_slug": "bureaucratic_ethos",
+    "tradition_slugs": [
+      "city_keepers_tradition",
+      "hereditary_hierarchy_tradition",
+      "strong_kinship_tradition",
+      "xenophilic_tradition"
+    ],
+    "language_slug": "scots_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

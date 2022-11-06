@@ -1,1 +1,98 @@
-[]
+[
+  {
+    "slug": "arabic_bedouin_culture",
+    "base_slug": "semitic_base",
+    "subbase_slug": "ancient_arabian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "caravaneers_tradition",
+      "desert_travelers_tradition",
+      "mubarizun_tradition",
+      "tribal_unity_tradition"
+    ],
+    "language_slug": "arabic_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "arabic_egyptian_culture",
+    "base_slug": "semitic_base",
+    "subbase_slug": "ancient_arabian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "agrarian_tradition",
+      "philosopher_culture_tradition",
+      "mubarizun_tradition",
+      "strong_believers_tradition"
+    ],
+    "language_slug": "arabic_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "arabic_maghrebi_culture",
+    "base_slug": "semitic_base",
+    "subbase_slug": "ancient_arabian_subbase",
+    "parent_culture_slugs": ["arabic_bedouin_culture", "berber_baranis_culture"],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "african_tolerance_tradition",
+      "dexterous_fishermen_tradition",
+      "mubarizun_tradition",
+      "dryland_dwellers_tradition",
+      "xenophilic_tradition"
+    ],
+    "language_slug": "arabic_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "arabic_mashriqi_culture",
+    "base_slug": "semitic_base",
+    "subbase_slug": "ancient_arabian_subbase",
+    "parent_culture_slugs": ["arabic_bedouin_culture"],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "dryland_dwellers_tradition",
+      "mubarizun_tradition",
+      "philosopher_culture_tradition",
+      "medicinal_herbalists_tradition"
+    ],
+    "language_slug": "arabic_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "arabic_yemeni_culture",
+    "base_slug": "semitic_base",
+    "subbase_slug": "ancient_arabian_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "maritime_mercantilism_tradition",
+      "mountain_herding_tradition",
+      "mountaineers_tradition",
+      "religion_blending_tradition"
+    ],
+    "language_slug": "arabic_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "strong_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

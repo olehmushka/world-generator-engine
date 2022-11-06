@@ -1,1 +1,76 @@
-[]
+[
+  {
+    "slug": "slavic_bosnian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_south_slavic_subbase",
+    "parent_culture_slugs": ["slavic_croatian_culture", "slavic_serbian_culture"],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "isolationist_tradition",
+      "mendicant_mystics_tradition",
+      "monastic_communities_tradition"
+    ],
+    "language_slug": "bosnian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "slavic_bulgarian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_south_slavic_subbase",
+    "parent_culture_slugs": ["slavic_croatian_culture", "turkic_bolghar_culture"],
+    "ethos_slug": "bureaucratic_ethos",
+    "tradition_slugs": [
+      "konni_raids_tradition",
+      "merciful_blindings_tradition",
+      "ruling_caste_tradition",
+      "stand_and_fight_tradition"
+    ],
+    "language_slug": "bulgarian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "slavic_croatian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_south_slavic_subbase",
+    "parent_culture_slugs": ["slavic_croatian_culture", "turkic_bolghar_culture"],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "konni_raids_tradition",
+      "hereditary_hierarchy_tradition",
+      "astute_diplomats_tradition"
+    ],
+    "language_slug": "croation_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "slavic_serbian_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_south_slavic_subbase",
+    "parent_culture_slugs": ["slavic_croatian_culture", "turkic_bolghar_culture"],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "konni_raids_tradition",
+      "religious_patronage_tradition",
+      "stalwart_defenders_tradition",
+      "staunch_traditionalists_tradition"
+    ],
+    "language_slug": "serbian_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

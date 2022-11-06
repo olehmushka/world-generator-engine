@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "slug": "goidelic_gaelic_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_goidelic_subbase",
+    "parent_culture_slugs": ["brythonic_pictish_culture", "goidelic_irish_culture"],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "concubines_tradition",
+      "dexterous_fishermen_tradition",
+      "highland_warriors_tradition",
+      "hill_dwellers_tradition",
+      "strong_kinship_tradition"
+    ],
+    "language_slug": "scottish_gaelic_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "goidelic_irish_culture",
+    "base_slug": "europe_continental_base",
+    "subbase_slug": "medieval_goidelic_subbase",
+    "parent_culture_slugs": ["brythonic_pictish_culture", "goidelic_irish_culture"],
+    "ethos_slug": "courtly_ethos",
+    "tradition_slugs": [
+      "maritime_mercantilism_tradition",
+      "monastic_communities_tradition",
+      "pastorialists_tradition",
+      "polygamous_tradition",
+      "refined_poetry_tradition"
+    ],
+    "language_slug": "irish_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]

@@ -1,1 +1,75 @@
-[]
+[
+  {
+    "slug": "niger_delta_edo_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "medieval_niger_delta_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "egalitarian_ethos",
+    "tradition_slugs": [
+      "bush_hunting_tradition",
+      "hidden_cities_tradition",
+      "parochialism_tradition"
+    ],
+    "language_slug": "kwa_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "niger_delta_ewe_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "medieval_niger_delta_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "bush_hunting_tradition",
+      "legalistic_tradition",
+      "religion_blending_tradition"
+    ],
+    "language_slug": "kwa_lang",
+    "gender_dominance": {
+      "dominated_sex": "",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "men_and_women"
+  },
+  {
+    "slug": "niger_delta_igbo_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "medieval_niger_delta_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "spiritual_ethos",
+    "tradition_slugs": [
+      "bush_hunting_tradition",
+      "hidden_cities_tradition",
+      "recognition_of_talent_tradition"
+    ],
+    "language_slug": "kwa_lang",
+    "gender_dominance": {
+      "dominated_sex": "",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "men_and_women"
+  },
+  {
+    "slug": "niger_delta_yoruba_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "medieval_niger_delta_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "communal_ethos",
+    "tradition_slugs": [
+      "bush_hunting_tradition",
+      "hidden_cities_tradition",
+      "equal_inheritance_tradition",
+      "philosopher_culture_tradition"
+    ],
+    "language_slug": "kwa_lang",
+    "gender_dominance": {
+      "dominated_sex": "",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "men_and_women"
+  }
+]

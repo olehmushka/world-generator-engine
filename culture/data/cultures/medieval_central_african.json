@@ -1,1 +1,73 @@
-[]
+[
+  {
+    "slug": "african_hausa_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "medieval_central_african_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "egalitarian_ethos",
+    "tradition_slugs": [
+      "caravaneers_tradition",
+      "family_business_tradition",
+      "parochialism_tradition"
+    ],
+    "language_slug": "hausa_lang",
+    "gender_dominance": {
+      "dominated_sex": "",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "men_and_women"
+  },
+  {
+    "slug": "african_kanuri_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "medieval_central_african_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "hit_and_run_tacticians_tradition",
+      "quarrelsome_tradition"
+    ],
+    "language_slug": "tebu_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "african_nupe_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "medieval_central_african_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "bellicose_ethos",
+    "tradition_slugs": [
+      "musical_theorists_tradition",
+      "parochialism_tradition"
+    ],
+    "language_slug": "kwa_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  },
+  {
+    "slug": "african_sao_culture",
+    "base_slug": "african_base",
+    "subbase_slug": "medieval_central_african_subbase",
+    "parent_culture_slugs": [],
+    "ethos_slug": "stoic_ethos",
+    "tradition_slugs": [
+      "agrarian_tradition",
+      "city_keepers_tradition",
+      "dryland_dwellers_tradition",
+      "parochialism_tradition"
+    ],
+    "language_slug": "hausa_lang",
+    "gender_dominance": {
+      "dominated_sex": "male_sex",
+      "influence": "moderate_influence"
+    },
+    "martial_custom": "only_men"
+  }
+]
