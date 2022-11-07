@@ -89,6 +89,18 @@ func TestGetLanguageKinship(t *testing.T) {
 	}
 }
 
+func TestRandomLanguageSlug(t *testing.T) {
+	t.Error("test is not written yet")
+}
+
+func TestFindLanguageBySlug(t *testing.T) {
+	t.Error("test is not written yet")
+}
+
+func TestSelectLanguageSlugByMostRecent(t *testing.T) {
+	t.Error("test is not written yet")
+}
+
 func TestLoadAllLanguages(t *testing.T) {
 	var count int
 	for chunk := range LoadAllLanguages() {

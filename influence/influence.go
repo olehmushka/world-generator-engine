@@ -18,6 +18,10 @@ const (
 	WeakInfluence     Influence = "weak_influence"
 )
 
+func GetRandom() (Influence, error) {
+	return GetInfluenceByProbability(0.32, 0.35, 0.32)
+}
+
 func GetInfluenceByProbability(strong, moderate, weak float64) (Influence, error) {
 	i, err := mapTools.PickOneByProb(map[string]float64{
 		string(StrongInfluence):   randomTools.PrepareProbability(strong),

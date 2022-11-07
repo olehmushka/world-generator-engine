@@ -10,9 +10,59 @@ import (
 	"sync"
 
 	"github.com/olehmushka/golang-toolkit/either"
+	mapTools "github.com/olehmushka/golang-toolkit/map_tools"
+	randomTools "github.com/olehmushka/golang-toolkit/random_tools"
 	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
 )
+
+func RandomBase(in []string) (string, error) {
+	if len(in) == 0 {
+		return "", wrapped_error.NewBadRequestError(nil, "can not get random base of empty slice of bases")
+	}
+	if len(in) == 1 {
+		return in[0], nil
+	}
+
+	out, err := sliceTools.RandomValueOfSlice(randomTools.RandFloat64, in)
+	if err != nil {
+		return "", wrapped_error.NewInternalServerError(err, "can not get random base")
+	}
+
+	return out, nil
+}
+
+func ExtractBases(cultures []*Culture) []string {
+	out := make([]string, len(cultures))
+	for i := range out {
+		out[i] = cultures[i].BaseSlug
+	}
+
+	return out
+}
+
+func SelectBaseByMostRecent(in []string) (string, error) {
+	m := make(map[string]int, 3)
+	for _, baseSlug := range in {
+		if count, ok := m[baseSlug]; ok {
+			m[baseSlug] = count + 1
+		} else {
+			m[baseSlug] = 1
+		}
+	}
+	probs := make(map[string]float64, 3)
+	total := float64(len(in))
+	for baseSlug, count := range m {
+		probs[baseSlug] = float64(count) / total
+	}
+
+	baseSlug, err := mapTools.PickOneByProb(probs)
+	if err != nil {
+		return "", wrapped_error.NewInternalServerError(err, "can not select base slug by most recent")
+	}
+
+	return baseSlug, nil
+}
 
 func LoadAllBases() chan either.Either[[]string] {
 	_, filename, _, _ := runtime.Caller(1)

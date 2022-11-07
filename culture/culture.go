@@ -10,10 +10,12 @@ import (
 	"sync"
 
 	"github.com/olehmushka/golang-toolkit/either"
+	randomtools "github.com/olehmushka/golang-toolkit/random_tools"
 	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
 	genderAcceptance "github.com/olehmushka/world-generator-engine/gender_acceptance"
 	genderDominance "github.com/olehmushka/world-generator-engine/gender_dominance"
+	"github.com/olehmushka/world-generator-engine/language"
 )
 
 type RawCulture struct {
@@ -38,6 +40,132 @@ type Culture struct {
 	LanguageSlug    string                      `json:"language_slug" bson:"language_slug"`
 	GenderDominance genderDominance.Dominance   `json:"gender_dominance" bson:"gender_dominance"`
 	MartialCustom   genderAcceptance.Acceptance `json:"martial_custom" bson:"martial_custom"`
+}
+
+type CreateCultureOpts struct {
+	LanguageSlugs []string
+	BaseSlugs     []string
+	Subbases      []Subbase
+	Ethoses       []Ethos
+	Traditions    []*Tradition
+}
+
+// Generate This method generates culture from already generated cultures
+// Or it can generate from data from opts passing via arguments
+// The method does not generate slug for the culture. It should be done by word_generator (Please, use GenrateSlug func for preparing generated word for using it as culture's slug)
+func Generate(opts *CreateCultureOpts, parents ...*Culture) (*Culture, error) {
+	if len(parents) == 0 {
+		c, err := New(opts)
+		if err != nil {
+			return nil, wrapped_error.NewInternalServerError(err, "can not generate random culture")
+		}
+		if c == nil {
+			return nil, wrapped_error.NewBadRequestError(nil, "can not genererate culture with options")
+		}
+
+		return c, nil
+	}
+	c := &Culture{
+		ParentCultures: parents,
+	}
+	gd, err := genderDominance.SelectGenderDominanceByMostRecent(ExtractGenderDominances(parents))
+	if err != nil {
+		return nil, wrapped_error.NewInternalServerError(err, "can not select dominated gender for generated culture")
+	}
+	c.GenderDominance = gd
+
+	mc, err := genderAcceptance.SelectAcceptanceByMostRecent(ExtractMartialCusoms(parents))
+	if err != nil {
+		return nil, wrapped_error.NewInternalServerError(err, "can not select martial custom for generated culture")
+	}
+	c.MartialCustom = mc
+
+	e, err := SelectEthosByMostRecent(ExtractEthoses(parents))
+	if err != nil {
+		return nil, wrapped_error.NewInternalServerError(err, "can not select ethos for generated culture")
+	}
+	c.Ethos = e
+
+	ts, err := RandomTraditions(UniqueTraditions(ExtractTraditions(parents)), 2, 7, e, gd.DominatedSex)
+	if err != nil {
+		return nil, wrapped_error.NewInternalServerError(err, "can not select traditions for generated culture")
+	}
+	c.Traditions = ts
+
+	baseSlug, err := SelectBaseByMostRecent(ExtractBases(parents))
+	if err != nil {
+		return nil, wrapped_error.NewInternalServerError(err, "can not select base_slug for generated culture")
+	}
+	c.BaseSlug = baseSlug
+
+	subbase, err := SelectSubbaseByMostRecent(FilterSubbasesByBaseSlug(ExtractSubbases(parents), baseSlug))
+	if err != nil {
+		return nil, wrapped_error.NewInternalServerError(err, "can not select subbase for generated culture")
+	}
+	c.Subbase = subbase
+
+	langSlug, err := language.SelectLanguageSlugByMostRecent(ExtractLanguageSlugs(parents))
+	if err != nil {
+		return nil, wrapped_error.NewInternalServerError(err, "can not generate language for random culture")
+	}
+	c.LanguageSlug = langSlug
+
+	return c, nil
+}
+
+func New(opts *CreateCultureOpts) (*Culture, error) {
+	if opts == nil {
+		return nil, nil
+	}
+
+	out := &Culture{}
+	gd, err := genderDominance.GetRandom()
+	if err != nil {
+		return nil, wrapped_error.NewInternalServerError(err, "can not generate dominated gender for random culture")
+	}
+	out.GenderDominance = gd
+
+	mc, err := RandomMartialCustom(gd)
+	if err != nil {
+		return nil, wrapped_error.NewInternalServerError(err, "can not generate martial custom for random culture")
+	}
+	out.MartialCustom = mc
+
+	e, err := RandomEthos(opts.Ethoses)
+	if err != nil {
+		return nil, wrapped_error.NewInternalServerError(err, "can not generate ethos for random culture")
+	}
+	out.Ethos = e
+
+	ts, err := RandomTraditions(opts.Traditions, 2, 7, e, gd.DominatedSex)
+	if err != nil {
+		return nil, wrapped_error.NewInternalServerError(err, "can not generate traditions for random culture")
+	}
+	out.Traditions = ts
+
+	baseSlug, err := RandomBase(opts.BaseSlugs)
+	if err != nil {
+		return nil, wrapped_error.NewInternalServerError(err, "can not generate base_slug for random culture")
+	}
+	out.BaseSlug = baseSlug
+
+	subbase, err := RandomSubbase(FilterSubbasesByBaseSlug(opts.Subbases, baseSlug))
+	if err != nil {
+		return nil, wrapped_error.NewInternalServerError(err, "can not generate subbase for random culture")
+	}
+	out.Subbase = subbase
+
+	langSlug, err := language.RandomLanguageSlug(opts.LanguageSlugs)
+	if err != nil {
+		return nil, wrapped_error.NewInternalServerError(err, "can not generate language for random culture")
+	}
+	out.LanguageSlug = langSlug
+
+	return out, nil
+}
+
+func GenrateSlug(word string) string {
+	return fmt.Sprintf("%sian_%s%s", word, randomtools.UUIDString(), RequiredCultureSlugSuffix)
 }
 
 func LoadAllRawCultures() chan either.Either[[]*RawCulture] {

@@ -10,6 +10,8 @@ import (
 	"sync"
 
 	"github.com/olehmushka/golang-toolkit/either"
+	mapTools "github.com/olehmushka/golang-toolkit/map_tools"
+	randomTools "github.com/olehmushka/golang-toolkit/random_tools"
 	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
 )
@@ -17,6 +19,70 @@ import (
 type Subbase struct {
 	Slug     string `json:"slug" bson:"slug"`
 	BaseSlug string `json:"base_slug" bson:"base_slug"`
+}
+
+func FilterSubbasesByBaseSlug(subbases []Subbase, baseSlug string) []Subbase {
+	out := make([]Subbase, 0, (len(subbases)/2)+1)
+	for _, sb := range subbases {
+		if sb.BaseSlug == baseSlug {
+			out = append(out, sb)
+		}
+	}
+
+	return out
+}
+
+func RandomSubbase(in []Subbase) (Subbase, error) {
+	if len(in) == 0 {
+		return Subbase{}, wrapped_error.NewBadRequestError(nil, "can not get random subbase of empty slice of subbases")
+	}
+	if len(in) == 1 {
+		return in[0], nil
+	}
+
+	out, err := sliceTools.RandomValueOfSlice(randomTools.RandFloat64, in)
+	if err != nil {
+		return Subbase{}, wrapped_error.NewInternalServerError(err, "can not get random subbase")
+	}
+
+	return out, nil
+}
+
+func ExtractSubbases(cultures []*Culture) []Subbase {
+	out := make([]Subbase, len(cultures))
+	for i := range out {
+		out[i] = cultures[i].Subbase
+	}
+
+	return out
+}
+
+func SelectSubbaseByMostRecent(in []Subbase) (Subbase, error) {
+	m := make(map[string]int, 3)
+	for _, sb := range in {
+		if count, ok := m[sb.Slug]; ok {
+			m[sb.Slug] = count + 1
+		} else {
+			m[sb.Slug] = 1
+		}
+	}
+	probs := make(map[string]float64, 3)
+	total := float64(len(in))
+	for slug, count := range m {
+		probs[slug] = float64(count) / total
+	}
+
+	slug, err := mapTools.PickOneByProb(probs)
+	if err != nil {
+		return Subbase{}, wrapped_error.NewInternalServerError(err, "can not select subbase by most recent")
+	}
+	for _, sb := range in {
+		if sb.Slug == slug {
+			return sb, nil
+		}
+	}
+
+	return Subbase{}, wrapped_error.NewInternalServerError(nil, fmt.Sprintf("can not select subbase by slug (slug=%s)", slug))
 }
 
 func LoadAllSubbases() chan either.Either[[]*Subbase] {

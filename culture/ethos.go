@@ -11,6 +11,7 @@ import (
 
 	"github.com/olehmushka/golang-toolkit/either"
 	mapTools "github.com/olehmushka/golang-toolkit/map_tools"
+	randomTools "github.com/olehmushka/golang-toolkit/random_tools"
 	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
 )
@@ -29,33 +30,20 @@ func (e Ethos) IsZero() bool {
 	return e == Ethos{}
 }
 
-func getRandomEthosFromCultures(proto []*Culture) (Ethos, error) {
-	ethoses := UniqueEthoses(ExtractEthoses(proto))
-	m := make(map[string]int)
-	for _, c := range proto {
-		if _, ok := m[c.Ethos.Slug]; ok {
-			m[c.Ethos.Slug]++
-			continue
-		}
-		m[c.Ethos.Slug] = 1
+func RandomEthos(in []Ethos) (Ethos, error) {
+	if len(in) == 0 {
+		return Ethos{}, wrapped_error.NewBadRequestError(nil, "can not get random ethos of empty slice of ethoses")
+	}
+	if len(in) == 1 {
+		return in[0], nil
 	}
 
-	mWithProb := make(map[string]float64, len(m))
-	for name, amount := range m {
-		mWithProb[name] = float64(amount) / float64(len(proto))
-	}
-
-	chosenEthos, err := mapTools.PickOneByProb(mWithProb)
+	out, err := sliceTools.RandomValueOfSlice(randomTools.RandFloat64, in)
 	if err != nil {
-		return Ethos{}, wrapped_error.NewInternalServerError(err, "can not generate ethos")
-	}
-	for _, e := range ethoses {
-		if e.Slug == chosenEthos {
-			return e, nil
-		}
+		return Ethos{}, wrapped_error.NewInternalServerError(err, "can not get random ethos")
 	}
 
-	return Ethos{}, nil
+	return out, nil
 }
 
 func ExtractEthoses(cultures []*Culture) []Ethos {
@@ -72,6 +60,34 @@ func ExtractEthoses(cultures []*Culture) []Ethos {
 	}
 
 	return out
+}
+
+func SelectEthosByMostRecent(in []Ethos) (Ethos, error) {
+	m := make(map[string]int, 3)
+	for _, e := range in {
+		if count, ok := m[e.Slug]; ok {
+			m[e.Slug] = count + 1
+		} else {
+			m[e.Slug] = 1
+		}
+	}
+	probs := make(map[string]float64, 3)
+	total := float64(len(in))
+	for slug, count := range m {
+		probs[slug] = float64(count) / total
+	}
+
+	slug, err := mapTools.PickOneByProb(probs)
+	if err != nil {
+		return Ethos{}, wrapped_error.NewInternalServerError(err, "can not select language slug by most recent")
+	}
+	for _, e := range in {
+		if e.Slug == slug {
+			return e, nil
+		}
+	}
+
+	return Ethos{}, wrapped_error.NewInternalServerError(nil, fmt.Sprintf("can not select language by slug (slug=%s)", slug))
 }
 
 func UniqueEthoses(ethoses []Ethos) []Ethos {

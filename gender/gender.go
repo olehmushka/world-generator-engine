@@ -24,6 +24,10 @@ func (s Sex) IsFemale() bool {
 	return s == FemaleSex
 }
 
+func (s Sex) IsZero() bool {
+	return s == ""
+}
+
 func GetRandomSex() (Sex, error) {
 	isMale, err := randomTools.GetRandomBool(0.5)
 	if err != nil {

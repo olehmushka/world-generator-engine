@@ -11,6 +11,7 @@ import (
 
 	"github.com/olehmushka/golang-toolkit/either"
 	"github.com/olehmushka/golang-toolkit/list"
+	mapTools "github.com/olehmushka/golang-toolkit/map_tools"
 	randomTools "github.com/olehmushka/golang-toolkit/random_tools"
 	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
@@ -110,6 +111,55 @@ func GetLanguageSimilarityCoef(l1, l2 *Language) (float64, error) {
 	default:
 		return 1 / float64(kinship), nil
 	}
+}
+
+func RandomLanguageSlug(in []string) (string, error) {
+	if len(in) == 0 {
+		return "", wrapped_error.NewBadRequestError(nil, "can not get random language of empty slice of languages")
+	}
+	if len(in) == 1 {
+		return in[0], nil
+	}
+
+	out, err := sliceTools.RandomValueOfSlice(randomTools.RandFloat64, in)
+	if err != nil {
+		return "", wrapped_error.NewInternalServerError(err, "can not get random language")
+	}
+
+	return out, nil
+}
+
+func FindLanguageBySlug(langs []*Language, slug string) *Language {
+	for _, lang := range langs {
+		if lang.Slug == slug {
+			return lang
+		}
+	}
+
+	return nil
+}
+
+func SelectLanguageSlugByMostRecent(in []string) (string, error) {
+	m := make(map[string]int, 3)
+	for _, slug := range in {
+		if count, ok := m[slug]; ok {
+			m[slug] = count + 1
+		} else {
+			m[slug] = 1
+		}
+	}
+	probs := make(map[string]float64, 3)
+	total := float64(len(in))
+	for slug, count := range m {
+		probs[slug] = float64(count) / total
+	}
+
+	slug, err := mapTools.PickOneByProb(probs)
+	if err != nil {
+		return "", wrapped_error.NewInternalServerError(err, "can not select language slug by most recent")
+	}
+
+	return slug, nil
 }
 
 func LoadAllLanguages() chan either.Either[*Language] {

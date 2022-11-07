@@ -1,18 +1,52 @@
 package culture
 
 import (
+	"strings"
 	"testing"
 )
 
+func TestRandomTraditions(t *testing.T) {
+	t.Error("test is not written yet")
+}
+
+func TestFilterTraditionsByEthos(t *testing.T) {
+	t.Error("test is not written yet")
+}
+
+func TestFilterTraditionsByDomitatedSex(t *testing.T) {
+	t.Error("test is not written yet")
+}
+
+func TestExtractTraditions(t *testing.T) {
+	t.Error("test is not written yet")
+}
+
+func TestUniqueTraditions(t *testing.T) {
+	t.Error("test is not written yet")
+}
+
 func TestLoadAllTraditions(t *testing.T) {
+	var count int
+
 	for chunk := range LoadAllTraditions() {
 		if chunk.Err != nil {
 			t.Fatalf("unexpected error (err=%+v)", chunk.Err)
 			return
 		}
 		if len(chunk.Value) == 0 {
-			t.Fatalf("unexpected length of traditions")
+			t.Errorf("unexpected length of traditions")
 		}
+		for _, c := range chunk.Value {
+			if !strings.HasSuffix(c.Slug, RequiredTraditionSlugSuffix) {
+				t.Errorf("unexpected tradition slug suffix (slug=%s)", c.Slug)
+			}
+		}
+
+		count += len(chunk.Value)
+	}
+
+	if expecCount := 147; count != expecCount {
+		t.Errorf("unexpected count of traditions (expected=%d, actual=%d)", expecCount, count)
 	}
 }
 
