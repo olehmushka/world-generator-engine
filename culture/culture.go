@@ -10,7 +10,7 @@ import (
 	"sync"
 
 	"github.com/olehmushka/golang-toolkit/either"
-	randomtools "github.com/olehmushka/golang-toolkit/random_tools"
+	randomTools "github.com/olehmushka/golang-toolkit/random_tools"
 	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
 	genderAcceptance "github.com/olehmushka/world-generator-engine/gender_acceptance"
@@ -165,7 +165,7 @@ func New(opts *CreateCultureOpts) (*Culture, error) {
 }
 
 func GenrateSlug(word string) string {
-	return fmt.Sprintf("%sian_%s%s", word, randomtools.UUIDString(), RequiredCultureSlugSuffix)
+	return fmt.Sprintf("%sian_%s%s", word, randomTools.UUIDString(), RequiredCultureSlugSuffix)
 }
 
 func LoadAllRawCultures() chan either.Either[[]*RawCulture] {

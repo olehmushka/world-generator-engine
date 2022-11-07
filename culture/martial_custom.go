@@ -11,15 +11,15 @@ func RandomMartialCustom(d genderDominance.Dominance) (genderAcceptance.Acceptan
 	var (
 		onlyMen     = 0.35
 		menAndWomen = 0.2
-		onlyWomen   = 0.05
+		onlyWomen   = 0.15
 	)
 	switch {
 	case d.DominatedSex.IsMale():
-		onlyMen += 0.2
+		onlyMen += 0.25
 	case d.DominatedSex.IsZero():
-		menAndWomen += 0.2
+		menAndWomen += 0.25
 	case d.DominatedSex.IsFemale():
-		onlyWomen += 0.2
+		onlyWomen += 0.25
 	}
 
 	mc, err := mapTools.PickOneByProb(map[string]float64{

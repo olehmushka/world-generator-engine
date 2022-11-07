@@ -6,15 +6,51 @@ import (
 )
 
 func TestFilterSubbasesByBaseSlug(t *testing.T) {
-	t.Error("test is not written yet")
+	baseSlug := "europe_continental_base"
+	result := FilterSubbasesByBaseSlug(mockSubbases, baseSlug)
+	var count int
+	for i, sb := range result {
+		if sb.BaseSlug != baseSlug {
+			t.Errorf("unexpected base_slug (expected=%s, actual=%s)", baseSlug, sb.BaseSlug)
+		}
+		count = i + 1
+	}
+
+	if expecCount := 24; count != expecCount {
+		t.Errorf("unexpected count of filtered subbases (expected=%d, actual=%d)", expecCount, count)
+	}
 }
 
 func TestRandomSubbase(t *testing.T) {
-	t.Error("test is not written yet")
+	result, err := RandomSubbase(mockSubbases)
+	if err != nil {
+		t.Fatalf("unexpected err (err=%+v)", err)
+	}
+	if result.IsZero() {
+		t.Errorf("result should not be empty string")
+		return
+	}
+	var isSubbasesIncludeResult bool
+	for _, sb := range mockSubbases {
+		if sb.Slug == result.Slug {
+			isSubbasesIncludeResult = true
+		}
+	}
+	if !isSubbasesIncludeResult {
+		t.Errorf("result subbase should be picked from input slice")
+	}
 }
 
 func TestExtractSubbases(t *testing.T) {
-	t.Error("test is not written yet")
+	subbases := ExtractSubbases(mockCultures)
+	if len(subbases) != len(mockCultures) {
+		t.Errorf("unexpected extracted subbase length (expected=%d, actual=%d)", len(mockCultures), len(subbases))
+	}
+	for _, subbase := range subbases {
+		if !strings.HasSuffix(subbase.Slug, RequiredSubbaseSlugSuffix) {
+			t.Errorf("unexpected subbase slug suffix (slug=%s)", subbase.Slug)
+		}
+	}
 }
 
 func TestSelectSubbaseByMostRecent(t *testing.T) {

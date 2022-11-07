@@ -21,6 +21,10 @@ type Subbase struct {
 	BaseSlug string `json:"base_slug" bson:"base_slug"`
 }
 
+func (sb Subbase) IsZero() bool {
+	return sb == Subbase{}
+}
+
 func FilterSubbasesByBaseSlug(subbases []Subbase, baseSlug string) []Subbase {
 	out := make([]Subbase, 0, (len(subbases)/2)+1)
 	for _, sb := range subbases {

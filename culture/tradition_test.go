@@ -3,10 +3,52 @@ package culture
 import (
 	"strings"
 	"testing"
+
+	"github.com/olehmushka/world-generator-engine/gender"
 )
 
 func TestRandomTraditions(t *testing.T) {
-	t.Error("test is not written yet")
+	tCases := []struct {
+		name            string
+		inputTraditions []*Tradition
+		min, max        int
+		ethos           Ethos
+		ds              gender.Sex
+		expectedOutput  []*Tradition
+	}{
+		{
+			name: "",
+			inputTraditions: []*Tradition{
+				{Slug: "equal_inheritance_tradition", OmitGenderDominance: []gender.Sex{"male_sex", "female_sex"}},
+				{Slug: "equal_inheritance_tradition", OmitGenderDominance: []gender.Sex{"male_sex", ""}},
+				{Slug: "city_keepers_tradition", OmitGenderDominance: []gender.Sex{}},
+				{Slug: "forest_folk_tradition", OmitGenderDominance: []gender.Sex{}},
+				{Slug: "hit_and_run_tacticians_tradition", OmitGenderDominance: []gender.Sex{}},
+				{Slug: "agrarian_tradition", OmitGenderDominance: []gender.Sex{}, OmitEthosSlugs: []string{"bellicose_ethos"}},
+			},
+			min:   2,
+			max:   5,
+			ethos: Ethos{Slug: "bellicose_ethos"},
+			ds:    gender.MaleSex,
+			expectedOutput: []*Tradition{
+				{Slug: "city_keepers_tradition", OmitGenderDominance: []gender.Sex{}},
+				{Slug: "forest_folk_tradition", OmitGenderDominance: []gender.Sex{}},
+				{Slug: "hit_and_run_tacticians_tradition", OmitGenderDominance: []gender.Sex{}},
+			},
+		},
+	}
+
+	for _, tc := range tCases {
+		t.Run(tc.name, func(tt *testing.T) {
+			out, err := RandomTraditions(tc.inputTraditions, tc.min, tc.max, tc.ethos, tc.ds)
+			if err != nil {
+				t.Fatalf("unexpected err (err=%+v)", err)
+			}
+			if len(out) != len(tc.expectedOutput) {
+				t.Errorf("unexpected output (expected_length=%+v, actual_length=%+v)", len(tc.expectedOutput), len(out))
+			}
+		})
+	}
 }
 
 func TestFilterTraditionsByEthos(t *testing.T) {
@@ -14,15 +56,93 @@ func TestFilterTraditionsByEthos(t *testing.T) {
 }
 
 func TestFilterTraditionsByDomitatedSex(t *testing.T) {
-	t.Error("test is not written yet")
+	tCases := []struct {
+		name           string
+		input          []*Tradition
+		inputSex       gender.Sex
+		expectedOutput []*Tradition
+	}{
+		{
+			name: "should work for male sex",
+			input: []*Tradition{
+				{Slug: "equal_inheritance_tradition", OmitGenderDominance: []gender.Sex{"male_sex", "female_sex"}},
+				{Slug: "equal_inheritance_tradition", OmitGenderDominance: []gender.Sex{"male_sex", ""}},
+				{Slug: "city_keepers_tradition", OmitGenderDominance: []gender.Sex{}},
+				{Slug: "forest_folk_tradition", OmitGenderDominance: []gender.Sex{}},
+				{Slug: "hit_and_run_tacticians_tradition", OmitGenderDominance: []gender.Sex{}},
+				{Slug: "agrarian_tradition", OmitGenderDominance: []gender.Sex{}},
+			},
+			inputSex: gender.MaleSex,
+			expectedOutput: []*Tradition{
+				{Slug: "city_keepers_tradition", OmitGenderDominance: []gender.Sex{}},
+				{Slug: "forest_folk_tradition", OmitGenderDominance: []gender.Sex{}},
+				{Slug: "hit_and_run_tacticians_tradition", OmitGenderDominance: []gender.Sex{}},
+				{Slug: "agrarian_tradition", OmitGenderDominance: []gender.Sex{}},
+			},
+		},
+	}
+
+	for _, tc := range tCases {
+		t.Run(tc.name, func(tt *testing.T) {
+			if out := FilterTraditionsByDomitatedSex(tc.input, tc.inputSex); len(out) != len(tc.expectedOutput) {
+				t.Errorf("unexpected output (expected_length=%+v, actual_length=%+v)", len(tc.expectedOutput), len(out))
+			}
+		})
+	}
 }
 
 func TestExtractTraditions(t *testing.T) {
-	t.Error("test is not written yet")
+	traditions := ExtractTraditions(mockCultures)
+	var expectedCount int
+	for _, c := range mockCultures {
+		expectedCount += len(c.Traditions)
+	}
+	if len(traditions) != expectedCount {
+		t.Errorf("unexpected extracted tradition length (expected=%d, actual=%d)", expectedCount, len(traditions))
+	}
+	for _, tradition := range traditions {
+		if !strings.HasSuffix(tradition.Slug, RequiredTraditionSlugSuffix) {
+			t.Errorf("unexpected tradition slug suffix (slug=%s)", tradition.Slug)
+		}
+	}
 }
 
 func TestUniqueTraditions(t *testing.T) {
-	t.Error("test is not written yet")
+	tCases := []struct {
+		name           string
+		input          []*Tradition
+		expectedOutput []*Tradition
+	}{
+		{
+			name: "should work for shuffeled",
+			input: []*Tradition{
+				{Slug: "agrarian_tradition"},
+				{Slug: "druzhina_tradition"},
+				{Slug: "charismatic_tradition"},
+				{Slug: "city_keepers_tradition"},
+				{Slug: "agrarian_tradition"},
+				{Slug: "druzhina_tradition"},
+				{Slug: "forest_folk_tradition"},
+				{Slug: "hit_and_run_tacticians_tradition"},
+			},
+			expectedOutput: []*Tradition{
+				{Slug: "druzhina_tradition"},
+				{Slug: "charismatic_tradition"},
+				{Slug: "city_keepers_tradition"},
+				{Slug: "forest_folk_tradition"},
+				{Slug: "hit_and_run_tacticians_tradition"},
+				{Slug: "agrarian_tradition"},
+			},
+		},
+	}
+
+	for _, tc := range tCases {
+		t.Run(tc.name, func(tt *testing.T) {
+			if out := UniqueTraditions(tc.input); len(out) != len(tc.expectedOutput) {
+				t.Errorf("unexpected output (expected_length=%+v, actual_length=%+v)", len(tc.expectedOutput), len(out))
+			}
+		})
+	}
 }
 
 func TestLoadAllTraditions(t *testing.T) {
