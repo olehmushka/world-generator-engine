@@ -89,7 +89,7 @@ var mockCultures = []*Culture{
 	{
 		Slug:     "latin_roman_culture",
 		BaseSlug: "mediterranean_base",
-		Subbase:  Subbase{Slug: "medieval_latin_subbase"},
+		Subbase:  Subbase{Slug: "medieval_latin_subbase", BaseSlug: "europe_continental_base"},
 		Ethos:    Ethos{Slug: "bellicose_ethos"},
 		Traditions: []*Tradition{
 			{Slug: "formation_fighting_experts_tradition"},
@@ -107,7 +107,7 @@ var mockCultures = []*Culture{
 	{
 		Slug:     "latin_italian_culture",
 		BaseSlug: "mediterranean_base",
-		Subbase:  Subbase{Slug: "medieval_latin_subbase"},
+		Subbase:  Subbase{Slug: "medieval_latin_subbase", BaseSlug: "europe_continental_base"},
 		Ethos:    Ethos{Slug: "spiritual_ethos"},
 		Traditions: []*Tradition{
 			{Slug: "formation_fighting_experts_tradition"},
@@ -124,7 +124,7 @@ var mockCultures = []*Culture{
 	{
 		Slug:     "latin_sardinian_culture",
 		BaseSlug: "mediterranean_base",
-		Subbase:  Subbase{Slug: "medieval_latin_subbase"},
+		Subbase:  Subbase{Slug: "medieval_latin_subbase", BaseSlug: "europe_continental_base"},
 		Ethos:    Ethos{Slug: "communal_ethos"},
 		Traditions: []*Tradition{
 			{Slug: "isolationist_tradition"},
@@ -140,7 +140,7 @@ var mockCultures = []*Culture{
 	{
 		Slug:     "latin_lombard_culture",
 		BaseSlug: "mediterranean_base",
-		Subbase:  Subbase{Slug: "medieval_latin_subbase"},
+		Subbase:  Subbase{Slug: "medieval_latin_subbase", BaseSlug: "europe_continental_base"},
 		Ethos:    Ethos{Slug: "stoic_ethos"},
 		Traditions: []*Tradition{
 			{Slug: "isolationist_tradition"},
@@ -158,7 +158,7 @@ var mockCultures = []*Culture{
 	{
 		Slug:     "latin_cisalpine_culture",
 		BaseSlug: "mediterranean_base",
-		Subbase:  Subbase{Slug: "medieval_latin_subbase"},
+		Subbase:  Subbase{Slug: "medieval_latin_subbase", BaseSlug: "europe_continental_base"},
 		Ethos:    Ethos{Slug: "communal_ethos"},
 		Traditions: []*Tradition{
 			{Slug: "martial_admiration_tradition"},
@@ -175,7 +175,7 @@ var mockCultures = []*Culture{
 	{
 		Slug:     "latin_sicilian_culture",
 		BaseSlug: "mediterranean_base",
-		Subbase:  Subbase{Slug: "medieval_latin_subbase"},
+		Subbase:  Subbase{Slug: "medieval_latin_subbase", BaseSlug: "europe_continental_base"},
 		Ethos:    Ethos{Slug: "courtly_ethos"},
 		Traditions: []*Tradition{
 			{Slug: "republican_legacy_tradition"},
@@ -194,7 +194,7 @@ var mockCultures = []*Culture{
 	{
 		Slug:     "frankish_frankish_culture",
 		BaseSlug: "europe_continental_base",
-		Subbase:  Subbase{Slug: "medieval_frankish_subbase"},
+		Subbase:  Subbase{Slug: "medieval_frankish_subbase", BaseSlug: "europe_continental_base"},
 		Ethos:    Ethos{Slug: "bellicose_ethos"},
 		Traditions: []*Tradition{
 			{Slug: "hereditary_hierarchy_tradition"},
@@ -211,7 +211,7 @@ var mockCultures = []*Culture{
 	{
 		Slug:     "frankish_french_culture",
 		BaseSlug: "europe_continental_base",
-		Subbase:  Subbase{Slug: "medieval_frankish_subbase"},
+		Subbase:  Subbase{Slug: "medieval_frankish_subbase", BaseSlug: "europe_continental_base"},
 		Ethos:    Ethos{Slug: "courtly_ethos"},
 		Traditions: []*Tradition{
 			{Slug: "hereditary_hierarchy_tradition"},
@@ -228,7 +228,7 @@ var mockCultures = []*Culture{
 	{
 		Slug:     "frankish_norman_culture",
 		BaseSlug: "europe_continental_base",
-		Subbase:  Subbase{Slug: "medieval_frankish_subbase"},
+		Subbase:  Subbase{Slug: "medieval_frankish_subbase", BaseSlug: "europe_continental_base"},
 		Ethos:    Ethos{Slug: "bellicose_ethos"},
 		Traditions: []*Tradition{
 			{Slug: "hereditary_hierarchy_tradition"},
@@ -245,7 +245,7 @@ var mockCultures = []*Culture{
 	{
 		Slug:     "frankish_occitan_culture",
 		BaseSlug: "europe_continental_base",
-		Subbase:  Subbase{Slug: "medieval_frankish_subbase"},
+		Subbase:  Subbase{Slug: "medieval_frankish_subbase", BaseSlug: "europe_continental_base"},
 		Ethos:    Ethos{Slug: "egalitarian_ethos"},
 		Traditions: []*Tradition{
 			{Slug: "chanson_de_geste_tradition"},

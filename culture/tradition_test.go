@@ -52,7 +52,36 @@ func TestRandomTraditions(t *testing.T) {
 }
 
 func TestFilterTraditionsByEthos(t *testing.T) {
-	t.Error("test is not written yet")
+	tCases := []struct {
+		name           string
+		input          []*Tradition
+		inputEthos     Ethos
+		expectedOutput []*Tradition
+	}{
+		{
+			name: "should work for bellicose_ethos",
+			input: []*Tradition{
+				{Slug: "equal_inheritance_tradition", OmitEthosSlugs: []string{"bellicose_ethos"}},
+				{Slug: "city_keepers_tradition", OmitEthosSlugs: []string{"bellicose_ethos"}},
+				{Slug: "forest_folk_tradition"},
+				{Slug: "hit_and_run_tacticians_tradition"},
+				{Slug: "agrarian_tradition", OmitEthosSlugs: []string{"bellicose_ethos"}},
+			},
+			inputEthos: Ethos{Slug: "bellicose_ethos"},
+			expectedOutput: []*Tradition{
+				{Slug: "forest_folk_tradition"},
+				{Slug: "hit_and_run_tacticians_tradition"},
+			},
+		},
+	}
+
+	for _, tc := range tCases {
+		t.Run(tc.name, func(tt *testing.T) {
+			if out := FilterTraditionsByEthos(tc.input, tc.inputEthos); len(out) != len(tc.expectedOutput) {
+				t.Errorf("unexpected output (expected_length=%+v, actual_length=%+v)", len(tc.expectedOutput), len(out))
+			}
+		})
+	}
 }
 
 func TestFilterTraditionsByDomitatedSex(t *testing.T) {

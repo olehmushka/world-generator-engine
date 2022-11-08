@@ -9,4 +9,5 @@ const (
 	RequiredSubbaseSlugSuffix   = "_subbase"
 	RequiredEthosSlugSuffix     = "_ethos"
 	RequiredTraditionSlugSuffix = "_tradition"
+	RequiredLanguageSlugSuffix  = "_lang"
 )

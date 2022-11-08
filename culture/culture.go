@@ -44,7 +44,6 @@ type Culture struct {
 
 type CreateCultureOpts struct {
 	LanguageSlugs []string
-	BaseSlugs     []string
 	Subbases      []Subbase
 	Ethoses       []Ethos
 	Traditions    []*Tradition
@@ -92,17 +91,12 @@ func Generate(opts *CreateCultureOpts, parents ...*Culture) (*Culture, error) {
 	}
 	c.Traditions = ts
 
-	baseSlug, err := SelectBaseByMostRecent(ExtractBases(parents))
-	if err != nil {
-		return nil, wrapped_error.NewInternalServerError(err, "can not select base_slug for generated culture")
-	}
-	c.BaseSlug = baseSlug
-
-	subbase, err := SelectSubbaseByMostRecent(FilterSubbasesByBaseSlug(ExtractSubbases(parents), baseSlug))
+	subbase, err := SelectSubbaseByMostRecent(ExtractSubbases(parents))
 	if err != nil {
 		return nil, wrapped_error.NewInternalServerError(err, "can not select subbase for generated culture")
 	}
 	c.Subbase = subbase
+	c.BaseSlug = subbase.BaseSlug
 
 	langSlug, err := language.SelectLanguageSlugByMostRecent(ExtractLanguageSlugs(parents))
 	if err != nil {
@@ -143,17 +137,12 @@ func New(opts *CreateCultureOpts) (*Culture, error) {
 	}
 	out.Traditions = ts
 
-	baseSlug, err := RandomBase(opts.BaseSlugs)
-	if err != nil {
-		return nil, wrapped_error.NewInternalServerError(err, "can not generate base_slug for random culture")
-	}
-	out.BaseSlug = baseSlug
-
-	subbase, err := RandomSubbase(FilterSubbasesByBaseSlug(opts.Subbases, baseSlug))
+	subbase, err := RandomSubbase(opts.Subbases)
 	if err != nil {
 		return nil, wrapped_error.NewInternalServerError(err, "can not generate subbase for random culture")
 	}
 	out.Subbase = subbase
+	out.BaseSlug = subbase.BaseSlug
 
 	langSlug, err := language.RandomLanguageSlug(opts.LanguageSlugs)
 	if err != nil {
@@ -164,7 +153,7 @@ func New(opts *CreateCultureOpts) (*Culture, error) {
 	return out, nil
 }
 
-func GenrateSlug(word string) string {
+func GenerateSlug(word string) string {
 	return fmt.Sprintf("%sian_%s%s", word, randomTools.UUIDString(), RequiredCultureSlugSuffix)
 }
 

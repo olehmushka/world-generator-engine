@@ -3,6 +3,8 @@ package culture
 import (
 	"strings"
 	"testing"
+
+	"github.com/olehmushka/world-generator-engine/tools"
 )
 
 func TestFilterSubbasesByBaseSlug(t *testing.T) {
@@ -54,7 +56,114 @@ func TestExtractSubbases(t *testing.T) {
 }
 
 func TestSelectSubbaseByMostRecent(t *testing.T) {
-	t.Error("test is not written yet")
+	iterationsNumber := 100
+	tCases := []struct {
+		name           string
+		input          []Subbase
+		expectedOutput Subbase
+	}{
+		{
+			name: "should works for 10 the same subbases",
+			input: []Subbase{
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+			},
+			expectedOutput: Subbase{Slug: "ancient_levantine_subbase"},
+		},
+		{
+			name: "should works for 9 the same subbases and 1 another",
+			input: []Subbase{
+				{Slug: "ancient_egyptian_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+			},
+			expectedOutput: Subbase{Slug: "ancient_levantine_subbase"},
+		},
+		{
+			name: "should works for 8 the same subbases and 2 other",
+			input: []Subbase{
+				{Slug: "ancient_egyptian_subbase"},
+				{Slug: "ancient_egyptian_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+			},
+			expectedOutput: Subbase{Slug: "ancient_levantine_subbase"},
+		},
+		{
+			name: "should works for 7 the same subbases and 3 other",
+			input: []Subbase{
+				{Slug: "ancient_egyptian_subbase"},
+				{Slug: "ancient_egyptian_subbase"},
+				{Slug: "ancient_egyptian_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+			},
+			expectedOutput: Subbase{Slug: "ancient_levantine_subbase"},
+		},
+		{
+			name: "should works for 6 the same subbases and 4 other",
+			input: []Subbase{
+				{Slug: "ancient_egyptian_subbase"},
+				{Slug: "ancient_egyptian_subbase"},
+				{Slug: "ancient_egyptian_subbase"},
+				{Slug: "ancient_egyptian_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+				{Slug: "ancient_levantine_subbase"},
+			},
+			expectedOutput: Subbase{Slug: "ancient_levantine_subbase"},
+		},
+	}
+
+	for _, tc := range tCases {
+		t.Run(tc.name, func(tt *testing.T) {
+			m := make(map[string]int)
+			for i := 0; i < iterationsNumber; i++ {
+				out, err := SelectSubbaseByMostRecent(tc.input)
+				if err != nil {
+					t.Fatalf("unexpected error (err=%v)", err)
+					return
+				}
+				if count, ok := m[out.Slug]; ok {
+					m[out.Slug] = count + 1
+				} else {
+					m[out.Slug] = 1
+				}
+			}
+			if slug := tools.GetKeyWithGreatestValue(m); slug != tc.expectedOutput.Slug {
+				t.Errorf("unexpected result (expected=%s, actual=%s)", tc.expectedOutput.Slug, slug)
+			}
+		})
+	}
 }
 
 func TestLoadAllSubbases(t *testing.T) {
