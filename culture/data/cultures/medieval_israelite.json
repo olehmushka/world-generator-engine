@@ -4,7 +4,7 @@
     "base_slug": "semitic_base",
     "subbase_slug": "medieval_israelite_subbase",
     "parent_culture_slugs": [],
-    "ethos_slug": "сommunal_ethos",
+    "ethos_slug": "communal_ethos",
     "tradition_slugs": [
       "diasporic_tradition",
       "philosopher_culture_tradition",
@@ -24,7 +24,7 @@
     "base_slug": "semitic_base",
     "subbase_slug": "medieval_israelite_subbase",
     "parent_culture_slugs": ["israelite_sephardi_culture", "dravidian_tamil_culture"],
-    "ethos_slug": "сommunal_ethos",
+    "ethos_slug": "communal_ethos",
     "tradition_slugs": [
       "diasporic_tradition",
       "philosopher_culture_tradition",

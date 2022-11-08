@@ -130,6 +130,30 @@ func UniqueTraditions(in []*Tradition) []*Tradition {
 	return out
 }
 
+func SepareteTraditionsByPresent(present []*Tradition, ts []string) ([]string, []string) {
+	if len(present) == 0 {
+		return []string{}, []string{}
+	}
+	included := make([]string, 0, len(present)/2)
+	notIncluded := make([]string, 0, len(present)/2)
+	for _, t := range ts {
+		var isFound bool
+		for _, pr := range present {
+			if pr.Slug == t {
+				isFound = true
+				break
+			}
+		}
+		if isFound {
+			included = append(included, t)
+			continue
+		}
+		notIncluded = append(notIncluded, t)
+	}
+
+	return included, notIncluded
+}
+
 func LoadAllTraditions() chan either.Either[[]*Tradition] {
 	_, filename, _, _ := runtime.Caller(1)
 	currDirname := path.Dir(filename) + "/"
@@ -203,4 +227,39 @@ func SearchTradition(slug string) (*Tradition, error) {
 	}
 
 	return nil, nil
+}
+
+func SearchTraditions(slugs []string) ([]*Tradition, error) {
+	_, filename, _, _ := runtime.Caller(1)
+	currDirname := path.Dir(filename) + "/"
+	dirname := currDirname + "/data/traditions/"
+	files, err := ioutil.ReadDir(dirname)
+	if err != nil {
+		return nil, wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))
+	}
+
+	out := make([]*Tradition, 0, len(slugs))
+	picked := make(map[string]bool, len(slugs))
+	for _, file := range files {
+		if file.IsDir() {
+			continue
+		}
+		filename := dirname + file.Name()
+		b, err := ioutil.ReadFile(filename)
+		if err != nil {
+			return nil, err
+		}
+		var ts []*Tradition
+		if err := json.Unmarshal(b, &ts); err != nil {
+			return nil, err
+		}
+		for _, t := range ts {
+			if _, found := picked[t.Slug]; sliceTools.Includes(slugs, t.Slug) && !found {
+				out = append(out, t)
+				picked[t.Slug] = true
+			}
+		}
+	}
+
+	return out, nil
 }

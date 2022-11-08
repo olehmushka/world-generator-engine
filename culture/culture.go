@@ -10,6 +10,7 @@ import (
 	"sync"
 
 	"github.com/olehmushka/golang-toolkit/either"
+	"github.com/olehmushka/golang-toolkit/list"
 	randomTools "github.com/olehmushka/golang-toolkit/random_tools"
 	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
@@ -197,6 +198,340 @@ func LoadAllRawCultures() chan either.Either[[]*RawCulture] {
 			}(file)
 		}
 		wg.Wait()
+		close(ch)
+	}()
+
+	return ch
+}
+
+func FilterRawCulturesBySlugs(rCultures []*RawCulture, slugs []string) []*RawCulture {
+	out := make([]*RawCulture, 0, len(rCultures))
+	for _, rc := range rCultures {
+		if sliceTools.Includes(slugs, rc.Slug) {
+			out = append(out, rc)
+		}
+	}
+
+	return out
+}
+
+func SearchCultures(slugs []string) ([]*Culture, error) {
+	if len(slugs) == 0 {
+		return []*Culture{}, nil
+	}
+
+	_, filename, _, _ := runtime.Caller(1)
+	currDirname := path.Dir(filename) + "/"
+	dirname := currDirname + "/data/cultures/"
+	rawCultureCh := make(chan []*RawCulture, MaxLoadDataConcurrency)
+	ch := make(chan either.Either[*Culture], MaxLoadDataConcurrency)
+
+	go func() {
+		files, err := ioutil.ReadDir(dirname)
+		if err != nil {
+			ch <- either.Either[*Culture]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))}
+			return
+		}
+
+		var wg sync.WaitGroup
+		wg.Add(len(files))
+		for _, file := range files {
+			go func(file fs.FileInfo) {
+				defer wg.Done()
+				if file.IsDir() {
+					return
+				}
+				filename := dirname + file.Name()
+				b, err := ioutil.ReadFile(filename)
+				if err != nil {
+					ch <- either.Either[*Culture]{Err: err}
+					return
+				}
+				var rcs []*RawCulture
+				if err := json.Unmarshal(b, &rcs); err != nil {
+					ch <- either.Either[*Culture]{Err: err}
+					return
+				}
+				rcs = FilterRawCulturesBySlugs(rcs, slugs)
+				if len(rcs) == 0 {
+					return
+				}
+				for _, chunk := range sliceTools.Chunk(MaxLoadDataChunkSize, rcs) {
+					rawCultureCh <- chunk
+				}
+			}(file)
+		}
+		wg.Wait()
+		close(rawCultureCh)
+	}()
+
+	go func() {
+		subbases := list.NewFIFOUniqueList(100, func(sb1, sb2 *Subbase) bool {
+			return sb1.Slug == sb2.Slug
+		})
+		ethoses := list.NewFIFOUniqueList(100, func(e1, e2 *Ethos) bool {
+			return e1.Slug == e2.Slug
+		})
+		traditions := list.NewFIFOUniqueList(100, func(t1, t2 *Tradition) bool {
+			return t1.Slug == t2.Slug
+		})
+
+		for rawCultures := range rawCultureCh {
+			for _, rCulture := range rawCultures {
+				// get subbase
+				sb, isSBFound := subbases.FindOne(func(_, curr, _ *Subbase) bool { return curr.Slug == rCulture.SubbaseSlug })
+				if !isSBFound {
+					found, err := SearchSubbase(rCulture.SubbaseSlug)
+					if err != nil {
+						ch <- either.Either[*Culture]{Err: err}
+						return
+					}
+					if found == nil {
+						ch <- either.Either[*Culture]{Err: wrapped_error.NewNotFoundError(nil, fmt.Sprintf("can not found subbase by slug (slug=%s)", rCulture.SubbaseSlug))}
+						return
+					}
+					sb = found
+				}
+				subbases.Push(sb)
+
+				// get ethos
+				e, isEFound := ethoses.FindOne(func(_, curr, _ *Ethos) bool { return curr.Slug == rCulture.EthosSlug })
+				if !isEFound {
+					found, err := SearchEthos(rCulture.EthosSlug)
+					if err != nil {
+						ch <- either.Either[*Culture]{Err: err}
+						return
+					}
+					if found == nil {
+						ch <- either.Either[*Culture]{Err: wrapped_error.NewNotFoundError(nil, fmt.Sprintf("can not found ethos by slug (slug=%s)", rCulture.EthosSlug))}
+						return
+					}
+					e = found
+				}
+				ethoses.Push(e)
+
+				ts := traditions.FindMany(func(_, curr, _ *Tradition) bool {
+					return sliceTools.Includes(rCulture.TraditionSlugs, curr.Slug)
+				})
+				if len(ts) != len(rCulture.TraditionSlugs) {
+					_, noFound := SepareteTraditionsByPresent(ts, rCulture.TraditionSlugs)
+					found, err := SearchTraditions(noFound)
+					if err != nil {
+						ch <- either.Either[*Culture]{Err: err}
+						return
+					}
+					if len(found) != len(noFound) {
+						ch <- either.Either[*Culture]{Err: wrapped_error.NewInternalServerError(nil, fmt.Sprintf("can not found all traditions (found.length=%d, all_required.length=%d)", len(found), len(noFound)))}
+						return
+					}
+					ts = sliceTools.Merge(ts, found)
+				}
+				for _, t := range ts {
+					traditions.Push(t)
+				}
+				parentCultures, err := SearchCultures(rCulture.ParentCultureSlugs)
+				if err != nil {
+					ch <- either.Either[*Culture]{Err: err}
+					return
+				}
+
+				ch <- either.Either[*Culture]{Value: &Culture{
+					Slug:            rCulture.Slug,
+					BaseSlug:        rCulture.BaseSlug,
+					Subbase:         *sb,
+					ParentCultures:  parentCultures,
+					Ethos:           *e,
+					Traditions:      ts,
+					LanguageSlug:    rCulture.LanguageSlug,
+					GenderDominance: rCulture.GenderDominance,
+					MartialCustom:   rCulture.MartialCustom,
+				}}
+			}
+		}
+		close(ch)
+	}()
+	out := make([]*Culture, 0, len(slugs))
+	for chunk := range ch {
+		if chunk.Err != nil {
+			close(ch)
+			return nil, chunk.Err
+		}
+		out = append(out, chunk.Value)
+	}
+
+	return out, nil
+}
+
+func SepareteCulturesByPresent(present []*Culture, ts []string) ([]string, []string) {
+	if len(present) == 0 {
+		return []string{}, []string{}
+	}
+	included := make([]string, 0, len(present)/2)
+	notIncluded := make([]string, 0, len(present)/2)
+	for _, t := range ts {
+		var isFound bool
+		for _, pr := range present {
+			if pr.Slug == t {
+				isFound = true
+				break
+			}
+		}
+		if isFound {
+			included = append(included, t)
+			continue
+		}
+		notIncluded = append(notIncluded, t)
+	}
+
+	return included, notIncluded
+}
+
+func LoadAllCultures() chan either.Either[*Culture] {
+	_, filename, _, _ := runtime.Caller(1)
+	currDirname := path.Dir(filename) + "/"
+	dirname := currDirname + "/data/cultures/"
+	rawCultureCh := make(chan []*RawCulture, MaxLoadDataConcurrency)
+	ch := make(chan either.Either[*Culture], MaxLoadDataConcurrency)
+
+	go func() {
+		files, err := ioutil.ReadDir(dirname)
+		if err != nil {
+			ch <- either.Either[*Culture]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))}
+			return
+		}
+
+		var wg sync.WaitGroup
+		wg.Add(len(files))
+		for _, file := range files {
+			go func(file fs.FileInfo) {
+				defer wg.Done()
+				if file.IsDir() {
+					return
+				}
+				filename := dirname + file.Name()
+				b, err := ioutil.ReadFile(filename)
+				if err != nil {
+					ch <- either.Either[*Culture]{Err: err}
+					return
+				}
+				var sfs []*RawCulture
+				if err := json.Unmarshal(b, &sfs); err != nil {
+					ch <- either.Either[*Culture]{Err: err}
+					return
+				}
+				if len(sfs) == 0 {
+					return
+				}
+				for _, chunk := range sliceTools.Chunk(MaxLoadDataChunkSize, sfs) {
+					rawCultureCh <- chunk
+				}
+			}(file)
+		}
+		wg.Wait()
+		close(rawCultureCh)
+	}()
+
+	go func() {
+		subbases := list.NewFIFOUniqueList(100, func(sb1, sb2 *Subbase) bool {
+			return sb1.Slug == sb2.Slug
+		})
+		ethoses := list.NewFIFOUniqueList(100, func(e1, e2 *Ethos) bool {
+			return e1.Slug == e2.Slug
+		})
+		traditions := list.NewFIFOUniqueList(100, func(t1, t2 *Tradition) bool {
+			return t1.Slug == t2.Slug
+		})
+		cultures := list.NewFIFOUniqueList(100, func(t1, t2 *Culture) bool {
+			return t1.Slug == t2.Slug
+		})
+
+		for rawCultures := range rawCultureCh {
+			for _, rCulture := range rawCultures {
+				// get subbase
+				sb, isSBFound := subbases.FindOne(func(_, curr, _ *Subbase) bool { return curr.Slug == rCulture.SubbaseSlug })
+				if !isSBFound {
+					found, err := SearchSubbase(rCulture.SubbaseSlug)
+					if err != nil {
+						ch <- either.Either[*Culture]{Err: err}
+						return
+					}
+					if found == nil {
+						ch <- either.Either[*Culture]{Err: wrapped_error.NewNotFoundError(nil, fmt.Sprintf("can not found subbase by slug (slug=%s)", rCulture.SubbaseSlug))}
+						return
+					}
+					sb = found
+				}
+				subbases.Push(sb)
+
+				// get ethos
+				e, isEFound := ethoses.FindOne(func(_, curr, _ *Ethos) bool { return curr.Slug == rCulture.EthosSlug })
+				if !isEFound {
+					found, err := SearchEthos(rCulture.EthosSlug)
+					if err != nil {
+						ch <- either.Either[*Culture]{Err: err}
+						return
+					}
+					if found == nil {
+						ch <- either.Either[*Culture]{Err: wrapped_error.NewNotFoundError(nil, fmt.Sprintf("can not found ethos by slug (slug=%s)", rCulture.EthosSlug))}
+						return
+					}
+					e = found
+				}
+				ethoses.Push(e)
+
+				ts := traditions.FindMany(func(_, curr, _ *Tradition) bool {
+					return sliceTools.Includes(rCulture.TraditionSlugs, curr.Slug)
+				})
+				if len(ts) != len(rCulture.TraditionSlugs) {
+					_, noFound := SepareteTraditionsByPresent(ts, rCulture.TraditionSlugs)
+					found, err := SearchTraditions(noFound)
+					if err != nil {
+						ch <- either.Either[*Culture]{Err: err}
+						return
+					}
+					if len(found) != len(noFound) {
+						ch <- either.Either[*Culture]{Err: wrapped_error.NewInternalServerError(nil, fmt.Sprintf("can not found all traditions (found.length=%d, all_required.length=%d)", len(found), len(noFound)))}
+						return
+					}
+					ts = sliceTools.Merge(ts, found)
+				}
+				for _, t := range ts {
+					traditions.Push(t)
+				}
+
+				cs := cultures.FindMany(func(_, curr, _ *Culture) bool {
+					return sliceTools.Includes(rCulture.ParentCultureSlugs, curr.Slug)
+				})
+				if len(cs) != len(rCulture.ParentCultureSlugs) {
+					_, noFound := SepareteCulturesByPresent(cs, rCulture.ParentCultureSlugs)
+					found, err := SearchCultures(noFound)
+					if err != nil {
+						ch <- either.Either[*Culture]{Err: err}
+						return
+					}
+					if len(found) != len(noFound) {
+						ch <- either.Either[*Culture]{Err: wrapped_error.NewInternalServerError(nil, fmt.Sprintf("can not found all traditions (found.length=%d, all_required.length=%d)", len(found), len(noFound)))}
+						return
+					}
+					cs = sliceTools.Merge(cs, found)
+				}
+				for _, c := range cs {
+					cultures.Push(c)
+				}
+
+				ch <- either.Either[*Culture]{Value: &Culture{
+					Slug:            rCulture.Slug,
+					BaseSlug:        rCulture.BaseSlug,
+					Subbase:         *sb,
+					ParentCultures:  cs,
+					Ethos:           *e,
+					Traditions:      ts,
+					LanguageSlug:    rCulture.LanguageSlug,
+					GenderDominance: rCulture.GenderDominance,
+					MartialCustom:   rCulture.MartialCustom,
+				}}
+			}
+		}
 		close(ch)
 	}()
 

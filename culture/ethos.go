@@ -199,13 +199,13 @@ func LoadAllEthoses() chan either.Either[[]Ethos] {
 	return ch
 }
 
-func SearchEthos(slug string) (Ethos, error) {
+func SearchEthos(slug string) (*Ethos, error) {
 	_, filename, _, _ := runtime.Caller(1)
 	currDirname := path.Dir(filename) + "/"
 	dirname := currDirname + "/data/ethoses/"
 	files, err := ioutil.ReadDir(dirname)
 	if err != nil {
-		return Ethos{}, wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))
+		return nil, wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))
 	}
 
 	for _, file := range files {
@@ -215,18 +215,18 @@ func SearchEthos(slug string) (Ethos, error) {
 		filename := dirname + file.Name()
 		b, err := ioutil.ReadFile(filename)
 		if err != nil {
-			return Ethos{}, err
+			return nil, err
 		}
-		var sfs []Ethos
-		if err := json.Unmarshal(b, &sfs); err != nil {
-			return Ethos{}, err
+		var es []*Ethos
+		if err := json.Unmarshal(b, &es); err != nil {
+			return nil, err
 		}
-		for _, sf := range sfs {
-			if sf.Slug == slug {
-				return sf, nil
+		for _, e := range es {
+			if e.Slug == slug {
+				return e, nil
 			}
 		}
 	}
 
-	return Ethos{}, nil
+	return nil, nil
 }

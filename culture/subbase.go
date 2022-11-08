@@ -131,3 +131,35 @@ func LoadAllSubbases() chan either.Either[[]*Subbase] {
 
 	return ch
 }
+
+func SearchSubbase(slug string) (*Subbase, error) {
+	_, filename, _, _ := runtime.Caller(1)
+	currDirname := path.Dir(filename) + "/"
+	dirname := currDirname + "/data/subbases/"
+	files, err := ioutil.ReadDir(dirname)
+	if err != nil {
+		return nil, wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))
+	}
+
+	for _, file := range files {
+		if file.IsDir() {
+			continue
+		}
+		filename := dirname + file.Name()
+		b, err := ioutil.ReadFile(filename)
+		if err != nil {
+			return nil, err
+		}
+		var sbs []*Subbase
+		if err := json.Unmarshal(b, &sbs); err != nil {
+			return nil, err
+		}
+		for _, sb := range sbs {
+			if sb.Slug == slug {
+				return sb, nil
+			}
+		}
+	}
+
+	return nil, nil
+}

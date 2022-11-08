@@ -155,3 +155,32 @@ func TestLoadAllRawCultures(t *testing.T) {
 		t.Errorf("unexpected count of cultures (expected=%d, actual=%d)", expecCount, count)
 	}
 }
+
+func TestSearchCultures(t *testing.T) {
+	cultures, err := SearchCultures([]string{"vlach_culture"})
+	if err != nil {
+		t.Fatalf("unexpected error (err=%+v)", err)
+		return
+	}
+	if len(cultures) == 0 {
+		t.Errorf("unexpected number or found cultures")
+	}
+}
+
+func TestLoadAllCultures(t *testing.T) {
+	var count int
+	for chunk := range LoadAllCultures() {
+		if chunk.Err != nil {
+			t.Fatalf("unexpected error (err=%+v)", chunk.Err)
+			return
+		}
+		if chunk.Value == nil {
+			t.Fatalf("loaded culture can not be nil")
+		}
+		count++
+		if count%25 == 0 {
+			t.Logf("counted cultures: %d\n", count)
+		}
+	}
+	t.Logf("counted cultures: %d\n", count)
+}

@@ -220,7 +220,7 @@ func TestLoadAllEthoses(t *testing.T) {
 }
 
 func TestSearchEthos(t *testing.T) {
-	slug := "courtly_ethos"
+	slug := "communal_ethos"
 	result, err := SearchEthos(slug)
 	if err != nil {
 		t.Fatalf("unexpected error (err=%+v)", err)

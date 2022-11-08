@@ -22,5 +22,6 @@ type Engine interface {
 	LoadAllEthoses() chan either.Either[[]culture.Ethos]
 	LoadAllTraditions() chan either.Either[[]*culture.Tradition]
 	LoadAllParentRawCultures() chan either.Either[[]*culture.RawCulture]
+	LoadAllParentCultures() chan either.Either[*culture.Culture]
 	Generate(opts *culture.CreateCultureOpts, parents ...*culture.Culture) (*culture.Culture, error)
 }

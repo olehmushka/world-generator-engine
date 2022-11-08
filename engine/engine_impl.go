@@ -85,6 +85,10 @@ func (e *engine) LoadAllParentRawCultures() chan either.Either[[]*culture.RawCul
 	return culture.LoadAllRawCultures()
 }
 
+func (e *engine) LoadAllParentCultures() chan either.Either[*culture.Culture] {
+	return culture.LoadAllCultures()
+}
+
 func (e *engine) Generate(opts *culture.CreateCultureOpts, parents ...*culture.Culture) (*culture.Culture, error) {
 	return culture.Generate(opts, parents...)
 }
