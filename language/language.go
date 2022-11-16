@@ -16,6 +16,7 @@ import (
 	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
 	"github.com/olehmushka/world-generator-engine/gender"
+	"github.com/olehmushka/world-generator-engine/tools"
 )
 
 type RawLanguage struct {
@@ -164,15 +165,15 @@ func SelectLanguageSlugByMostRecent(in []string) (string, error) {
 
 func LoadAllLanguages() chan either.Either[*Language] {
 	_, filename, _, _ := runtime.Caller(1)
-	currDirname := path.Dir(filename) + "/"
-	dirname := currDirname + "/data/languages/"
+	currDirname := tools.PreparePath(path.Dir(filename), "language")
+	dirname := currDirname + "data/languages/"
 	rawLangCh := make(chan []*RawLanguage, MaxLoadDataConcurrency)
 	ch := make(chan either.Either[*Language], MaxLoadDataConcurrency)
 
 	go func() {
 		files, err := ioutil.ReadDir(dirname)
 		if err != nil {
-			ch <- either.Either[*Language]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))}
+			ch <- either.Either[*Language]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", dirname))}
 			return
 		}
 

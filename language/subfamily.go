@@ -12,6 +12,7 @@ import (
 	"github.com/olehmushka/golang-toolkit/either"
 	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
+	"github.com/olehmushka/world-generator-engine/tools"
 )
 
 type Subfamily struct {
@@ -22,13 +23,13 @@ type Subfamily struct {
 
 func LoadAllSubfamilies() chan either.Either[[]*Subfamily] {
 	_, filename, _, _ := runtime.Caller(1)
-	currDirname := path.Dir(filename) + "/"
-	dirname := currDirname + "/data/subfamilies/"
+	currDirname := tools.PreparePath(path.Dir(filename), "language")
+	dirname := currDirname + "data/subfamilies/"
 	ch := make(chan either.Either[[]*Subfamily], MaxLoadDataConcurrency)
 	go func() {
 		files, err := ioutil.ReadDir(dirname)
 		if err != nil {
-			ch <- either.Either[[]*Subfamily]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))}
+			ch <- either.Either[[]*Subfamily]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", dirname))}
 			return
 		}
 

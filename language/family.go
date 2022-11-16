@@ -12,18 +12,19 @@ import (
 	"github.com/olehmushka/golang-toolkit/either"
 	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
+	"github.com/olehmushka/world-generator-engine/tools"
 )
 
 func LoadAllFamilies() chan either.Either[[]string] {
 	_, filename, _, _ := runtime.Caller(1)
-	currDirname := path.Dir(filename) + "/"
-	dirname := currDirname + "/data/families/"
+	currDirname := tools.PreparePath(path.Dir(filename), "language")
+	dirname := currDirname + "data/families/"
 	ch := make(chan either.Either[[]string], MaxLoadDataConcurrency)
 
 	go func() {
 		files, err := ioutil.ReadDir(dirname)
 		if err != nil {
-			ch <- either.Either[[]string]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))}
+			ch <- either.Either[[]string]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", dirname))}
 			return
 		}
 
