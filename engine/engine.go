@@ -7,21 +7,22 @@ import (
 	genderAcceptance "github.com/olehmushka/world-generator-engine/gender_acceptance"
 	"github.com/olehmushka/world-generator-engine/influence"
 	"github.com/olehmushka/world-generator-engine/language"
+	"github.com/olehmushka/world-generator-engine/types"
 )
 
 type Engine interface {
-	LoadLanguageFamilies() chan either.Either[[]string]
-	LoadLanguageSubfamilies() chan either.Either[[]*language.Subfamily]
-	LoadLanguages() chan either.Either[*language.Language]
+	LoadLanguageFamilies(opts ...types.ChangeStringFunc) chan either.Either[[]string]
+	LoadLanguageSubfamilies(opts ...types.ChangeStringFunc) chan either.Either[[]*language.Subfamily]
+	LoadLanguages(opts ...types.ChangeStringFunc) chan either.Either[*language.Language]
 	GenerateWord(lang *language.Language) (string, error)
 	LoadGenders() []gender.Sex
 	LoadGenderAcceptances() []genderAcceptance.Acceptance
 	LoadInfluences() []influence.Influence
-	LoadCulturesBases() chan either.Either[[]string]
-	LoadCultureSubbases() chan either.Either[[]*culture.Subbase]
-	LoadAllEthoses() chan either.Either[[]culture.Ethos]
-	LoadAllTraditions() chan either.Either[[]*culture.Tradition]
-	LoadAllParentRawCultures() chan either.Either[[]*culture.RawCulture]
-	LoadAllParentCultures() chan either.Either[*culture.Culture]
+	LoadCulturesBases(opts ...types.ChangeStringFunc) chan either.Either[[]string]
+	LoadCultureSubbases(opts ...types.ChangeStringFunc) chan either.Either[[]*culture.Subbase]
+	LoadAllEthoses(opts ...types.ChangeStringFunc) chan either.Either[[]culture.Ethos]
+	LoadAllTraditions(opts ...types.ChangeStringFunc) chan either.Either[[]*culture.Tradition]
+	LoadAllParentRawCultures(opts ...types.ChangeStringFunc) chan either.Either[[]*culture.RawCulture]
+	LoadAllParentCultures(opts ...types.ChangeStringFunc) chan either.Either[*culture.Culture]
 	Generate(opts *culture.CreateCultureOpts, parents ...*culture.Culture) (*culture.Culture, error)
 }

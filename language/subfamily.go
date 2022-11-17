@@ -13,6 +13,7 @@ import (
 	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
 	"github.com/olehmushka/world-generator-engine/tools"
+	"github.com/olehmushka/world-generator-engine/types"
 )
 
 type Subfamily struct {
@@ -21,7 +22,7 @@ type Subfamily struct {
 	ExtendedSubfamily *Subfamily `json:"extended_subfamily" bson:"extended_subfamily"`
 }
 
-func LoadAllSubfamilies(opts ...PathChangeLoadOpts) chan either.Either[[]*Subfamily] {
+func LoadAllSubfamilies(opts ...types.ChangeStringFunc) chan either.Either[[]*Subfamily] {
 	_, filename, _, _ := runtime.Caller(1)
 	currDirname := tools.PreparePath(path.Dir(filename), "language")
 	dirname := currDirname + "data/subfamilies/"
@@ -64,7 +65,7 @@ func LoadAllSubfamilies(opts ...PathChangeLoadOpts) chan either.Either[[]*Subfam
 	return ch
 }
 
-func SearchSubfamily(slug string, opts ...PathChangeLoadOpts) (*Subfamily, error) {
+func SearchSubfamily(slug string, opts ...types.ChangeStringFunc) (*Subfamily, error) {
 	_, filename, _, _ := runtime.Caller(1)
 	currDirname := tools.PreparePath(path.Dir(filename), "language")
 	dirname := currDirname + "data/subfamilies/"

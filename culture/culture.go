@@ -18,6 +18,7 @@ import (
 	genderDominance "github.com/olehmushka/world-generator-engine/gender_dominance"
 	"github.com/olehmushka/world-generator-engine/language"
 	"github.com/olehmushka/world-generator-engine/tools"
+	"github.com/olehmushka/world-generator-engine/types"
 )
 
 type RawCulture struct {
@@ -159,7 +160,7 @@ func GenerateSlug(word string) string {
 	return fmt.Sprintf("%sian_%s%s", word, randomTools.UUIDString(), RequiredCultureSlugSuffix)
 }
 
-func LoadAllRawCultures(opts ...PathChangeLoadOpts) chan either.Either[[]*RawCulture] {
+func LoadAllRawCultures(opts ...types.ChangeStringFunc) chan either.Either[[]*RawCulture] {
 	_, filename, _, _ := runtime.Caller(1)
 	currDirname := tools.PreparePath(path.Dir(filename), "culture")
 	dirname := currDirname + "data/cultures/"
@@ -219,7 +220,7 @@ func FilterRawCulturesBySlugs(rCultures []*RawCulture, slugs []string) []*RawCul
 	return out
 }
 
-func SearchCultures(slugs []string, opts ...PathChangeLoadOpts) ([]*Culture, error) {
+func SearchCultures(slugs []string, opts ...types.ChangeStringFunc) ([]*Culture, error) {
 	if len(slugs) == 0 {
 		return []*Culture{}, nil
 	}
@@ -393,7 +394,7 @@ func SepareteCulturesByPresent(present []*Culture, ts []string) ([]string, []str
 	return included, notIncluded
 }
 
-func LoadAllCultures(opts ...PathChangeLoadOpts) chan either.Either[*Culture] {
+func LoadAllCultures(opts ...types.ChangeStringFunc) chan either.Either[*Culture] {
 	_, filename, _, _ := runtime.Caller(1)
 	currDirname := tools.PreparePath(path.Dir(filename), "culture")
 	dirname := currDirname + "data/cultures/"

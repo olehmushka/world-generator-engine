@@ -12,6 +12,7 @@ import (
 	"github.com/olehmushka/golang-toolkit/either"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
 	"github.com/olehmushka/world-generator-engine/tools"
+	"github.com/olehmushka/world-generator-engine/types"
 )
 
 type Wordbase struct {
@@ -25,7 +26,7 @@ type Wordbase struct {
 	M              float64  `json:"m" bson:"m"`
 }
 
-func LoadAllWordbases(opts ...PathChangeLoadOpts) chan either.Either[*Wordbase] {
+func LoadAllWordbases(opts ...types.ChangeStringFunc) chan either.Either[*Wordbase] {
 	_, filename, _, _ := runtime.Caller(1)
 	currDirname := tools.PreparePath(path.Dir(filename), "language")
 	dirname := currDirname + "data/wordbases/"
@@ -69,7 +70,7 @@ func LoadAllWordbases(opts ...PathChangeLoadOpts) chan either.Either[*Wordbase] 
 	return ch
 }
 
-func SearchWordbase(slug string, opts ...PathChangeLoadOpts) (*Wordbase, error) {
+func SearchWordbase(slug string, opts ...types.ChangeStringFunc) (*Wordbase, error) {
 	_, filename, _, _ := runtime.Caller(1)
 	currDirname := tools.PreparePath(path.Dir(filename), "language")
 	dirname := currDirname + "data/wordbases/"

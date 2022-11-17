@@ -17,6 +17,7 @@ import (
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
 	"github.com/olehmushka/world-generator-engine/gender"
 	"github.com/olehmushka/world-generator-engine/tools"
+	"github.com/olehmushka/world-generator-engine/types"
 )
 
 type RawLanguage struct {
@@ -163,7 +164,7 @@ func SelectLanguageSlugByMostRecent(in []string) (string, error) {
 	return slug, nil
 }
 
-func LoadAllLanguages(opts ...PathChangeLoadOpts) chan either.Either[*Language] {
+func LoadAllLanguages(opts ...types.ChangeStringFunc) chan either.Either[*Language] {
 	_, filename, _, _ := runtime.Caller(1)
 	currDirname := tools.PreparePath(path.Dir(filename), "language")
 	dirname := currDirname + "data/languages/"

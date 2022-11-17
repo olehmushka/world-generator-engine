@@ -15,6 +15,7 @@ import (
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
 	"github.com/olehmushka/world-generator-engine/gender"
 	"github.com/olehmushka/world-generator-engine/tools"
+	"github.com/olehmushka/world-generator-engine/types"
 )
 
 type Tradition struct {
@@ -155,7 +156,7 @@ func SepareteTraditionsByPresent(present []*Tradition, ts []string) ([]string, [
 	return included, notIncluded
 }
 
-func LoadAllTraditions(opts ...PathChangeLoadOpts) chan either.Either[[]*Tradition] {
+func LoadAllTraditions(opts ...types.ChangeStringFunc) chan either.Either[[]*Tradition] {
 	_, filename, _, _ := runtime.Caller(1)
 	currDirname := tools.PreparePath(path.Dir(filename), "culture")
 	dirname := currDirname + "data/traditions/"
@@ -201,7 +202,7 @@ func LoadAllTraditions(opts ...PathChangeLoadOpts) chan either.Either[[]*Traditi
 	return ch
 }
 
-func SearchTradition(slug string, opts ...PathChangeLoadOpts) (*Tradition, error) {
+func SearchTradition(slug string, opts ...types.ChangeStringFunc) (*Tradition, error) {
 	_, filename, _, _ := runtime.Caller(1)
 	currDirname := tools.PreparePath(path.Dir(filename), "culture")
 	dirname := currDirname + "data/traditions/"
@@ -236,7 +237,7 @@ func SearchTradition(slug string, opts ...PathChangeLoadOpts) (*Tradition, error
 	return nil, nil
 }
 
-func SearchTraditions(slugs []string, opts ...PathChangeLoadOpts) ([]*Tradition, error) {
+func SearchTraditions(slugs []string, opts ...types.ChangeStringFunc) ([]*Tradition, error) {
 	_, filename, _, _ := runtime.Caller(1)
 	currDirname := tools.PreparePath(path.Dir(filename), "culture")
 	dirname := currDirname + "data/traditions/"

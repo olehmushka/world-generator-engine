@@ -13,9 +13,10 @@ import (
 	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
 	"github.com/olehmushka/world-generator-engine/tools"
+	"github.com/olehmushka/world-generator-engine/types"
 )
 
-func LoadAllFamilies(opts ...PathChangeLoadOpts) chan either.Either[[]string] {
+func LoadAllFamilies(opts ...types.ChangeStringFunc) chan either.Either[[]string] {
 	_, filename, _, _ := runtime.Caller(1)
 	currDirname := tools.PreparePath(path.Dir(filename), "language")
 	dirname := currDirname + "data/families/"

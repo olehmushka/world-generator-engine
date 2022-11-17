@@ -15,6 +15,7 @@ import (
 	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
 	"github.com/olehmushka/world-generator-engine/tools"
+	"github.com/olehmushka/world-generator-engine/types"
 )
 
 type Subbase struct {
@@ -90,7 +91,7 @@ func SelectSubbaseByMostRecent(in []Subbase) (Subbase, error) {
 	return Subbase{}, wrapped_error.NewInternalServerError(nil, fmt.Sprintf("can not select subbase by slug (slug=%s)", slug))
 }
 
-func LoadAllSubbases(opts ...PathChangeLoadOpts) chan either.Either[[]*Subbase] {
+func LoadAllSubbases(opts ...types.ChangeStringFunc) chan either.Either[[]*Subbase] {
 	_, filename, _, _ := runtime.Caller(1)
 	currDirname := tools.PreparePath(path.Dir(filename), "culture")
 	dirname := currDirname + "data/subbases/"
@@ -136,7 +137,7 @@ func LoadAllSubbases(opts ...PathChangeLoadOpts) chan either.Either[[]*Subbase] 
 	return ch
 }
 
-func SearchSubbase(slug string, opts ...PathChangeLoadOpts) (*Subbase, error) {
+func SearchSubbase(slug string, opts ...types.ChangeStringFunc) (*Subbase, error) {
 	_, filename, _, _ := runtime.Caller(1)
 	currDirname := tools.PreparePath(path.Dir(filename), "culture")
 	dirname := currDirname + "data/subbases/"

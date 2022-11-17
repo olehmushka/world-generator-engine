@@ -15,6 +15,7 @@ import (
 	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
 	"github.com/olehmushka/world-generator-engine/tools"
+	"github.com/olehmushka/world-generator-engine/types"
 )
 
 func RandomBase(in []string) (string, error) {
@@ -65,7 +66,7 @@ func SelectBaseByMostRecent(in []string) (string, error) {
 	return baseSlug, nil
 }
 
-func LoadAllBases(opts ...PathChangeLoadOpts) chan either.Either[[]string] {
+func LoadAllBases(opts ...types.ChangeStringFunc) chan either.Either[[]string] {
 	_, filename, _, _ := runtime.Caller(1)
 	currDirname := tools.PreparePath(path.Dir(filename), "culture")
 	dirname := currDirname + "data/bases/"

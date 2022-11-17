@@ -15,6 +15,7 @@ import (
 	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
 	"github.com/olehmushka/world-generator-engine/tools"
+	"github.com/olehmushka/world-generator-engine/types"
 )
 
 type Ethos struct {
@@ -157,7 +158,7 @@ func GetEthosSimilarityCoef(e1, e2 Ethos) float64 {
 	return out
 }
 
-func LoadAllEthoses(opts ...PathChangeLoadOpts) chan either.Either[[]Ethos] {
+func LoadAllEthoses(opts ...types.ChangeStringFunc) chan either.Either[[]Ethos] {
 	_, filename, _, _ := runtime.Caller(1)
 	currDirname := tools.PreparePath(path.Dir(filename), "culture")
 	dirname := currDirname + "data/ethoses/"
@@ -203,7 +204,7 @@ func LoadAllEthoses(opts ...PathChangeLoadOpts) chan either.Either[[]Ethos] {
 	return ch
 }
 
-func SearchEthos(slug string, opts ...PathChangeLoadOpts) (*Ethos, error) {
+func SearchEthos(slug string, opts ...types.ChangeStringFunc) (*Ethos, error) {
 	_, filename, _, _ := runtime.Caller(1)
 	currDirname := tools.PreparePath(path.Dir(filename), "culture")
 	dirname := currDirname + "data/ethoses/"
