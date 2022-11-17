@@ -11,6 +11,7 @@ import (
 
 	"github.com/olehmushka/golang-toolkit/either"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
+	"github.com/olehmushka/world-generator-engine/tools"
 )
 
 type Wordbase struct {
@@ -24,15 +25,18 @@ type Wordbase struct {
 	M              float64  `json:"m" bson:"m"`
 }
 
-func LoadAllWordbases() chan either.Either[*Wordbase] {
+func LoadAllWordbases(opts ...PathChangeLoadOpts) chan either.Either[*Wordbase] {
 	_, filename, _, _ := runtime.Caller(1)
-	currDirname := path.Dir(filename) + "/"
-	dirname := currDirname + "/data/wordbases/"
+	currDirname := tools.PreparePath(path.Dir(filename), "language")
+	dirname := currDirname + "data/wordbases/"
+	for _, fn := range opts {
+		dirname = fn(dirname)
+	}
 	ch := make(chan either.Either[*Wordbase], MaxLoadDataConcurrency)
 	go func() {
 		files, err := ioutil.ReadDir(dirname)
 		if err != nil {
-			ch <- either.Either[*Wordbase]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))}
+			ch <- either.Either[*Wordbase]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", dirname))}
 			return
 		}
 
@@ -65,13 +69,16 @@ func LoadAllWordbases() chan either.Either[*Wordbase] {
 	return ch
 }
 
-func SearchWordbase(slug string) (*Wordbase, error) {
+func SearchWordbase(slug string, opts ...PathChangeLoadOpts) (*Wordbase, error) {
 	_, filename, _, _ := runtime.Caller(1)
-	currDirname := path.Dir(filename) + "/"
-	dirname := currDirname + "/data/wordbases/"
+	currDirname := tools.PreparePath(path.Dir(filename), "language")
+	dirname := currDirname + "data/wordbases/"
+	for _, fn := range opts {
+		dirname = fn(dirname)
+	}
 	files, err := ioutil.ReadDir(dirname)
 	if err != nil {
-		return nil, wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))
+		return nil, wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", dirname))
 	}
 
 	for _, file := range files {

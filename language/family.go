@@ -15,10 +15,13 @@ import (
 	"github.com/olehmushka/world-generator-engine/tools"
 )
 
-func LoadAllFamilies() chan either.Either[[]string] {
+func LoadAllFamilies(opts ...PathChangeLoadOpts) chan either.Either[[]string] {
 	_, filename, _, _ := runtime.Caller(1)
 	currDirname := tools.PreparePath(path.Dir(filename), "language")
 	dirname := currDirname + "data/families/"
+	for _, fn := range opts {
+		dirname = fn(dirname)
+	}
 	ch := make(chan either.Either[[]string], MaxLoadDataConcurrency)
 
 	go func() {

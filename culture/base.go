@@ -14,6 +14,7 @@ import (
 	randomTools "github.com/olehmushka/golang-toolkit/random_tools"
 	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
+	"github.com/olehmushka/world-generator-engine/tools"
 )
 
 func RandomBase(in []string) (string, error) {
@@ -64,16 +65,19 @@ func SelectBaseByMostRecent(in []string) (string, error) {
 	return baseSlug, nil
 }
 
-func LoadAllBases() chan either.Either[[]string] {
+func LoadAllBases(opts ...PathChangeLoadOpts) chan either.Either[[]string] {
 	_, filename, _, _ := runtime.Caller(1)
-	currDirname := path.Dir(filename) + "/"
-	dirname := currDirname + "/data/bases/"
+	currDirname := tools.PreparePath(path.Dir(filename), "culture")
+	dirname := currDirname + "data/bases/"
+	for _, fn := range opts {
+		dirname = fn(dirname)
+	}
 	ch := make(chan either.Either[[]string], MaxLoadDataConcurrency)
 
 	go func() {
 		files, err := ioutil.ReadDir(dirname)
 		if err != nil {
-			ch <- either.Either[[]string]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))}
+			ch <- either.Either[[]string]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", dirname))}
 			return
 		}
 

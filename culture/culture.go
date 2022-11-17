@@ -17,6 +17,7 @@ import (
 	genderAcceptance "github.com/olehmushka/world-generator-engine/gender_acceptance"
 	genderDominance "github.com/olehmushka/world-generator-engine/gender_dominance"
 	"github.com/olehmushka/world-generator-engine/language"
+	"github.com/olehmushka/world-generator-engine/tools"
 )
 
 type RawCulture struct {
@@ -158,15 +159,18 @@ func GenerateSlug(word string) string {
 	return fmt.Sprintf("%sian_%s%s", word, randomTools.UUIDString(), RequiredCultureSlugSuffix)
 }
 
-func LoadAllRawCultures() chan either.Either[[]*RawCulture] {
+func LoadAllRawCultures(opts ...PathChangeLoadOpts) chan either.Either[[]*RawCulture] {
 	_, filename, _, _ := runtime.Caller(1)
-	currDirname := path.Dir(filename) + "/"
-	dirname := currDirname + "/data/cultures/"
+	currDirname := tools.PreparePath(path.Dir(filename), "culture")
+	dirname := currDirname + "data/cultures/"
+	for _, fn := range opts {
+		dirname = fn(dirname)
+	}
 	ch := make(chan either.Either[[]*RawCulture], MaxLoadDataConcurrency)
 	go func() {
 		files, err := ioutil.ReadDir(dirname)
 		if err != nil {
-			ch <- either.Either[[]*RawCulture]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))}
+			ch <- either.Either[[]*RawCulture]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", dirname))}
 			return
 		}
 
@@ -215,21 +219,24 @@ func FilterRawCulturesBySlugs(rCultures []*RawCulture, slugs []string) []*RawCul
 	return out
 }
 
-func SearchCultures(slugs []string) ([]*Culture, error) {
+func SearchCultures(slugs []string, opts ...PathChangeLoadOpts) ([]*Culture, error) {
 	if len(slugs) == 0 {
 		return []*Culture{}, nil
 	}
 
 	_, filename, _, _ := runtime.Caller(1)
-	currDirname := path.Dir(filename) + "/"
-	dirname := currDirname + "/data/cultures/"
+	currDirname := tools.PreparePath(path.Dir(filename), "culture")
+	dirname := currDirname + "data/cultures/"
+	for _, fn := range opts {
+		dirname = fn(dirname)
+	}
 	rawCultureCh := make(chan []*RawCulture, MaxLoadDataConcurrency)
 	ch := make(chan either.Either[*Culture], MaxLoadDataConcurrency)
 
 	go func() {
 		files, err := ioutil.ReadDir(dirname)
 		if err != nil {
-			ch <- either.Either[*Culture]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))}
+			ch <- either.Either[*Culture]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", dirname))}
 			return
 		}
 
@@ -386,17 +393,20 @@ func SepareteCulturesByPresent(present []*Culture, ts []string) ([]string, []str
 	return included, notIncluded
 }
 
-func LoadAllCultures() chan either.Either[*Culture] {
+func LoadAllCultures(opts ...PathChangeLoadOpts) chan either.Either[*Culture] {
 	_, filename, _, _ := runtime.Caller(1)
-	currDirname := path.Dir(filename) + "/"
-	dirname := currDirname + "/data/cultures/"
+	currDirname := tools.PreparePath(path.Dir(filename), "culture")
+	dirname := currDirname + "data/cultures/"
+	for _, fn := range opts {
+		dirname = fn(dirname)
+	}
 	rawCultureCh := make(chan []*RawCulture, MaxLoadDataConcurrency)
 	ch := make(chan either.Either[*Culture], MaxLoadDataConcurrency)
 
 	go func() {
 		files, err := ioutil.ReadDir(dirname)
 		if err != nil {
-			ch <- either.Either[*Culture]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))}
+			ch <- either.Either[*Culture]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", dirname))}
 			return
 		}
 

@@ -14,6 +14,7 @@ import (
 	randomTools "github.com/olehmushka/golang-toolkit/random_tools"
 	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
+	"github.com/olehmushka/world-generator-engine/tools"
 )
 
 type Ethos struct {
@@ -156,15 +157,18 @@ func GetEthosSimilarityCoef(e1, e2 Ethos) float64 {
 	return out
 }
 
-func LoadAllEthoses() chan either.Either[[]Ethos] {
+func LoadAllEthoses(opts ...PathChangeLoadOpts) chan either.Either[[]Ethos] {
 	_, filename, _, _ := runtime.Caller(1)
-	currDirname := path.Dir(filename) + "/"
-	dirname := currDirname + "/data/ethoses/"
+	currDirname := tools.PreparePath(path.Dir(filename), "culture")
+	dirname := currDirname + "data/ethoses/"
+	for _, fn := range opts {
+		dirname = fn(dirname)
+	}
 	ch := make(chan either.Either[[]Ethos], MaxLoadDataConcurrency)
 	go func() {
 		files, err := ioutil.ReadDir(dirname)
 		if err != nil {
-			ch <- either.Either[[]Ethos]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))}
+			ch <- either.Either[[]Ethos]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", dirname))}
 			return
 		}
 
@@ -199,13 +203,16 @@ func LoadAllEthoses() chan either.Either[[]Ethos] {
 	return ch
 }
 
-func SearchEthos(slug string) (*Ethos, error) {
+func SearchEthos(slug string, opts ...PathChangeLoadOpts) (*Ethos, error) {
 	_, filename, _, _ := runtime.Caller(1)
-	currDirname := path.Dir(filename) + "/"
-	dirname := currDirname + "/data/ethoses/"
+	currDirname := tools.PreparePath(path.Dir(filename), "culture")
+	dirname := currDirname + "data/ethoses/"
+	for _, fn := range opts {
+		dirname = fn(dirname)
+	}
 	files, err := ioutil.ReadDir(dirname)
 	if err != nil {
-		return nil, wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))
+		return nil, wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", dirname))
 	}
 
 	for _, file := range files {

@@ -14,6 +14,7 @@ import (
 	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
 	"github.com/olehmushka/world-generator-engine/gender"
+	"github.com/olehmushka/world-generator-engine/tools"
 )
 
 type Tradition struct {
@@ -154,15 +155,18 @@ func SepareteTraditionsByPresent(present []*Tradition, ts []string) ([]string, [
 	return included, notIncluded
 }
 
-func LoadAllTraditions() chan either.Either[[]*Tradition] {
+func LoadAllTraditions(opts ...PathChangeLoadOpts) chan either.Either[[]*Tradition] {
 	_, filename, _, _ := runtime.Caller(1)
-	currDirname := path.Dir(filename) + "/"
-	dirname := currDirname + "/data/traditions/"
+	currDirname := tools.PreparePath(path.Dir(filename), "culture")
+	dirname := currDirname + "data/traditions/"
+	for _, fn := range opts {
+		dirname = fn(dirname)
+	}
 	ch := make(chan either.Either[[]*Tradition], MaxLoadDataConcurrency)
 	go func() {
 		files, err := ioutil.ReadDir(dirname)
 		if err != nil {
-			ch <- either.Either[[]*Tradition]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))}
+			ch <- either.Either[[]*Tradition]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", dirname))}
 			return
 		}
 
@@ -197,13 +201,16 @@ func LoadAllTraditions() chan either.Either[[]*Tradition] {
 	return ch
 }
 
-func SearchTradition(slug string) (*Tradition, error) {
+func SearchTradition(slug string, opts ...PathChangeLoadOpts) (*Tradition, error) {
 	_, filename, _, _ := runtime.Caller(1)
-	currDirname := path.Dir(filename) + "/"
-	dirname := currDirname + "/data/traditions/"
+	currDirname := tools.PreparePath(path.Dir(filename), "culture")
+	dirname := currDirname + "data/traditions/"
+	for _, fn := range opts {
+		dirname = fn(dirname)
+	}
 	files, err := ioutil.ReadDir(dirname)
 	if err != nil {
-		return nil, wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))
+		return nil, wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", dirname))
 	}
 
 	for _, file := range files {
@@ -229,13 +236,16 @@ func SearchTradition(slug string) (*Tradition, error) {
 	return nil, nil
 }
 
-func SearchTraditions(slugs []string) ([]*Tradition, error) {
+func SearchTraditions(slugs []string, opts ...PathChangeLoadOpts) ([]*Tradition, error) {
 	_, filename, _, _ := runtime.Caller(1)
-	currDirname := path.Dir(filename) + "/"
-	dirname := currDirname + "/data/traditions/"
+	currDirname := tools.PreparePath(path.Dir(filename), "culture")
+	dirname := currDirname + "data/traditions/"
+	for _, fn := range opts {
+		dirname = fn(dirname)
+	}
 	files, err := ioutil.ReadDir(dirname)
 	if err != nil {
-		return nil, wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))
+		return nil, wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", dirname))
 	}
 
 	out := make([]*Tradition, 0, len(slugs))

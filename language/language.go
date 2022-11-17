@@ -163,10 +163,13 @@ func SelectLanguageSlugByMostRecent(in []string) (string, error) {
 	return slug, nil
 }
 
-func LoadAllLanguages() chan either.Either[*Language] {
+func LoadAllLanguages(opts ...PathChangeLoadOpts) chan either.Either[*Language] {
 	_, filename, _, _ := runtime.Caller(1)
 	currDirname := tools.PreparePath(path.Dir(filename), "language")
 	dirname := currDirname + "data/languages/"
+	for _, fn := range opts {
+		dirname = fn(dirname)
+	}
 	rawLangCh := make(chan []*RawLanguage, MaxLoadDataConcurrency)
 	ch := make(chan either.Either[*Language], MaxLoadDataConcurrency)
 

@@ -14,6 +14,7 @@ import (
 	randomTools "github.com/olehmushka/golang-toolkit/random_tools"
 	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
 	"github.com/olehmushka/golang-toolkit/wrapped_error"
+	"github.com/olehmushka/world-generator-engine/tools"
 )
 
 type Subbase struct {
@@ -89,15 +90,18 @@ func SelectSubbaseByMostRecent(in []Subbase) (Subbase, error) {
 	return Subbase{}, wrapped_error.NewInternalServerError(nil, fmt.Sprintf("can not select subbase by slug (slug=%s)", slug))
 }
 
-func LoadAllSubbases() chan either.Either[[]*Subbase] {
+func LoadAllSubbases(opts ...PathChangeLoadOpts) chan either.Either[[]*Subbase] {
 	_, filename, _, _ := runtime.Caller(1)
-	currDirname := path.Dir(filename) + "/"
-	dirname := currDirname + "/data/subbases/"
+	currDirname := tools.PreparePath(path.Dir(filename), "culture")
+	dirname := currDirname + "data/subbases/"
+	for _, fn := range opts {
+		dirname = fn(dirname)
+	}
 	ch := make(chan either.Either[[]*Subbase], MaxLoadDataConcurrency)
 	go func() {
 		files, err := ioutil.ReadDir(dirname)
 		if err != nil {
-			ch <- either.Either[[]*Subbase]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))}
+			ch <- either.Either[[]*Subbase]{Err: wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", dirname))}
 			return
 		}
 
@@ -132,13 +136,16 @@ func LoadAllSubbases() chan either.Either[[]*Subbase] {
 	return ch
 }
 
-func SearchSubbase(slug string) (*Subbase, error) {
+func SearchSubbase(slug string, opts ...PathChangeLoadOpts) (*Subbase, error) {
 	_, filename, _, _ := runtime.Caller(1)
-	currDirname := path.Dir(filename) + "/"
-	dirname := currDirname + "/data/subbases/"
+	currDirname := tools.PreparePath(path.Dir(filename), "culture")
+	dirname := currDirname + "data/subbases/"
+	for _, fn := range opts {
+		dirname = fn(dirname)
+	}
 	files, err := ioutil.ReadDir(dirname)
 	if err != nil {
-		return nil, wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))
+		return nil, wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", dirname))
 	}
 
 	for _, file := range files {

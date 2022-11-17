@@ -21,7 +21,7 @@ type Subfamily struct {
 	ExtendedSubfamily *Subfamily `json:"extended_subfamily" bson:"extended_subfamily"`
 }
 
-func LoadAllSubfamilies() chan either.Either[[]*Subfamily] {
+func LoadAllSubfamilies(opts ...PathChangeLoadOpts) chan either.Either[[]*Subfamily] {
 	_, filename, _, _ := runtime.Caller(1)
 	currDirname := tools.PreparePath(path.Dir(filename), "language")
 	dirname := currDirname + "data/subfamilies/"
@@ -64,13 +64,16 @@ func LoadAllSubfamilies() chan either.Either[[]*Subfamily] {
 	return ch
 }
 
-func SearchSubfamily(slug string) (*Subfamily, error) {
+func SearchSubfamily(slug string, opts ...PathChangeLoadOpts) (*Subfamily, error) {
 	_, filename, _, _ := runtime.Caller(1)
-	currDirname := path.Dir(filename) + "/"
-	dirname := currDirname + "/data/subfamilies/"
+	currDirname := tools.PreparePath(path.Dir(filename), "language")
+	dirname := currDirname + "data/subfamilies/"
+	for _, fn := range opts {
+		dirname = fn(dirname)
+	}
 	files, err := ioutil.ReadDir(dirname)
 	if err != nil {
-		return nil, wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", currDirname))
+		return nil, wrapped_error.NewInternalServerError(err, fmt.Sprintf("can not read dir by dirname (dirname=%s)", dirname))
 	}
 
 	for _, file := range files {
