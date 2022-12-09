@@ -41,7 +41,7 @@ func TestGetAcceptanceByProbability(t *testing.T) {
 		t.Run(tc.name, func(tt *testing.T) {
 			m := make(map[string]int)
 			for i := 0; i < iterationsNumber; i++ {
-				out, err := GetAcceptanceByProbability(tc.onlyMenProb, tc.menAndWomenProb, tc.onlyWomenProb)
+				out, err := GetAcceptanceByProb(tc.onlyMenProb, tc.menAndWomenProb, tc.onlyWomenProb)
 				if err != nil {
 					t.Fatalf("unexpected error (err=%v)", err)
 					return

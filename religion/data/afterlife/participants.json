@@ -1,0 +1,22 @@
+[
+	{
+		"slug": "righteous_afterlife_participant",
+		"description": "Whose Faith is considered legitimate.",
+    "order": 0
+	},
+	{
+		"slug": "astray_afterlife_participant",
+		"description": "Whose Faith differs in a way that is not particularly significant.",
+    "order": 1
+	},
+	{
+		"slug": "hostile_afterlife_participant",
+		"description": "Whose Faith deviates significantly.",
+    "order": 2
+	},
+	{
+		"slug": "evil_afterlife_participant",
+		"description": "Whose Faith is considered anathema.",
+    "order": 3
+	}
+]

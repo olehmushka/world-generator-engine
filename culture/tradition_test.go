@@ -1,23 +1,22 @@
 package culture
 
 import (
-	"strings"
 	"testing"
 
 	"github.com/olehmushka/world-generator-engine/gender"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 func TestRandomTraditions(t *testing.T) {
-	tCases := []struct {
-		name            string
+	tCases := map[string]struct {
 		inputTraditions []*Tradition
 		min, max        int
 		ethos           Ethos
 		ds              gender.Sex
 		expectedOutput  []*Tradition
 	}{
-		{
-			name: "",
+		"should generate random tradition": {
 			inputTraditions: []*Tradition{
 				{Slug: "equal_inheritance_tradition", OmitGenderDominance: []gender.Sex{"male_sex", "female_sex"}},
 				{Slug: "equal_inheritance_tradition", OmitGenderDominance: []gender.Sex{"male_sex", ""}},
@@ -38,28 +37,23 @@ func TestRandomTraditions(t *testing.T) {
 		},
 	}
 
-	for _, tc := range tCases {
-		t.Run(tc.name, func(tt *testing.T) {
+	for name, tc := range tCases {
+		t.Run(name, func(tt *testing.T) {
 			out, err := RandomTraditions(tc.inputTraditions, tc.min, tc.max, tc.ethos, tc.ds)
-			if err != nil {
-				t.Fatalf("unexpected err (err=%+v)", err)
-			}
-			if len(out) != len(tc.expectedOutput) {
-				t.Errorf("unexpected output (expected_length=%+v, actual_length=%+v)", len(tc.expectedOutput), len(out))
-			}
+			require.NoError(t, err)
+			assert.Equal(tt, len(out), len(tc.expectedOutput))
 		})
 	}
 }
 
 func TestFilterTraditionsByEthos(t *testing.T) {
-	tCases := []struct {
+	tCases := map[string]struct {
 		name           string
 		input          []*Tradition
 		inputEthos     Ethos
 		expectedOutput []*Tradition
 	}{
-		{
-			name: "should work for bellicose_ethos",
+		"should work for bellicose_ethos": {
 			input: []*Tradition{
 				{Slug: "equal_inheritance_tradition", OmitEthosSlugs: []string{"bellicose_ethos"}},
 				{Slug: "city_keepers_tradition", OmitEthosSlugs: []string{"bellicose_ethos"}},
@@ -75,24 +69,21 @@ func TestFilterTraditionsByEthos(t *testing.T) {
 		},
 	}
 
-	for _, tc := range tCases {
-		t.Run(tc.name, func(tt *testing.T) {
-			if out := FilterTraditionsByEthos(tc.input, tc.inputEthos); len(out) != len(tc.expectedOutput) {
-				t.Errorf("unexpected output (expected_length=%+v, actual_length=%+v)", len(tc.expectedOutput), len(out))
-			}
+	for name, tc := range tCases {
+		t.Run(name, func(tt *testing.T) {
+			out := FilterTraditionsByEthos(tc.input, tc.inputEthos)
+			assert.Equal(tt, len(out), len(tc.expectedOutput))
 		})
 	}
 }
 
 func TestFilterTraditionsByDomitatedSex(t *testing.T) {
-	tCases := []struct {
-		name           string
+	tCases := map[string]struct {
 		input          []*Tradition
 		inputSex       gender.Sex
 		expectedOutput []*Tradition
 	}{
-		{
-			name: "should work for male sex",
+		"should work for male sex": {
 			input: []*Tradition{
 				{Slug: "equal_inheritance_tradition", OmitGenderDominance: []gender.Sex{"male_sex", "female_sex"}},
 				{Slug: "equal_inheritance_tradition", OmitGenderDominance: []gender.Sex{"male_sex", ""}},
@@ -111,11 +102,10 @@ func TestFilterTraditionsByDomitatedSex(t *testing.T) {
 		},
 	}
 
-	for _, tc := range tCases {
-		t.Run(tc.name, func(tt *testing.T) {
-			if out := FilterTraditionsByDomitatedSex(tc.input, tc.inputSex); len(out) != len(tc.expectedOutput) {
-				t.Errorf("unexpected output (expected_length=%+v, actual_length=%+v)", len(tc.expectedOutput), len(out))
-			}
+	for name, tc := range tCases {
+		t.Run(name, func(tt *testing.T) {
+			out := FilterTraditionsByDomitatedSex(tc.input, tc.inputSex)
+			assert.Equal(tt, len(out), len(tc.expectedOutput))
 		})
 	}
 }
@@ -126,24 +116,19 @@ func TestExtractTraditions(t *testing.T) {
 	for _, c := range mockCultures {
 		expectedCount += len(c.Traditions)
 	}
-	if len(traditions) != expectedCount {
-		t.Errorf("unexpected extracted tradition length (expected=%d, actual=%d)", expectedCount, len(traditions))
-	}
+	assert.Equal(t, len(traditions), expectedCount)
 	for _, tradition := range traditions {
-		if !strings.HasSuffix(tradition.Slug, RequiredTraditionSlugSuffix) {
-			t.Errorf("unexpected tradition slug suffix (slug=%s)", tradition.Slug)
-		}
+		assert.Contains(t, tradition.Slug, RequiredTraditionSlugSuffix)
 	}
 }
 
 func TestUniqueTraditions(t *testing.T) {
-	tCases := []struct {
+	tCases := map[string]struct {
 		name           string
 		input          []*Tradition
 		expectedOutput []*Tradition
 	}{
-		{
-			name: "should work for shuffeled",
+		"should work for shuffeled": {
 			input: []*Tradition{
 				{Slug: "agrarian_tradition"},
 				{Slug: "druzhina_tradition"},
@@ -165,11 +150,10 @@ func TestUniqueTraditions(t *testing.T) {
 		},
 	}
 
-	for _, tc := range tCases {
-		t.Run(tc.name, func(tt *testing.T) {
-			if out := UniqueTraditions(tc.input); len(out) != len(tc.expectedOutput) {
-				t.Errorf("unexpected output (expected_length=%+v, actual_length=%+v)", len(tc.expectedOutput), len(out))
-			}
+	for name, tc := range tCases {
+		t.Run(name, func(tt *testing.T) {
+			out := UniqueTraditions(tc.input)
+			assert.Equal(tt, len(out), len(tc.expectedOutput))
 		})
 	}
 }
@@ -178,38 +162,22 @@ func TestLoadAllTraditions(t *testing.T) {
 	var count int
 
 	for chunk := range LoadAllTraditions() {
-		if chunk.Err != nil {
-			t.Fatalf("unexpected error (err=%+v)", chunk.Err)
-			return
-		}
-		if len(chunk.Value) == 0 {
-			t.Errorf("unexpected length of traditions")
-		}
+		require.NoError(t, chunk.Err)
+		assert.NotEmpty(t, chunk.Value)
 		for _, c := range chunk.Value {
-			if !strings.HasSuffix(c.Slug, RequiredTraditionSlugSuffix) {
-				t.Errorf("unexpected tradition slug suffix (slug=%s)", c.Slug)
-			}
+			assert.Contains(t, c.Slug, RequiredTraditionSlugSuffix)
 		}
 
 		count += len(chunk.Value)
 	}
 
-	if expecCount := 147; count != expecCount {
-		t.Errorf("unexpected count of traditions (expected=%d, actual=%d)", expecCount, count)
-	}
+	assert.Equal(t, 147, count)
 }
 
 func TestSearchTradition(t *testing.T) {
 	slug := "astute_diplomats_tradition"
 	result, err := SearchTradition(slug)
-	if err != nil {
-		t.Fatalf("unexpected error (err=%+v)", err)
-		return
-	}
-	if result == nil {
-		t.Fatal("result should not be nil")
-	}
-	if result.Slug != slug {
-		t.Fatalf("unexpected result (expected slug=%s, actual slug=%s)", slug, result.Slug)
-	}
+	require.NoError(t, err)
+	assert.NotNil(t, result)
+	assert.Equal(t, result.Slug, slug)
 }

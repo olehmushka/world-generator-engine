@@ -3,18 +3,12 @@ package gender
 import (
 	"testing"
 
-	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 func TestGetRandomSex(t *testing.T) {
 	result, err := GetRandomSex()
-	if err != nil {
-		t.Fatalf("unexpected err (err=%+v)", err)
-	}
-	if !sliceTools.Includes([]string{
-		MaleSex.String(),
-		FemaleSex.String(),
-	}, result.String()) {
-		t.Errorf("result should be picked from available sexes")
-	}
+	require.NoError(t, err)
+	assert.Contains(t, []string{MaleSex.String(), FemaleSex.String()}, result.String())
 }

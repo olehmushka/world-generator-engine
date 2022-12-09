@@ -1,0 +1,14 @@
+[
+	{
+		"slug": "good_afterlife_participance",
+		"goodness_coef": 1
+	},
+	{
+		"slug": "depends_afterlife_participance",
+		"goodness_coef": 0
+	},
+	{
+		"slug": "bad_afterlife_participance",
+		"goodness_coef": -1
+	}
+]

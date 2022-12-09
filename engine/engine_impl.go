@@ -8,6 +8,7 @@ import (
 	genderAcceptance "github.com/olehmushka/world-generator-engine/gender_acceptance"
 	"github.com/olehmushka/world-generator-engine/influence"
 	"github.com/olehmushka/world-generator-engine/language"
+	"github.com/olehmushka/world-generator-engine/religion"
 	"github.com/olehmushka/world-generator-engine/types"
 )
 
@@ -90,6 +91,51 @@ func (e *engine) LoadAllParentCultures(opts ...types.ChangeStringFunc) chan eith
 	return culture.LoadAllCultures(opts...)
 }
 
-func (e *engine) Generate(opts *culture.CreateCultureOpts, parents ...*culture.Culture) (*culture.Culture, error) {
-	return culture.Generate(opts, parents...)
+func (e *engine) GenerateCulture(data *culture.CreateCultureOpts, parents ...*culture.Culture) (*culture.Culture, error) {
+	return culture.Generate(data, parents...)
+}
+
+func (e *engine) LoadAllReligionTypes(opts ...types.ChangeStringFunc) chan either.Either[[]*religion.Trait] {
+	return religion.LoadAllTypeTraits(opts...)
+}
+
+func (e *engine) LoadAllReligionHighGoals(opts ...types.ChangeStringFunc) chan either.Either[[]*religion.Trait] {
+	return religion.LoadAllHighGoals(opts...)
+}
+
+func (e *engine) LoadAllReligionMarriageKinds(opts ...types.ChangeStringFunc) chan either.Either[[]*religion.Trait] {
+	return religion.LoadAllMarriageKinds(opts...)
+}
+
+func (e *engine) LoadAllReligionBastardies(opts ...types.ChangeStringFunc) chan either.Either[[]*religion.Trait] {
+	return religion.LoadAllBastardies(opts...)
+}
+
+func (e *engine) LoadAllReligionConsanguinities(opts ...types.ChangeStringFunc) chan either.Either[[]*religion.Trait] {
+	return religion.LoadAllConsanguinities(opts...)
+}
+
+func (e *engine) LoadAllReligionDivorceOpts(opts ...types.ChangeStringFunc) chan either.Either[[]*religion.PermissionTrait] {
+	return religion.LoadAllDivorceOpts(opts...)
+}
+
+func (e *engine) GenerateReligion(opts religion.CreateReligionOpts, data religion.Data) (*religion.Religion, error) {
+	return religion.New(opts, data)
+}
+
+func (e *engine) GenerateReligionByCulture(c *culture.Culture, opts religion.CreateReligionByCultureOpts, data religion.Data) (*religion.Religion, error) {
+	generateOpts := religion.CreateReligionOpts{
+		Opts: religion.CreateReligionTraitsOpts{
+			Slug:            opts.Opts.Slug,
+			Stats:           opts.Opts.Stats,
+			MinHighGoalsNum: opts.Opts.MinHighGoalsNum,
+			MaxHighGoalsNum: opts.Opts.MaxHighGoalsNum,
+		},
+		GenderDominance: c.GenderDominance,
+	}
+	if generateOpts.Opts.Stats == nil {
+		generateOpts.Opts.Stats = &religion.Stats{}
+	}
+
+	return religion.New(generateOpts, data)
 }

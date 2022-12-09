@@ -20,7 +20,7 @@ const (
 	OnlyWomen   Acceptance = "only_women"
 )
 
-func GetAcceptanceByProbability(onlyMen, menAndWomen, onlyWomen float64) (Acceptance, error) {
+func GetAcceptanceByProb(onlyMen, menAndWomen, onlyWomen float64) (Acceptance, error) {
 	out, err := mapTools.PickOneByProb(map[string]float64{
 		string(OnlyMen):     randomTools.PrepareProbability(onlyMen),
 		string(MenAndWomen): randomTools.PrepareProbability(menAndWomen),

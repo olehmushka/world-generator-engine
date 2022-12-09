@@ -2,14 +2,14 @@ package language
 
 import (
 	"testing"
+
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 func TestLoadAllSubfamilies(t *testing.T) {
 	for chunk := range LoadAllSubfamilies() {
-		if chunk.Err != nil {
-			t.Fatalf("unexpected error (err=%+v)", chunk.Err)
-			return
-		}
+		require.NoError(t, chunk.Err)
 		if len(chunk.Value) == 0 {
 			t.Fatalf("unexpected length of subfamilies")
 		}
@@ -19,14 +19,7 @@ func TestLoadAllSubfamilies(t *testing.T) {
 func TestSearchSubfamily(t *testing.T) {
 	slug := "ruthenian_lang_subfamily"
 	result, err := SearchSubfamily(slug)
-	if err != nil {
-		t.Fatalf("unexpected error (err=%+v)", err)
-		return
-	}
-	if result == nil {
-		t.Fatal("result should not be nil")
-	}
-	if result.Slug != slug {
-		t.Fatalf("unexpected result (expected slug=%s, actual slug=%s)", slug, result.Slug)
-	}
+	require.NoError(t, err)
+	assert.NotNil(t, result)
+	assert.Equal(t, result.Slug, slug)
 }

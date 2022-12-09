@@ -1,0 +1,78 @@
+[
+  {
+    "slug": "human_has_soul_human_nature_trait",
+    "description": "",
+    "kind": "human_nature_trait_kind",
+    "base_coef": "regular_base_coef",
+    "omit_type_slugs": [
+      "atheism_type_trait"
+    ],
+    "omit_trait_slugs": [],
+    "omit_stats_keys": [],
+    "omit_dominated_genders": [],
+    "stats": {
+      "restricted": 0,
+      "open": 0,
+      "celestial": 0.25,
+      "chthonic": 0,
+      "sexual_emancipated": 0,
+      "sexual_strictness": 0,
+      "aggressive": 0,
+      "pacifistic": 0,
+      "hedonistic": 0,
+      "ascetic": 0,
+      "lawful": 0.75,
+      "anarchy": 0,
+      "pragmatic": 0,
+      "altruistic": 0,
+      "naturalistic": 0,
+      "urbanistic": 0,
+      "philosophic": 0.1,
+      "primitive": 0,
+      "authoritaristic": 0,
+      "liberal": 0,
+      "individualistic": 0,
+      "collectivistic": 0,
+      "spiritualustic": 0.5,
+      "materialistic": 0
+    }
+  },
+  {
+    "slug": "human_can_be_saint_human_nature_trait",
+    "description": "",
+    "kind": "human_nature_trait_kind",
+    "base_coef": "regular_base_coef",
+    "omit_type_slugs": [
+      "atheism_type_trait"
+    ],
+    "omit_trait_slugs": [],
+    "omit_stats_keys": [],
+    "omit_dominated_genders": [],
+    "stats": {
+      "restricted": 0.1,
+      "open": 0,
+      "celestial": 0.5,
+      "chthonic": 0,
+      "sexual_emancipated": 0,
+      "sexual_strictness": 0,
+      "aggressive": 0,
+      "pacifistic": 0,
+      "hedonistic": 0,
+      "ascetic": 0.5,
+      "lawful": 0.1,
+      "anarchy": 0,
+      "pragmatic": 0,
+      "altruistic": 0,
+      "naturalistic": 0,
+      "urbanistic": 0,
+      "philosophic": 0.1,
+      "primitive": 0,
+      "authoritaristic": 0,
+      "liberal": 0,
+      "individualistic": 0,
+      "collectivistic": 0,
+      "spiritualustic": 0.5,
+      "materialistic": 0
+    }
+  }
+]

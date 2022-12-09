@@ -1,53 +1,41 @@
 package culture
 
 import (
-	"strings"
 	"testing"
 
 	"github.com/olehmushka/world-generator-engine/tools"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 func TestRandomEthos(t *testing.T) {
 	result, err := RandomEthos(mockEthoses)
-	if err != nil {
-		t.Fatalf("unexpected err (err=%+v)", err)
-	}
-	if result.IsZero() {
-		t.Errorf("result should not be empty string")
-		return
-	}
+	require.NoError(t, err)
+	assert.False(t, result.IsZero())
 	var isEthosesIncludeResult bool
 	for _, e := range mockEthoses {
 		if e.Slug == result.Slug {
 			isEthosesIncludeResult = true
 		}
 	}
-	if !isEthosesIncludeResult {
-		t.Errorf("result ethos should be picked from input slice")
-	}
+	assert.True(t, isEthosesIncludeResult)
 }
 
 func TestExtractEthoses(t *testing.T) {
 	ethoses := ExtractEthoses(mockCultures)
-	if len(ethoses) != len(mockCultures) {
-		t.Errorf("unexpected extracted ethos length (expected=%d, actual=%d)", len(mockCultures), len(ethoses))
-	}
+	assert.Equal(t, len(ethoses), len(mockCultures))
 	for _, ethos := range ethoses {
-		if !strings.HasSuffix(ethos.Slug, RequiredEthosSlugSuffix) {
-			t.Errorf("unexpected ethos slug suffix (slug=%s)", ethos.Slug)
-		}
+		assert.Contains(t, ethos.Slug, RequiredEthosSlugSuffix)
 	}
 }
 
 func TestSelectEthosByMostRecent(t *testing.T) {
 	iterationsNumber := 100
-	tCases := []struct {
-		name           string
+	tCases := map[string]struct {
 		input          []Ethos
 		expectedOutput Ethos
 	}{
-		{
-			name: "should works for 10 the same ethoses",
+		"should works for 10 the same ethoses": {
 			input: []Ethos{
 				{Slug: "bellicose_ethos"},
 				{Slug: "bellicose_ethos"},
@@ -62,8 +50,7 @@ func TestSelectEthosByMostRecent(t *testing.T) {
 			},
 			expectedOutput: Ethos{Slug: "bellicose_ethos"},
 		},
-		{
-			name: "should works for 9 the same ethoses and 1 another",
+		"should works for 9 the same ethoses and 1 another": {
 			input: []Ethos{
 				{Slug: "bureaucratic_ethos"},
 				{Slug: "bellicose_ethos"},
@@ -78,8 +65,7 @@ func TestSelectEthosByMostRecent(t *testing.T) {
 			},
 			expectedOutput: Ethos{Slug: "bellicose_ethos"},
 		},
-		{
-			name: "should works for 8 the same ethoses and 2 other",
+		"should works for 8 the same ethoses and 2 other": {
 			input: []Ethos{
 				{Slug: "bureaucratic_ethos"},
 				{Slug: "bureaucratic_ethos"},
@@ -94,8 +80,7 @@ func TestSelectEthosByMostRecent(t *testing.T) {
 			},
 			expectedOutput: Ethos{Slug: "bellicose_ethos"},
 		},
-		{
-			name: "should works for 7 the same ethoses and 3 other",
+		"should works for 7 the same ethoses and 3 other": {
 			input: []Ethos{
 				{Slug: "bureaucratic_ethos"},
 				{Slug: "bureaucratic_ethos"},
@@ -110,8 +95,7 @@ func TestSelectEthosByMostRecent(t *testing.T) {
 			},
 			expectedOutput: Ethos{Slug: "bellicose_ethos"},
 		},
-		{
-			name: "should works for 6 the same ethoses and 4 other",
+		"should works for 6 the same ethoses and 4 other": {
 			input: []Ethos{
 				{Slug: "bureaucratic_ethos"},
 				{Slug: "bureaucratic_ethos"},
@@ -128,36 +112,29 @@ func TestSelectEthosByMostRecent(t *testing.T) {
 		},
 	}
 
-	for _, tc := range tCases {
-		t.Run(tc.name, func(tt *testing.T) {
+	for name, tc := range tCases {
+		t.Run(name, func(tt *testing.T) {
 			m := make(map[string]int)
 			for i := 0; i < iterationsNumber; i++ {
 				out, err := SelectEthosByMostRecent(tc.input)
-				if err != nil {
-					t.Fatalf("unexpected error (err=%v)", err)
-					return
-				}
+				require.NoError(t, err)
 				if count, ok := m[out.Slug]; ok {
 					m[out.Slug] = count + 1
 				} else {
 					m[out.Slug] = 1
 				}
 			}
-			if slug := tools.GetKeyWithGreatestValue(m); slug != tc.expectedOutput.Slug {
-				t.Errorf("unexpected result (expected=%s, actual=%s)", tc.expectedOutput.Slug, slug)
-			}
+			assert.Equal(tt, tools.GetKeyWithGreatestValue(m), tc.expectedOutput.Slug)
 		})
 	}
 }
 
 func TestUniqueEthoses(t *testing.T) {
-	tCases := []struct {
-		name           string
+	tCases := map[string]struct {
 		input          []Ethos
 		expectedOutput []Ethos
 	}{
-		{
-			name: "should work for shuffeled",
+		"should work for shuffeled": {
 			input: []Ethos{
 				{Slug: "bellicose_ethos"},
 				{Slug: "bellicose_ethos"},
@@ -185,11 +162,9 @@ func TestUniqueEthoses(t *testing.T) {
 		},
 	}
 
-	for _, tc := range tCases {
-		t.Run(tc.name, func(tt *testing.T) {
-			if out := UniqueEthoses(tc.input); len(out) != len(tc.expectedOutput) {
-				t.Errorf("unexpected output (expected_length=%+v, actual_length=%+v)", len(tc.expectedOutput), len(out))
-			}
+	for name, tc := range tCases {
+		t.Run(name, func(tt *testing.T) {
+			assert.Equal(tt, len(UniqueEthoses(tc.input)), len(tc.expectedOutput))
 		})
 	}
 }
@@ -198,38 +173,21 @@ func TestLoadAllEthoses(t *testing.T) {
 	var count int
 
 	for chunk := range LoadAllEthoses() {
-		if chunk.Err != nil {
-			t.Fatalf("unexpected error (err=%+v)", chunk.Err)
-			return
-		}
-		if len(chunk.Value) == 0 {
-			t.Errorf("unexpected length of ethoses")
-		}
+		require.NoError(t, chunk.Err)
+		assert.NotEmpty(t, chunk.Value)
 		for _, c := range chunk.Value {
-			if !strings.HasSuffix(c.Slug, RequiredEthosSlugSuffix) {
-				t.Errorf("unexpected ethos slug suffix (slug=%s)", c.Slug)
-			}
+			assert.Contains(t, c.Slug, RequiredEthosSlugSuffix)
 		}
-
 		count += len(chunk.Value)
 	}
 
-	if expecCount := 7; count != expecCount {
-		t.Errorf("unexpected count of ethoses (expected=%d, actual=%d)", expecCount, count)
-	}
+	assert.Equal(t, 7, count)
 }
 
 func TestSearchEthos(t *testing.T) {
 	slug := "communal_ethos"
 	result, err := SearchEthos(slug)
-	if err != nil {
-		t.Fatalf("unexpected error (err=%+v)", err)
-		return
-	}
-	if result.IsZero() {
-		t.Fatal("result should not be nil")
-	}
-	if result.Slug != slug {
-		t.Fatalf("unexpected result (expected slug=%s, actual slug=%s)", slug, result.Slug)
-	}
+	require.NoError(t, err)
+	assert.False(t, result.IsZero())
+	assert.Equal(t, result.Slug, slug)
 }

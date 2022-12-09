@@ -2,16 +2,14 @@ package language
 
 import (
 	"testing"
+
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 func TestLoadAllFamilies(t *testing.T) {
 	for chunk := range LoadAllFamilies() {
-		if chunk.Err != nil {
-			t.Fatalf("unexpected error (err=%+v)", chunk.Err)
-			return
-		}
-		if len(chunk.Value) == 0 {
-			t.Fatalf("unexpected length of families")
-		}
+		require.NoError(t, chunk.Err)
+		assert.Greater(t, len(chunk.Value), 0)
 	}
 }

@@ -1,10 +1,12 @@
 package culture
 
-import "testing"
+import (
+	"testing"
+
+	"github.com/stretchr/testify/assert"
+)
 
 func TestExtractGenderDominances(t *testing.T) {
 	gds := ExtractGenderDominances(mockCultures)
-	if len(gds) != len(mockCultures) {
-		t.Errorf("unexpected extracted lang_slug length (expected=%d, actual=%d)", len(mockCultures), len(gds))
-	}
+	assert.Equal(t, len(gds), len(mockCultures))
 }

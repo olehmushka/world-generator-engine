@@ -5,6 +5,8 @@ import (
 
 	sliceTools "github.com/olehmushka/golang-toolkit/slice_tools"
 	"github.com/olehmushka/world-generator-engine/tools"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 func TestGetLanguageKinship(t *testing.T) {
@@ -177,14 +179,10 @@ func TestSelectLanguageSlugByMostRecent(t *testing.T) {
 func TestLoadAllLanguages(t *testing.T) {
 	var count int
 	for chunk := range LoadAllLanguages() {
-		if chunk.Err != nil {
-			t.Fatalf("unexpected error (err=%+v)", chunk.Err)
-			return
-		}
-		if chunk.Value == nil {
-			t.Fatalf("loaded language can not be nil")
-		}
+		require.NoError(t, chunk.Err)
+		assert.NotNil(t, chunk.Value)
 		count++
 	}
-	t.Logf("counted langs: %d\n", count)
+
+	assert.Equal(t, 479, count)
 }

@@ -4,65 +4,56 @@ import (
 	"testing"
 
 	"github.com/olehmushka/world-generator-engine/tools"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 func TestGetRandom(t *testing.T) {
 	iterationsNumber := 10000
-	tCases := []struct {
-		name           string
+	tCases := map[string]struct {
 		expectedOutput string
 	}{
-		{
-			name:           "should returns moderate_influence for most cases",
+		"should returns moderate_influence for most cases": {
 			expectedOutput: ModerateInfluence.String(),
 		},
 	}
 
-	for _, tc := range tCases {
-		t.Run(tc.name, func(tt *testing.T) {
+	for name, tc := range tCases {
+		t.Run(name, func(tt *testing.T) {
 			m := make(map[string]int)
 			for i := 0; i < iterationsNumber; i++ {
 				out, err := GetRandom()
-				if err != nil {
-					t.Fatalf("unexpected error (err=%v)", err)
-					return
-				}
+				require.NoError(tt, err)
 				if count, ok := m[out.String()]; ok {
 					m[out.String()] = count + 1
 				} else {
 					m[out.String()] = 1
 				}
 			}
-			if slug := tools.GetKeyWithGreatestValue(m); slug != tc.expectedOutput {
-				t.Errorf("unexpected result (expected=%s, actual=%s)", tc.expectedOutput, slug)
-			}
+			assert.Equal(tt, tools.GetKeyWithGreatestValue(m), tc.expectedOutput)
 		})
 	}
 }
 
 func TestGetInfluenceByProbability(t *testing.T) {
 	iterationsNumber := 1000
-	tCases := []struct {
-		name                               string
+	tCases := map[string]struct {
 		strongProb, moderateProb, weakProb float64
 		expectedOutput                     string
 	}{
-		{
-			name:           "should returns strong_influence for greater strong probability",
+		"should returns strong_influence for greater strong probability": {
 			strongProb:     0.35,
 			moderateProb:   0.2,
 			weakProb:       0.2,
 			expectedOutput: StrongInfluence.String(),
 		},
-		{
-			name:           "should returns moderate_influence for greater moderate probability",
+		"should returns moderate_influence for greater moderate probability": {
 			strongProb:     0.2,
 			moderateProb:   0.35,
 			weakProb:       0.2,
 			expectedOutput: ModerateInfluence.String(),
 		},
-		{
-			name:           "should returns weak_influence for greater weak probability",
+		"should returns weak_influence for greater weak probability": {
 			strongProb:     0.2,
 			moderateProb:   0.2,
 			weakProb:       0.35,
@@ -70,24 +61,19 @@ func TestGetInfluenceByProbability(t *testing.T) {
 		},
 	}
 
-	for _, tc := range tCases {
-		t.Run(tc.name, func(tt *testing.T) {
+	for name, tc := range tCases {
+		t.Run(name, func(tt *testing.T) {
 			m := make(map[string]int)
 			for i := 0; i < iterationsNumber; i++ {
 				out, err := GetInfluenceByProbability(tc.strongProb, tc.moderateProb, tc.weakProb)
-				if err != nil {
-					t.Fatalf("unexpected error (err=%v)", err)
-					return
-				}
+				require.NoError(tt, err)
 				if count, ok := m[out.String()]; ok {
 					m[out.String()] = count + 1
 				} else {
 					m[out.String()] = 1
 				}
 			}
-			if slug := tools.GetKeyWithGreatestValue(m); slug != tc.expectedOutput {
-				t.Errorf("unexpected result (expected=%s, actual=%s)", tc.expectedOutput, slug)
-			}
+			assert.Equal(tt, tools.GetKeyWithGreatestValue(m), tc.expectedOutput)
 		})
 	}
 }

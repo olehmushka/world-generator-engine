@@ -15,6 +15,10 @@ type Dominance struct {
 	Influence    influence.Influence `json:"influence" bson:"influence"`
 }
 
+func (d Dominance) IsZero() bool {
+	return d == Dominance{}
+}
+
 func GetRandom() (Dominance, error) {
 	ds, err := mapTools.PickOneByProb(map[string]float64{
 		gender.MaleSex.String():   randomTools.PrepareProbability(0.33),
